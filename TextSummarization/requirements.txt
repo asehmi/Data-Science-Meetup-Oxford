@@ -1,0 +1,14 @@
+streamlit==0.51.0
+numpy
+pandas
+django-environ
+pysolr
+altair
+matplotlib
+plotly
+plotly_express
+gensim
+sumy
+spacy
+
+

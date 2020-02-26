@@ -1,0 +1,27 @@
+Health data paints a rich picture of our lives. Even if you remove your name, date of birth and NHS number to “anonymise” yourself, a full health history will reveal your age, gender, the places where you have lived, your family relationships and aspects of your lifestyle.
+
+Used in combination with other available information, this may be enough to verify that this medical history relates to you personally and to target you online. Consequently, whenever the NHS shares health data, even if it is anonymised, we need to have confidence in who it goes to and what they can do with it.
+
+Recent Observer coverage raises big questions over the transparency and claims of anonymity in NHS data transfers through the research scheme used by the health service. It appears that individual-level UK medical data ends up being sold to American drug companies and there appears to be little transparency or accountability around the process.
+
+Society has largely lost control over how our personal data is collected and shared. The effects of this may feel creepy when they lead to an unexpectedly appropriate online recommendation, for example when I received ads for dog grooming, apparently as a consequence of posting pictures of dogs. But when data about us influences a credit rating, a hiring decision or a reoffending risk assessment in a probation case, we are unlikely ever to find out a breach has occurred. The University of Maryland law professor, Frank Pasquale, calls this the “black box society”.
+
+Much of what happens is likely to be illegal, but the volume of internet data collection and sharing is such that existing wide-ranging data protection laws, such as the GDPR, are impossible to enforce at scale and across jurisdictions.
+
+For the internet giants, we have little information to go on beyond what they wish to tell us, which historically has not always been accurate and never complete. Most people will feel that this “surveillance capitalism” is unethical, crossing the boundaries of their rights and expectations, but financial profit remains the determining driver.
+
+This story is not new. We have heard it in terms of our online buying behaviour and the internet advertising market. In recent years, the Observer has covered extensively how the surveillance of online behaviour and profiling can be used to influence our political position, for example through social media.
+
+It is clear that the black box society does not only feed on internet surveillance information. Databases collected by public bodies are becoming more and more part of the dark data economy. Last month, it emerged that a data broker in receipt of the UK’s national pupil database had shared its access with gambling companies. This is likely to be the tip of the iceberg; even where initial recipients of shared data might be checked and vetted, it is much harder to oversee who the data is passed on to from there.
+
+Health data, the rich population-wide information held within the NHS, is another such example. Pharmaceutical companies and internet giants have been eyeing the NHS’s extensive databases for commercial exploitation for many years. Google infamously claimed it could save 100,000 lives if only it had free rein with all our health data. If there really is such value hidden in NHS data, do we really want Google to extract it to sell it to us? Google still holds health data that its subsidiary DeepMind Health obtained illegally from the NHS in 2016.
+
+Although many health data-sharing schemes, such as in the NHS’s register of approved data releases], are said to be “anonymised”, this offers a limited guarantee against abuse.
+
+There is just too much information included in health data that points to other aspects of patients’ lives and existence. If recipients of anonymised health data want to use it to re-identify individuals, they will often be able to do so by combining it, for example, with publicly available information. That this would be illegal under UK data protection law is a small consolation as it would be extremely hard to detect.
+
+It is clear that providing access to public organisations’ data for research purposes can serve the greater good and it is unrealistic to expect bodies such as the NHS to keep this all in-house.
+
+However, there are other methods by which to do this, beyond the sharing of anonymised databases. CeLSIUS, for example, a physical facility where researchers can interrogate data under tightly controlled conditions for specific registered purposes, holds UK census information over many years.
+
+These arrangements prevent abuse, such as through deanonymisation, do not have the problem of shared data being passed on to third parties and ensure complete transparency of the use of the data. Online analogues of such set-ups do not yet exist, but that is where the future of safe and transparent access to sensitive data lies.

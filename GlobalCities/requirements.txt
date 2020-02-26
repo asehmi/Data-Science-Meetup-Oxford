@@ -1,0 +1,9 @@
+streamlit>=0.56.0
+numpy
+pandas
+django-environ
+altair
+matplotlib
+plotly
+plotly_express
+
