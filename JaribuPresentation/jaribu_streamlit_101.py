@@ -321,10 +321,18 @@ if st.sidebar.checkbox('Resources', False):
     '''
     # Resources
 
+    - [**GitHub Repo of this and other apps**](https://github.com/asehmi/Data-Science-Meetup-Oxford)
+      
+      `https://github.com/asehmi/Data-Science-Meetup-Oxford`
+
     - [Awesome Streamlit Docs](https://awesome-streamlit.readthedocs.io/en/latest/index.html)
+
     - [Awesome Streamlit App Gallery](https://awesome-streamlit.org/)
+
     - [Streamlit Discussion Forum](https://discuss.streamlit.io/)
+
     - [Will Streamlit cause the extinction of Flask?](https://towardsdatascience.com/part-2-will-streamlit-cause-the-extinction-of-flask-395d282296ed)
+
     - [CSS Hacks!](https://discuss.streamlit.io/t/are-you-using-html-in-markdown-tell-us-why/96/23)
     '''
 
@@ -347,6 +355,26 @@ if st.sidebar.checkbox('Videos', False):
     st.markdown('''
         <iframe width="560" height="315" src="https://www.youtube.com/embed/z8vgmvtgxCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         ''', unsafe_allow_html=True)
+
+if st.sidebar.checkbox('Get feedback on topics for next session', False):
+    '''
+    ## Talk by Oxford Economics:
+
+    - **Introduction to Pandas for Data Science**
+
+    Speaker: Dr. Adelina Madhja, Data Science Engineer.
+
+    ## Talks by Wolfram Research Europe Ltd.:
+
+    All talks are related to Big Data and AI without sales pitch:
+    - **Big Problems with Big Data: Managing Risks in AI**
+    - **AI: Lessons Learned from the Front Lines**
+    - **AI: Experts not required**
+    - **Data Science Is More Than Just Statistics**
+    - **Building Custom Neural Networks**
+    
+    Speakers: Jon McLoone (Director of Technical Services, Communication and Strategy) and Mark Braithwaite (Senior Technical Specialist).
+    '''
 
 st.sidebar.markdown('---')
 
