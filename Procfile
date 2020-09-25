@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run --server.port 80 app.py
+web: sh setup.sh && cd ./GlobalCities && streamlit run --server.port 80 app.py
