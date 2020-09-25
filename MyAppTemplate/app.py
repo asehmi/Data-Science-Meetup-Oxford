@@ -21,10 +21,9 @@ def main():
     # >> DISPLAY WIDGETS <<
 
     # FILTER TO SELECTED LOCATION & YEAR
+    year = st.sidebar.slider('Select year', min_value=2015, max_value=2022, value=2020)
     locations_list = list(data_unpivoted.loc[:,'Location'].sort_values(ascending=True).unique())
     location = st.sidebar.selectbox('Select location', locations_list, index=locations_list.index('United Kingdom'))
-    indicator_slot = st.sidebar.empty() # reserve slot for indcator selector
-    year = st.sidebar.slider('Select year', min_value=2015, max_value=2022, value=2020)
     
     data_view = data_unpivoted.loc[(data_unpivoted.loc[:,'Location'] == location) & (data_unpivoted.loc[:,'Year'] == year)]
 
@@ -38,11 +37,10 @@ def main():
         _permission of the owner, Oxford Economics._
         '''
         # TABLE
-        st.sidebar.subheader('Data view')
-        if st.sidebar.checkbox('Show DataFrame', True):
+        if st.checkbox('Show DataFrame', True):
             data_view
 
-        if st.sidebar.checkbox('Show Table'):
+        if st.checkbox('Show Table'):
             st.table(data_view)
 
     '''
@@ -54,7 +52,7 @@ def main():
 
     indicators_list = list(chart_data.loc[:,'Indicator'].sort_values(ascending=True).unique())
     # this selection box is put into the reserved widget slot created above
-    indicator = indicator_slot.selectbox('Select indicator', indicators_list)
+    indicator = st.sidebar.selectbox('Select indicator', indicators_list)
 
     # step 2 (using chart_data, filtered by location's indicators)
     chart_data = chart_data[(chart_data['Indicator'] == indicator)]
@@ -106,7 +104,7 @@ if __name__ == '__main__':
     BlockContainerStyler().set_default_block_container_style()
 
     # >> DISPLAY WIDGETS <<
-    st.image('./images/logo.jpg', format='jpg')
+    st.image('./images/logo.jpg', output_format='jpg')
     '''
     # My App Template
     Shows how to properly structure a Streamlit app. The app `loads data` from an xlsx file, `reshapes` and

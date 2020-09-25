@@ -5,7 +5,7 @@ import streamlit as st
 import spacy
 
 @st.cache(persist=False, allow_output_mutation=True)
-def load_data(article_file, path=""):
+def load_data(article_file, path="./"):
     with open(f'{path}data/{article_file}', 'r', encoding='utf-8') as f:
         data = f.read()
     return data

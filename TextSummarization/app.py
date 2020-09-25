@@ -9,7 +9,6 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
 import unittest
-#from prefect import Flow, Task, task, Parameter
 
 from data import load_data
 from TF_IDF import tf_idf
@@ -19,10 +18,10 @@ from LayoutAndStyleUtils import (Grid, Cell, BlockContainerStyler)
 def main():
     st.sidebar.header("Settings")
 
-    article = st.sidebar.selectbox('Select article', ['Health Data', 'Corona Virus', 'Huawei'])
+    article = st.sidebar.selectbox('Select article', ['Health Data', 'Coronavirus', 'Huawei'])
     if article == 'Health Data':
         article_file = 'text_sample_1.txt'
-    elif article == 'Corona Virus':
+    elif article == 'Coronavirus':
         article_file = 'text_sample_2.txt'
     else:
         article_file = 'text_sample_3.txt'
@@ -96,7 +95,7 @@ if __name__ == '__main__':
     BlockContainerStyler().set_default_block_container_style()
 
     # >> DISPLAY WIDGETS <<
-    st.image('./images/logo.jpg', format='jpg')
+    st.image('./images/logo.jpg', output_format='jpg')
     '''
     # Text Summarization App
     '''

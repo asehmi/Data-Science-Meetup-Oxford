@@ -2,7 +2,7 @@ import streamlit as st
 
 from jaribu_app import *
 
-st.sidebar.image('./oe_logo_new.png', use_column_width=True, format='png')
+st.sidebar.image('./oe_logo_new.png', use_column_width=True, output_format='png')
 
 st.sidebar.info(
     '''
@@ -176,7 +176,7 @@ if st.sidebar.checkbox('Debugging in VS Code', False):
     ```python
     import ptvsd
     ptvsd.enable_attach(address=('localhost', 5678))
-    ptvsd.wait_for_attach() # Only include this line if you always wan't to attach the debugger
+    ptvsd.wait_for_attach() # Only include this line if you always want to manually attach the debugger
     ```
 
     3. Then start your Streamlit app
@@ -203,7 +203,7 @@ if st.sidebar.checkbox('Debugging in VS Code', False):
     ```
 
     5. Make sure you manually insert the `redirectOutput` setting.
-    6. By default you will be debugging your own code only. If you wan’t to debug into streamlit code, then change `justMyCode` setting from `true` to `false`.
+    6. By default you will be debugging your own code only. If you want to debug into streamlit code, then change `justMyCode` setting from `true` to `false`.
     7. Finally, attach the debugger by clicking the debugger play button.
 
     ## Profiling your app
@@ -321,18 +321,10 @@ if st.sidebar.checkbox('Resources', False):
     '''
     # Resources
 
-    - [**GitHub Repo of this and other apps**](https://github.com/asehmi/Data-Science-Meetup-Oxford)
-      
-      `https://github.com/asehmi/Data-Science-Meetup-Oxford`
-
     - [Awesome Streamlit Docs](https://awesome-streamlit.readthedocs.io/en/latest/index.html)
-
     - [Awesome Streamlit App Gallery](https://awesome-streamlit.org/)
-
     - [Streamlit Discussion Forum](https://discuss.streamlit.io/)
-
     - [Will Streamlit cause the extinction of Flask?](https://towardsdatascience.com/part-2-will-streamlit-cause-the-extinction-of-flask-395d282296ed)
-
     - [CSS Hacks!](https://discuss.streamlit.io/t/are-you-using-html-in-markdown-tell-us-why/96/23)
     '''
 
@@ -355,26 +347,6 @@ if st.sidebar.checkbox('Videos', False):
     st.markdown('''
         <iframe width="560" height="315" src="https://www.youtube.com/embed/z8vgmvtgxCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         ''', unsafe_allow_html=True)
-
-if st.sidebar.checkbox('Get feedback on topics for next session', False):
-    '''
-    ## Talk by Oxford Economics:
-
-    - **Introduction to Pandas for Data Science**
-
-    Speaker: Dr. Adelina Madhja, Data Science Engineer.
-
-    ## Talks by Wolfram Research Europe Ltd.:
-
-    All talks are related to Big Data and AI without sales pitch:
-    - **Big Problems with Big Data: Managing Risks in AI**
-    - **AI: Lessons Learned from the Front Lines**
-    - **AI: Experts not required**
-    - **Data Science Is More Than Just Statistics**
-    - **Building Custom Neural Networks**
-    
-    Speakers: Jon McLoone (Director of Technical Services, Communication and Strategy) and Mark Braithwaite (Senior Technical Specialist).
-    '''
 
 st.sidebar.markdown('---')
 

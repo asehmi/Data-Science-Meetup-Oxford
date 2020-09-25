@@ -23,14 +23,14 @@ import unittest # https://docs.python.org/2/library/unittest.html
 class Test_TF_IDF(unittest.TestCase):
 
     def testTfIdf(self):
-        text = load_data(path='c:\\Dev\\streamlit\\OE-Streamlit-Projects\\TextSummarization\\')
+        text = load_data('text_sample_1.txt')
         summary = tf_idf().summarize(text, 0.8)
         print(summary)
 
 class Test_Sumy(unittest.TestCase):
 
     def testSumy(self):
-        text = load_data(path='c:\\Dev\\streamlit\\OE-Streamlit-Projects\\TextSummarization\\')
+        text = load_data('text_sample_1.txt')
         parser = PlaintextParser.from_string(text,Tokenizer("english"))
         lex_summarizer = LexRankSummarizer()
         sumy_lex = lex_summarizer(parser.document,5)
@@ -39,6 +39,6 @@ class Test_Sumy(unittest.TestCase):
         print(sumy_summary)
 
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(Test_Sumy)
+    suite = unittest.TestLoader().loadTestsFromTestCase(Test_TF_IDF)
     unittest.TextTestRunner(verbosity=2).run(suite)
     #unittest.main()

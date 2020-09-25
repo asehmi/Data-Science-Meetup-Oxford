@@ -97,10 +97,13 @@ class tf_idf():
         for sent, f_table in tf_idf_matrix.items():
             sent_word_count = len(f_table)
             scores = [score for _word, score in f_table.items()]
-            maxScore = max(scores)
-            normScores = [score/maxScore for score in scores]
-            total_sent_score = sum(normScores)
-            sentenceScores[sent] = total_sent_score / sent_word_count
+            if len(scores) > 0:
+                maxScore = max(scores)
+                normScores = [score/maxScore for score in scores]
+                total_sent_score = sum(normScores)
+                sentenceScores[sent] = total_sent_score / sent_word_count
+            else:
+                sentenceScores[sent] = 0.0
 
         return sentenceScores
 

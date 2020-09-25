@@ -15,7 +15,7 @@ import unittest
 
 BlockContainerStyler().set_default_block_container_style()
 
-st.image('./images/logo.jpg', format='jpg')
+st.image('./images/logo.jpg', output_format='jpg')
 '''
 # Global cities explorer
 
@@ -81,7 +81,7 @@ opacity=0.8
 text_colour = TEXT_COLOUR.get('Black')
 
 st.sidebar.header("Map settings")
-mapdata = merged_filtered_view[['Location', 'Year', 'Value', 'Units > Scale', 'longitude', 'latitude']]
+mapdata = merged_filtered_view[['Location', 'Indicator', 'Measurement', 'Year', 'Value', 'Units > Scale', 'longitude', 'latitude']]
 
 layer_choice = st.sidebar.selectbox('Choose layer',['Scatterplot','Text','Scatterplot + Text'])
 if 'Scatterplot' in layer_choice:
@@ -151,7 +151,7 @@ try:
     st.pydeck_chart(pdk.Deck(
             map_style='mapbox://styles/mapbox/light-v9',
             initial_view_state=pdk.ViewState(
-                # mapboxApiAccessToken=settings.MAPBOX_ACCESS_TOKEN,
+                mapboxApiAccessToken=settings.MAPBOX_ACCESS_TOKEN,
                 longitude=0.0,
                 latitude=0.0,
                 zoom=2,
@@ -159,7 +159,8 @@ try:
                 max_zoom=5,
                 pitch=0
             ),
-            layers = layers
+            layers = layers,
+            tooltip = {"html": "{Location}, {Indicator}<br/>Year: {Year}, Value: {Value}<br/>{Units > Scale} in {Measurement}", "style": {"color": "white"}}
     ))
 except:
     st.warning('Can\'t display map with supplied settings')

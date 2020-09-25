@@ -105,7 +105,7 @@ Essentially follow these steps:
 ```python
 import ptvsd
 ptvsd.enable_attach(address=('localhost', 5678))
-ptvsd.wait_for_attach() # Only include this line if you always wan't to attach the debugger
+ptvsd.wait_for_attach() # Only include this line if you always want to manually attach the debugger
 ```
 
 3. Then start your Streamlit app
@@ -132,7 +132,7 @@ ptvsd.wait_for_attach() # Only include this line if you always wan't to attach t
 ```
 
 5. Make sure you manually insert the `redirectOutput` setting.
-6. By default you will be debugging your own code only. If you wan’t to debug into streamlit code, then change `justMyCode` setting from `true` to `false`.
+6. By default you will be debugging your own code only. If you want to debug into streamlit code, then change `justMyCode` setting from `true` to `false`.
 7. Finally, attach the debugger by clicking the debugger play button.
 
 ## Profiling your app
