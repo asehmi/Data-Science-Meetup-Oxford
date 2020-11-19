@@ -14,6 +14,10 @@ Streamlit projects available in this repo:
 
 	[Text Summarization Experiments](./TextSummarization)
 
+* Streamlit Component with Server API Interaction
+
+	[Streamlit Component](./StreamlitComponent)
+
 * A proof-of-concept app with rich dashboard-like visualisation to explore a small set of Global Cities forecasts variables
 
 	[Global Cities](./GlobalCities)
