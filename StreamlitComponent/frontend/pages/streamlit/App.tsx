@@ -5,25 +5,24 @@ import {
   Streamlit,
 } from 'streamlit-component-lib';
 
-let numClicks: number = 0
-let hostname: string = 'No Hostname'
-let action: string = 'No Action'
-let message: {} = {'ping': 'No Message'}
-
 function App(props: ComponentProps) {
 
-  const [state, setState] = useState({hostname: hostname, numClicks: numClicks, message: message, isError: false, error: ''})
-  const [clicks, setClicks] = useState(numClicks)
+  const [hostname, setHostname] = useState('No Hostname')
+  const [message, setMessage] = useState({})
+  const [clicks, setClicks] = useState(0)
+  const [action, setAction] = useState('')
+
+  const [state, setState] = useState({hostname: 'No Hostname', clicks: 0, message: {}, isError: false, error: ''})
   
   const initializeProps = (props: ComponentProps) => {
     if ('hostname' in props.args) {
-      hostname = props.args.hostname
+      setHostname(props.args.hostname)
       delete props.args.hostname
     }
     if ('initial_state' in props.args) {
-      message = props.args.initial_state['message']
-      action = props.args.initial_state['action']
-      setState({hostname: hostname, numClicks: clicks, message: message, isError: false, error: ''})
+      setMessage(props.args.initial_state['message'])
+      setAction(props.args.initial_state['action'])
+      // setState({hostname: hostname, clicks: clicks, message: message, isError: false, error: ''})
       delete props.args.initial_state
     }
   }
@@ -60,11 +59,12 @@ function App(props: ComponentProps) {
 
   useEffect(() => {
     reportEvent('onStatusUpdate', state)
-  }, [clicks])
+  }, [state])
 
   const handleStatusUpdate = async () => {
-    setClicks(numClicks += 1)
-    setState({hostname: hostname, numClicks: numClicks, message: message, isError: false, error: ''})
+    let clicks1 = clicks + 1
+    setClicks(clicks1)
+    setState({hostname: hostname, clicks: clicks1, message: message, isError: false, error: ''})
   }
   
   const handleDirectActionRequest = async () => {
@@ -72,9 +72,9 @@ function App(props: ComponentProps) {
     const response = await fetch('http://localhost:8888/api/ping', {
       mode: 'cors' // allow CORS
     })
-    const message = await response.json()
-    console.log(message)
-    setState({hostname: hostname, numClicks: numClicks, message: message, isError: false, error: ''})
+    const msg = await response.json()
+    setMessage(msg)
+    setState({hostname: hostname, clicks: clicks, message: msg, isError: false, error: ''})
   }
 
   const handleHostActionRequest = async () => {
@@ -107,7 +107,7 @@ function App(props: ComponentProps) {
             </button>
             <p/>
             <div>
-              Host: {state.hostname} | Message: {state.message['ping']} | Clicks: {state.numClicks}
+              Host: {state.hostname} | Message: {state.message['ping']} | Clicks: {state.clicks}
             </div>
           </div>
       </header>
