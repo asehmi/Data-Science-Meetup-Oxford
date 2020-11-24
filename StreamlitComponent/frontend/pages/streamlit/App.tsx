@@ -8,7 +8,7 @@ import {
 function App(props: ComponentProps) {
 
   const [hostname, setHostname] = useState('No Hostname')
-  const [message, setMessage] = useState({})
+  const [message, setMessage] = useState({ping: 'No Message'})
   const [clicks, setClicks] = useState(0)
   const [action, setAction] = useState('')
 
@@ -22,7 +22,6 @@ function App(props: ComponentProps) {
     if ('initial_state' in props.args) {
       setMessage(props.args.initial_state['message'])
       setAction(props.args.initial_state['action'])
-      // setState({hostname: hostname, clicks: clicks, message: message, isError: false, error: ''})
       delete props.args.initial_state
     }
   }
@@ -43,11 +42,7 @@ function App(props: ComponentProps) {
   }
 
   const reportEvent = (event_name: string, data: any) => {
-    try {
-      props.args.event_name(data)
-    } catch {
-      Streamlit.setComponentValue({name: event_name, data: data})
-    }
+    Streamlit.setComponentValue({name: event_name, data: data})
   }
 
   initializeProps(props)
@@ -60,6 +55,10 @@ function App(props: ComponentProps) {
   useEffect(() => {
     reportEvent('onStatusUpdate', state)
   }, [state])
+
+  useEffect(() => {
+      setState({hostname: hostname, clicks: clicks, message: message, isError: false, error: ''})
+  }, [])
 
   const handleStatusUpdate = async () => {
     let clicks1 = clicks + 1
@@ -107,7 +106,7 @@ function App(props: ComponentProps) {
             </button>
             <p/>
             <div>
-              Host: {state.hostname} | Message: {state.message['ping']} | Clicks: {state.clicks}
+              Host: {hostname} | Message: {message['ping']} | Clicks: {clicks}
             </div>
           </div>
       </header>
