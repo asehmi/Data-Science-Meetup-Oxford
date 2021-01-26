@@ -14,7 +14,7 @@ Streamlit projects available in this repo:
 
 	[Text Summarization Experiments](./TextSummarization)
 
-* Streamlit Component with Server API Interaction
+* Streamlit Next.js Component, Auth0 Authentication, Bi-Directional Messaging & Serverless APIs
 
 	[Streamlit Component](./StreamlitComponent)
 
