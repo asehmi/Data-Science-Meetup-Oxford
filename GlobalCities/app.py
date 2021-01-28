@@ -134,8 +134,10 @@ text_layer = pdk.Layer(
     billboard=False,
     get_size=18,
     get_angle=0,
-    get_text_anchor='middle',
-    get_alignment_baseline='center'
+    # Note that string constants in pydeck are explicitly passed as strings
+    # This distinguishes them from columns in a data set
+    get_text_anchor='"middle"',
+    get_alignment_baseline='"center"'
 )
 
 if layer_choice == 'Scatterplot':
