@@ -20,12 +20,12 @@ def load_data(region_type):
 
 @st.cache(persist=True)
 def load_data_countries():
-    gc_data_countries = pd.read_excel('GCFS Countries (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na=False, na_values=["NA"])
+    gc_data_countries = pd.read_excel('GCFS Countries (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na=False, na_values=["NA"], engine='openpyxl')
     return gc_data_countries
 
 @st.cache(persist=True)
 def load_data_cities():
-    gc_data_cities = pd.read_excel('GCFS Cities (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na = False, na_values = ['NA'])
+    gc_data_cities = pd.read_excel('GCFS Cities (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na = False, na_values = ['NA'], engine='openpyxl')
     return gc_data_cities
 
 @st.cache(persist=True)
