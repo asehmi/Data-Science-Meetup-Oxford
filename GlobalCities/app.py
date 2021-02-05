@@ -214,7 +214,7 @@ if st.sidebar.checkbox('Readme', False):
     '''
     ### Readme
     '''
-    with open('./README.md', 'r', encoding='utf-8') as f:
+    with open('./README_SUMMARY.md', 'r', encoding='utf-8') as f:
         readme = f.read()
         st.markdown(readme)
 
