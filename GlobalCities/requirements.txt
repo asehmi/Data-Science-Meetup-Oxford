@@ -4,7 +4,7 @@ django_environ
 matplotlib
 streamlit
 pandas
-xlrd
+openpyxl
 altair
 numpy
 plotly
