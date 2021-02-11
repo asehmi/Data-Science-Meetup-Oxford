@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-    @apply bg-indigo-50;
+    @apply bg-white;
     @apply m-5;
 }

@@ -1,4 +1,4 @@
 // https://github.com/kutlugsahin/next-transpile-modules
-const withTM = require('next-transpile-modules')(['streamlit-component-lib']); // pass the modules you would like to see transpiled
- 
+// pass the modules you would like to see transpiled
+const withTM = require('next-transpile-modules')(['streamlit-component-lib']);
 module.exports = withTM();

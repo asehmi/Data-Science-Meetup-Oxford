@@ -1,10 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Head from 'next/head';
 
 export default function AuthApp({ session }) {
 
     console.log('======== AuthApp ========')
 
+    const SHOW_UI = false
+    
     const user = session?.user
     const accessToken = session?.accessToken
     const accessTokenExpiresAt = session?.accessTokenExpiresAt
@@ -26,22 +28,32 @@ export default function AuthApp({ session }) {
     })
 
     return (
-        <div className="container mx-auto my-10 max-w-xl p-2">
+        <div className="container max-w-xl">
             <Head>
                 <title>Authentication</title>
             </Head>
             <main>
-                <div className="flex items-center justify-center py-4">
-                    {user && (
-                        <a  href="/api/logout"
-                            className="rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4">
-                            Logout
+                <div className="container my-0 max-w-xl">
+                    {SHOW_UI && !user && (
+                        <div className="text-xl my-2">Click to sign into the application...</div>
+                    )}
+                    {SHOW_UI && !user && (
+                        <a  href="/api/login"
+                            className="inline-flex px-4 py-1 border border-transparent
+                            rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
+                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Login
                         </a>
                     )}
-                    {!user && (
-                        <a  href="/api/login"
-                            className="rounded bg-blue-500 hover:bg-blue-600 text-white py-2 px-4">
-                            Login
+                    {SHOW_UI && user && (
+                        <div className="text-xl my-2">Click to sign out of the application...</div>
+                    )}
+                    {SHOW_UI && user && (
+                        <a  href="/api/logout"
+                            className="inline-flex px-4 py-1 border border-transparent
+                            rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
+                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Logout
                         </a>
                     )}
                 </div>

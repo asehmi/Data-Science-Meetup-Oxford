@@ -1,4 +1,4 @@
 @echo off
 cd ./frontend
-yarn start
+yarn dev
 cd ..

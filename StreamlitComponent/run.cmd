@@ -1,1 +1,1 @@
-streamlit run --server.port 4009 StreamlitComponent.py
+streamlit run --server.port 4009 app.py

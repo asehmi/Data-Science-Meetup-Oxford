@@ -6,23 +6,25 @@ export default function Home({ session }) {
 
     console.log('======== Home ========')
 
+    const SHOW_UI = false
+
     return (
-        <div className="container mx-auto my-10 max-w-xl p-2">
+        <div className="container my-3 max-w-xl p-2">
             <Head>
                 <title>Home - App Launcher</title>
             </Head>
             <main>
-                <div className="flex flex-row place-items-center gap-4">
+                <div className="flex flex-row gap-4">
                     <div>
                         <AuthApp session={session}/>
                     </div>
                 </div>
-                {session?.accessToken && (
+                {SHOW_UI && session?.accessToken && (
                     <div>
                         accessToken: <p className="text-gray-400 truncate ...">{session.accessToken}</p>
                     </div>
                 )}
-                {session?.accessTokenExpiresAt && (
+                {SHOW_UI && session?.accessTokenExpiresAt && (
                     <div>
                         tokenExpiry: <p className="text-gray-400 truncate ...">{session.accessTokenExpiresAt}</p>
                     </div>

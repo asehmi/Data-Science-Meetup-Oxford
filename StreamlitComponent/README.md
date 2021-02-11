@@ -1,7 +1,7 @@
-# Streamlit Next.js Component, Auth0 Authentication, Bi-Directional Messaging & Serverless APIs
+# Streamlit Next.js Component, Auth0 Authentication, Event-Based Messaging & Serverless APIs
 
 > Arvindra Sehmi, Oxford Economics Ltd. | [Website](https://www.oxfordeconomics.com/) | [LinkedIn](https://www.linkedin.com/in/asehmi/)
-> (Updated: 26 January, 2021)
+> (Updated: 10 February, 2021)
 
 Let me put it out there, I'm a big, big fan of [Streamlit](https://www.streamlit.io/) and use it a lot at work and play. Thank you Team Streamlit!
 
@@ -17,11 +17,13 @@ There are three parts to my solution:
 
 ## [1] Streamlit component host app
 
-This uses a component design similar to [@synode's](https://discuss.streamlit.io/u/synode/summary) [Streamlit-Player](https://discuss.streamlit.io/t/streamlit-player/3169) and generalises its ability to receive `OnStatusUpdate` and `OnError` _events_ from the hosted component, so it can be used more easily as a component template in other applications. The generalisation includes an example of handling a "delegated host action" `OnActionRequest` event. In the example provided to handle `OnActionRequest`, the component requests the host (i.e. the Streamlit app) to make a web request, which then _passes_ the results back to the component. The latter is a bit hacky because the host app can communicate only _once_ with the hosted component, each time the Streamlit script runs. To get around this I use a [SessionState](https://gist.github.com/FranzDiebold/898396a6be785d9b5ca6f3706ef9b0bc) implementation and the experimental `rerun` Streamlit API.
+This uses a component design similar to [@synode's](https://discuss.streamlit.io/u/synode/summary) [Streamlit-Player](https://discuss.streamlit.io/t/streamlit-player/3169) and generalises its ability to receive `OnStatusUpdate` and `OnError` _events_ from the hosted component, so it can be used more easily as a component template in other applications. The generalisation includes an example of handling a "delegated host action" `OnActionRequest` event. `auth0_login_component` component provided is able to handle `OnActionRequest` where the component can request the host (i.e. the Streamlit app) to make a web request.
 
-The rerun _hack_ isn't strictly needed as the latest versions of Streamlit (>=0.74) allows the `allow-same-origin` CORS settings to be set on server APIs, so calling protected APIs on a different origin domain, from the component iframe, is now possible! (The component is hosted in an iframe automagically.) Still, the hack can be useful to get data from Streamlit into the component _subsequent to the component's first initialisation_.
+Results from the host's web request (or other actions) can be _passed_ back to the component by using the experimental `rerun` Streamlit API _hack_, but I refrained from doing this as it's not generalisable and highly specific to the execution flow of each application that uses it. By design, Streamlit's component lifecyle supplies its host's prop values only _once_, each time the component is mounted, when the Streamlit script runs. The _hack_ involves using [SessionState](https://gist.github.com/FranzDiebold/898396a6be785d9b5ca6f3706ef9b0bc) and the experimental `rerun` Streamlit API if you wish to try it.
 
-So, whilst I was able to get this _hack_ to work, it is far from ideal. Turns out the combination of `rerun` and updating the component properties from `SessionState` values is one time step behind the data that the host gets from its delegated API call (I have a timestamp on the API response and display the same in the component, so I can verify this). This aliasing anomaly may be okay in some scenarios. _Re-running the script is not fast, so is not recommended_, and you're better off designing solutions that do not need Streamlit to send values back to the component during the component lifetime. (Hopefully, Streamlit will provide a native solution at some point?)
+It'd be cleaner to use a database and lightweight pub/sub techniques in the host and component for bi-directional host-component communication. (Hopefully, Streamlit will provide a native solution at some point?)
+
+Since Streamlit (>=0.73) the `allow-same-origin` CORS settings can be set on server-side APIs. This means protected APIs on a different origin domain can be called from the component iframe! (The component is hosted in an iframe automagically.)
 
 ## [2] Next.js (React) component
 
@@ -29,25 +31,27 @@ The [Next.js](https://nextjs.org/) app is based on the [with-typescript](https:/
 
 The component implementation is in `/pages/streamlit` and similar to the one described in `Streamlit Component-template`, reference 2, with some extras motivated by the `ReactPlayer integration` in reference 3.
 
-The component UI displays its state, and provides six button actions to update the state: incrementing a click counter, invoking the API endpoint directly (with and without authentication), and invoking the API by delegating the responsibility to the host using the `OnActionRequest` event (with and without authentication). To get delegated web response data back into the component, the rerun hack is used.
+The component UI is minimal and simply displays the user's authentication status. It's primary job is to listen for `window.localstorage` changes in an authentication `jwt` token, and send these as `OnStatusUpdate` events to the Streamlit host application, which can act accordingly to authenticate the user. The component has a minimal `handle_event()` implementation that stores the token in `SessionState` which is accessible application-wide. The event handler uses `report_event()` to print output to the console. Change this to suit your needs.
 
-Authentication is provided using Auth0's identity provider integration for Next.js. The Auth0 login screen is presented by the component and displayed in a Streamlit component iframe. The JWT authentication token is saved in local storage by the auth implementation, and because it's running on the same domain as the component front end, the front end app can use it to make authenticated API calls.
+If the Streamlit app needs to make authenticated API calls, it uses the session state token to do so. Session state ensures the token survives script reruns and isolates different user sessions from each other.
+
+Authentication is provided using Auth0's identity provider integration for Next.js. The Auth0 login screen is presented in a Streamlit component iframe. The `jwt` authentication token state is saved in local storage by the component auth implementation. The component listener notifies the host with this information. The component app can use the `jwt` to make authenticated remote API calls.
 
 I didn't create a nice wrapper to manage local storage (or indeed use a fancy js library). My requirement is modest and the native browser `window.localstorage` API is sufficient.
 
-The stored token is passed to the Streamlit component host application using `Streamlit.setComponentValue()`, and stored in Streamlit's session using `SessionState`. If the Streamlit app needs to make authenticated API calls, it uses this token to do so. Session state ensures the token survives script reruns and is isolates different user sessions from each other.
+The stored token is passed to the Streamlit component host application using `Streamlit.setComponentValue()`.
 
-To run the frontend homepage in isolation, go to [http://localhost:3001](http://localhost:3001).
+To run the front end homepage in isolation, go to [http://localhost:3001](http://localhost:3001). Toggle the `SHOW_UI` flag in `AuthApp.js` first!
 
 More details [below](#authenticated-component-app).
 
-**Note**, to get `streamlit-component-lib` to work in Next.js, I had to use the Next.js transpiler module. See, `next.config.js`. If you figure out how to avoid this, _please let me know_ as dubugging is hellish on transpiled code!!
+**Note**, to get `streamlit-component-lib` to work in Next.js, I had to use the Next.js transpiler module. See, `next.config.js`. If you figure out how to avoid this, _please let me know_ as debugging is hellish on transpiled code!!
 
 ## [3] Flask server hosting API endpoint
 
-The Flask server provides a couple of very simple API endpoints, `/api/ping` (public) and `/api/pong` (protected). They return a timestamped json object. To deal with potential CORS issues, an `@app.after_request` decorator adds the necessary response headers to allow the repsonse to propagate into the Next.js/React component which, in turn, updates its state and passes it to the Streamlit host through an `OnStatusUpdate` event. The Streamlit app event handler reports the event data returned by the API calls.
+The Flask server provides a couple of very simple API endpoints, `/api/ping` (public) and `/api/pong` (protected). They return a timestamped json object. To deal with potential CORS issues, an `@app.after_request` decorator adds the necessary response headers to allow the repsonse to propagate into the Next.js/React component. You can easily write component code to pass an `OnActionRequest` event with `WebRequest` action and auth_kind `'BEARER'` to delegate an authenticated API call to the host, or  code the web request in your Streamlit app.
 
-The supplied implementation, doesn't fully authenticate `/api/pong` but merely checks for the presence of an `Authorization: Bearer <token>` header. (Sorry, didn't want to include a full blown authenticated Flask app with this example. You'll have enough to get going.)
+The Flask server implementation doesn't fully authenticate `/api/pong` and merely checks for the presence of an `Authorization: Bearer <token>` header. (Sorry, didn't want to include a full blown authenticated Flask app with this example. You'll have enough to get going.)
 
 ## Starting the application
 
@@ -59,36 +63,22 @@ Below is the `scripts` section in `frontend/package.json`. With the `concurrentl
 
 ```json
 "scripts": {
-  "dev": "next -p 3001",
-  "build": "next build",
-  "start": "next -p 3001",
-  "start-streamlit": "streamlit run --server.port 4009 ../StreamlitComponent.py",
+  "dev": "npx next dev -p 3001",
+  "build": "next build --debug",
+  "start": "npx next start -p 3001",
+  "start-streamlit": "streamlit run --server.port 4009 ../app.py",
   "start-api": "python ../server/flask-api.py 8888",
   "typecheck": "tsc"
 }
 ```
 
-## Screenshots
+### Demo
 
-Download the [PDF presentation](./doc_images/streamlitcomponent.pdf).
-
-### Start screen
-
-![Start screen](./doc_images/stc_start.png)
-
-### Auth0 Login
-
-![Auth0 Login](./doc_images/stc_auth0_login.png)
-
-### Status Post Login
-
-![Status Post Login](./doc_images/stc_status_post_login.png)
-
-### Authenticated API Call
-
-![Authenticated API Call](./doc_images/stc_auth_api_call.png)
+![Demo](./doc_images/streamlitcomponent_demo.gif)
 
 ## System Design
+
+Download the [PDF presentation](./doc_images/streamlitcomponent.pdf).
 
 Instead of describing the system architecture and design in writing, I've instead explained it with a series of diagrams of increasing detail:
 
@@ -199,7 +189,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) to view the app.
+Open [http://localhost:3001](http://localhost:3001) to view the app. Toggle the `SHOW_UI` flag in `AuthApp.js` first!
 
 ## Resources
 
@@ -214,7 +204,6 @@ I use Auth0 identity provider to authenticate, and learned a lot from the resour
 - [Try NextJS](https://nextjs.org/)
 - [Setup NextJS and Tailwind](https://dev.to/notrab/get-up-and-running-with-tailwind-css-and-next-js-3a73) 
 - [Flexbox tricks](https://css-tricks.com/flexbox-truncated-text/)
-
 - [The Ultimate Guide to Next.js Authentication with Auth0](https://auth0.com/blog/ultimate-guide-nextjs-authentication-auth0/)
 - [Try Auth0 for free](https://a0.to/auth0)
 - [Upcoming Events](https://a0.to/events)
