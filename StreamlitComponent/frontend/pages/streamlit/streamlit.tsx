@@ -7,8 +7,8 @@ import {
 import MyButton from '../../components/MyButton'
 
 // All values in seconds
-const HEARTBEAT_INTERVAL = 5
-const WAIT_INTERVAL = 2
+const HEARTBEAT_INTERVAL = 2
+const WAIT_INTERVAL = 1
 const LISTENER_TIMEOUT = 120
 
 const SHOW_UI = false
@@ -18,18 +18,32 @@ const StreamlitComponent = (props: ComponentProps) => {
 
   console.log('======== Streamlit component ========')
 
-  // return something "falsy", but not null
-  const getToken = () => { return window.localStorage.getItem('token') || '' }
-  const getTokenExpiry = () => { return window.localStorage.getItem('tokenExpiry') || '' }
+  const getToken = () => { return window.localStorage.getItem('token') }
+  const getTokenExpiry = () => { return window.localStorage.getItem('tokenExpiry') }
+  const clearToken = () => {
+    window.localStorage.removeItem('token')
+    window.localStorage.removeItem('tokenExpiry')
+  }
+
+  const getUserInfo = async () => {
+    const resp = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/me`)
+    const me = await resp.json()
+    const name = me.name || `${me.given_name} ${me.family_name}` || me.nickname || me.email
+    const email = me.email || me.sub
+    console.log('getUserInfo: ' + name + ' | ' + email)
+    return {user: name, email: email}
+  }
 
   const [heartbeatInterval, setHeartbeatInterval] = useState(HEARTBEAT_INTERVAL)
 
   const [hostname, setHostname] = useState('None')
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('None')
+  const [userInfo, setUserInfo] = useState({user: null, email: null})
   const [token, setToken] = useState(getToken())
   const [tokenExpiry, setTokenExpiry] = useState(getTokenExpiry())
   const [state, setState] = useState({ hostname: hostname, message: message, isError: false, error: null,
-                                       token: { value: getToken(), expiry: getTokenExpiry() } })
+                                       token: { value: getToken(), expiry: getTokenExpiry() },
+                                       userinfo: userInfo })
 
   const initializeProps = async (props: ComponentProps) => {
     if ('hostname' in props.args && 'initial_state' in props.args) {
@@ -62,18 +76,20 @@ const StreamlitComponent = (props: ComponentProps) => {
     }
   }
 
-  // Must be run inside useEffect hook
+  // !! This function is the main driver of events in this component !!
+  // Must be run inside useEffect hook... see below hook with zero dependencies (i.e. always runs)
   const listenForTokenChangeAndNotifyHost = async () => {
     if (heartbeatInterval > 0) {
       setTimeout(() => setHeartbeatInterval(heartbeatInterval - 1), 1000)
     } else {
       if (token != getToken()) {
         if (getToken()) { // logged in change
-          const resp = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/me`)
-          const me = await resp.json()
-          updateStateAndNotifyHost(me.given_name || me.name || me.nickname || me.email)
+          const _userinfo = await getUserInfo()
+          setUserInfo(_userinfo)
+          updateStateAndNotifyHost('Logged in')
         } else {          // logged out change
-          updateStateAndNotifyHost('')
+          setUserInfo({user: null, email: null})
+          updateStateAndNotifyHost('Logged out')
         }
       }
       setHeartbeatInterval(HEARTBEAT_INTERVAL)
@@ -86,7 +102,8 @@ const StreamlitComponent = (props: ComponentProps) => {
     setToken(getToken())
     setTokenExpiry(getTokenExpiry())
     var _state = { hostname: hostname, message: _message, isError: false, error: error,
-                   token: { value: getToken(), expiry: getTokenExpiry() } }
+                   token: { value: getToken(), expiry: getTokenExpiry() },
+                   userinfo: userInfo }
     setState(_state)
 
     await sendEvent('onStatusUpdate', _state)
@@ -105,17 +122,21 @@ const StreamlitComponent = (props: ComponentProps) => {
 
     await listenForTokenChangeWithTimeout()
 
+    const _userinfo = await getUserInfo()
+    setUserInfo(_userinfo)
+
     console.log('CALLING UpdateToken onActionRequest')
     await sendEvent('onActionRequest', {
-      action: 'UpdateToken',
+      action: 'UpdateTokenUserInfo',
       token: { value: getToken(), expiry: getTokenExpiry() },
+      userinfo: _userinfo,
     })
 
     // Requires wait else st comms channel swallows messages
     await new Promise(r => setTimeout(r, WAIT_INTERVAL * 1000));
 
     console.log('CALLING updateStateAndNotifyHost')
-    await updateStateAndNotifyHost()
+    await updateStateAndNotifyHost('Logged in')
   }
 
   // TEST ONLY ------------------------------------------
@@ -131,11 +152,20 @@ const StreamlitComponent = (props: ComponentProps) => {
 
     await listenForTokenChangeWithTimeout()
 
+    setUserInfo({user: null, email: null})
+
     console.log('CALLING UpdateToken onActionRequest')
     await sendEvent('onActionRequest', {
-      action: 'UpdateToken',
+      action: 'UpdateTokenUserInfo',
       token: { value: getToken(), expiry: getTokenExpiry() },
+      userinfo: {user: null, email: null},
     })
+
+    // Requires wait else st comms channel swallows messages
+    await new Promise(r => setTimeout(r, WAIT_INTERVAL * 1000));
+
+    console.log('CALLING updateStateAndNotifyHost')
+    await updateStateAndNotifyHost('Logged out')
   }
   
   // TEST ONLY ------------------------------------------
@@ -143,18 +173,10 @@ const StreamlitComponent = (props: ComponentProps) => {
     console.log('CALLING UpdateToken onActionRequest')
 
     await sendEvent('onActionRequest', {
-      action: 'UpdateToken',
+      action: 'UpdateTokenUserInfo',
       token: { value: getToken(), expiry: getTokenExpiry() },
+      userinfo: userInfo
     })
-
-    // Requires wait else st comms channel swallows messages
-    await new Promise(r => setTimeout(r, WAIT_INTERVAL * 1000));
-
-    setToken(getToken())
-    setTokenExpiry(getTokenExpiry())
-
-    console.log('CALLING updateStateAndNotifyHost')
-    await updateStateAndNotifyHost()
   }
   // ----------------------------------------------------
 
@@ -201,7 +223,7 @@ const StreamlitComponent = (props: ComponentProps) => {
         </div>
         <p/>
         <div className="text-md text-pink-600">
-        {message || hostname} | {token ? 'You\'re logged in and authorized to use the app.' : 'Signed out.'}{tokenExpiry ? ' | Token expires on ' + timestampToDateString(tokenExpiry) : ''}
+        {hostname} | {token ? 'You\'re logged in and authorized to use the app.' : 'Signed out.'}{tokenExpiry ? ' | Token expires on ' + timestampToDateString(tokenExpiry) : ''}
         </div>
     </header>
   );

@@ -1,20 +1,20 @@
 import streamlit as st
 
-import auth0_login_component as auth_component
-
 from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
 BlockContainerStyler().set_default_block_container_style()
 
-from app import messageboard
+from app import session_state, messageboard
+from auth0_login_component import check_token
+
 messageboard.empty()
 
 def main():
-    is_authenticated = auth_component.check_token(auth_component.session_state.token)
+    is_authenticated = check_token(session_state.token)
     if not is_authenticated:
         messageboard.warning('Please login to use this application.')
         return
 
-    st.sidebar.write(f'({auth_component.session_state.user} logged in)')
+    st.sidebar.write(f'({session_state.user} logged in)')
     st.sidebar.header('Settings')
 
     st.title('DUmmmY ApP')

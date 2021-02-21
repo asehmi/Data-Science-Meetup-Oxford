@@ -6,29 +6,20 @@ import streamlit as st
 import streamlit.components.v1 as components
 import asyncio
 
-import SessionState
+import settings
 
 from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
 BlockContainerStyler().set_default_block_container_style()
 
-from app import messageboard
+from app import session_state, messageboard
 messageboard.empty()
-
-# --------------------------------------------------------------------------------
-# Session State variables:
-session_state = SessionState.get(
-    message='To use this application, please login...',
-    token={'value': None, 'expiry': None},
-    user=None,
-    report=[],
-)
 
 # --------------------------------------------------------------------------------
 
 USE_COMPONENT_EVENT_QUEUE = True
 
 # --------------------------------------------------------------------------------
-URL = 'http://localhost:3001/streamlit'
+URL = f'{settings.COMPONENT_BASE_URL}/streamlit'
 
 _RELEASE = False
 if not _RELEASE:
@@ -121,7 +112,7 @@ async def component_event_consumer(queue):
         print_report(report)
 
 async def component_event_producer(queue):
-    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Web Scraper App', initial_state={'message': session_state.message})
+    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Dummy App', initial_state={'message': session_state.message})
     if event:
         await queue.put(event)
 
@@ -151,7 +142,7 @@ def run_component_async():
 # SYNCHRONOUS VERSION
 
 def run_component_sync():
-    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Web Scraper & Text Analysis', initial_state={'message': session_state.message})
+    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Dummy App', initial_state={'message': session_state.message})
     if event:
         report = handle_event(event)
         print_report(report)
@@ -236,23 +227,15 @@ def handle_event(event):
             components.iframe(src=props['auth_url'], width=None, height=600, scrolling=True)
 
         # TEST ACTION ONLY
-        elif action == 'UpdateToken':
-            token = data.get('token', None)
-            if token and len(token['value']):
-                session_state.token = token
-                session_state.user = data.get('message', None)
-            else:
-                session_state.token={'value': None, 'expiry': None}
-                session_state.user = None
+        elif action == 'UpdateTokenUserInfo':
+            session_state.email = data.get('userinfo')['email'] if data.get('userinfo', None) else None
+            session_state.user = data.get('userinfo')['user'] if data.get('userinfo', None) else None
+            session_state.token = data.get('token') if data.get('token', None) else {'value': None, 'expiry': None}
 
     elif name == 'onStatusUpdate':
-        token = data.get('token', None)
-        if token and len(token['value']):
-            session_state.token = token
-            session_state.user = data.get('message', 'NO USER')
-        else:
-            session_state.token={'value': None, 'expiry': None}
-            session_state.user = None
+        session_state.email = data.get('userinfo')['email'] if data.get('userinfo', None) else None
+        session_state.user = data.get('userinfo')['user'] if data.get('userinfo', None) else None
+        session_state.token = data.get('token') if data.get('token', None) else {'value': None, 'expiry': None}
 
     session_state.report = report
     
