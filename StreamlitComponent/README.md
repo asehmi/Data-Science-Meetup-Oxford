@@ -1,7 +1,7 @@
 # Streamlit Next.js Component, Auth0 Authentication, Event-Based Messaging & Serverless APIs
 
 > Arvindra Sehmi, Oxford Economics Ltd. | [Website](https://www.oxfordeconomics.com/) | [LinkedIn](https://www.linkedin.com/in/asehmi/)
-> (Updated: 10 February, 2021)
+> (Updated: 5 March, 2021)
 
 Let me put it out there, I'm a big, big fan of [Streamlit](https://www.streamlit.io/) and use it a lot at work and play. Thank you Team Streamlit!
 
