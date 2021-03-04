@@ -1,4 +1,6 @@
-# https://gist.github.com/FranzDiebold/898396a6be785d9b5ca6f3706ef9b0bc
+# Main discussion: https://gist.github.com/tvst/036da038ab3e999a64497f42de966a92
+# Forked implementation used here: https://gist.github.com/FranzDiebold/898396a6be785d9b5ca6f3706ef9b0bc
+# Caching state to prevent crosstalk: https://gist.github.com/tvst/036da038ab3e999a64497f42de966a92#gistcomment-3627145
 """Hack to add per-session state to Streamlit.
 Works for Streamlit >= v0.65
 Usage

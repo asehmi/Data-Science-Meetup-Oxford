@@ -1,60 +1,81 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head';
 
+import STORAGE from '../utils/storage'
+
 export default function AuthApp({ session }) {
 
     console.log('======== AuthApp ========')
 
-    const SHOW_UI = false
-    
-    const user = session?.user
-    const accessToken = session?.accessToken
-    const accessTokenExpiresAt = session?.accessTokenExpiresAt
+    // Initialy there will be no session, then the post-login callback will pass in the session object
+    const [user, setUser] = useState(session?.user)
+    const [accessToken, setAccessToken] = useState(session?.accessToken)
+    const [accessTokenExpiresAt, setAccessTokenExpiresAt] = useState(session?.accessTokenExpiresAt)
 
+    console.log('AuthApp:')
     console.log(user ? user : 'Null user')
     console.log(accessToken ? accessToken : 'Null token')
     console.log(accessTokenExpiresAt ? accessTokenExpiresAt : 'Null token expiry')
 
     useEffect(() => {
-        if (accessToken && accessTokenExpiresAt) {
-            window.localStorage.setItem('token', accessToken)
-            window.localStorage.setItem('tokenExpiry', accessTokenExpiresAt)
-            console.log('Stored token: ' + accessToken)
-            console.log('Stored token expiry: ' + accessTokenExpiresAt)
-        } else {
-            window.localStorage.removeItem('token')
-            window.localStorage.removeItem('tokenExpiry')
+        const setItems = async () => {
+            console.log('AuthApp (set user, token, expiry)')
+            await STORAGE.setItem('user', JSON.stringify(user))
+            await STORAGE.setItem('token', accessToken)
+            await STORAGE.setItem('tokenExpiry', accessTokenExpiresAt)
         }
-    })
+        const removeItems = async () => {
+            console.log('AuthApp (remove user, token, expiry)')
+            await STORAGE.removeItem('user')
+            await STORAGE.removeItem('token')
+            await STORAGE.removeItem('tokenExpiry')
+        }
+
+        if (user && accessToken && accessTokenExpiresAt) {
+            setItems()
+        }
+        if (!user || !accessToken || !accessTokenExpiresAt) {
+            removeItems()
+        }
+
+    }, [user, accessToken, accessTokenExpiresAt])
 
     return (
-        <div className="container max-w-xl">
+        <div>
             <Head>
                 <title>Authentication</title>
             </Head>
             <main>
-                <div className="container my-0 max-w-xl">
-                    {SHOW_UI && !user && (
-                        <div className="text-xl my-2">Click to sign into the application...</div>
+                <div>
+                    <div className="flex flex-col mx-20 my-10">
+                        <img src='/logo.jpg'/>
+                    </div>
+                    {!user?.email && (
+                        <div className="flex flex-col mx-20 gap-3">
+                            <p className="text-xl">Sign into the application...</p>
+                            <div>
+                                <a  href="/api/login"
+                                    className="inline-flex px-4 py-1 border border-transparent
+                                    rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
+                                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
                     )}
-                    {SHOW_UI && !user && (
-                        <a  href="/api/login"
-                            className="inline-flex px-4 py-1 border border-transparent
-                            rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
-                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            Login
-                        </a>
-                    )}
-                    {SHOW_UI && user && (
-                        <div className="text-xl my-2">Click to sign out of the application...</div>
-                    )}
-                    {SHOW_UI && user && (
-                        <a  href="/api/logout"
-                            className="inline-flex px-4 py-1 border border-transparent
-                            rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
-                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            Logout
-                        </a>
+                    {user?.email && (
+                        <div className="flex flex-col mx-20 gap-3">
+                            <div className="text-xl">Signed in.</div>
+                            <div className="text-xl">Return to the application, or sign out...</div>
+                            <div>
+                                <a  href="/api/logout"
+                                    className="inline-flex px-4 py-1 border border-transparent
+                                    rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
+                                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
                     )}
                 </div>
             </main>

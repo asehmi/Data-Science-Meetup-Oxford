@@ -9,35 +9,26 @@ ptvsd.enable_attach(address=('localhost', 6790))
 from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
 BlockContainerStyler().set_default_block_container_style()
 
-# --------------------------------------------------------------------------------
-messageboard = st.empty()
-
-from utils import SessionState
-# Session State variables:
-session_state = SessionState.get(
-    message='To use this application, please login...',
-    token={'value': None, 'expiry': None},
-    user=None,
-    email=None,
-    report=[],
-)
+from __init__ import session_state, messageboard, check_token
 
 # --------------------------------------------------------------------------------
 
 # import must come after messageboard as these apps use app.messageboard
-import dumb_app, dumber_app, login_app, logout_app
+import dumb_app, dumber_app
+
+# --------------------------------------------------------------------------------
+
+if settings.USE_AUTHENTICATION:
+    from auth0_login_component import run_login_component
+    run_login_component()
+
+# --------------------------------------------------------------------------------
 
 def main():
     pages = {
         'DuMMMy aPp [1]': [dumb_app.main],      # DUMMY APP 1
         'DUmmmY ApP [2]': [dumber_app.main],    # DUMMY APP 2
     }
-    if settings.USE_AUTHENTICATION:
-        auth_pages = {
-            'Login': [login_app.main],              # LOGIN APP
-            'Logout': [logout_app.main],            # LOGOUT APP
-        }
-        pages = dict(pages, **auth_pages)
 
     choice = st.sidebar.radio('What do you want to do?', tuple(pages.keys()))
     pages[choice][0](*pages[choice][1:])

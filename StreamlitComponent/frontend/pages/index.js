@@ -6,7 +6,15 @@ export default function Home({ session }) {
 
     console.log('======== Home ========')
 
-    const SHOW_UI = false
+    const SHOW_UI = true
+
+    const user = session?.user
+    const accessToken = session?.accessToken
+    const accessTokenExpiresAt = session?.accessTokenExpiresAt
+
+    console.log(user ? user : 'Null user')
+    console.log(accessToken ? accessToken : 'Null token')
+    console.log(accessTokenExpiresAt ? accessTokenExpiresAt : 'Null token expiry')
 
     return (
         <div className="container my-3 max-w-xl p-2">
@@ -19,7 +27,7 @@ export default function Home({ session }) {
                         <AuthApp session={session}/>
                     </div>
                 </div>
-                {SHOW_UI && session?.accessToken && (
+                {/* {SHOW_UI && session?.accessToken && (
                     <div>
                         accessToken: <p className="text-gray-400 truncate ...">{session.accessToken}</p>
                     </div>
@@ -28,7 +36,7 @@ export default function Home({ session }) {
                     <div>
                         tokenExpiry: <p className="text-gray-400 truncate ...">{session.accessTokenExpiresAt}</p>
                     </div>
-                )}
+                )} */}
             </main>
         </div>
     );

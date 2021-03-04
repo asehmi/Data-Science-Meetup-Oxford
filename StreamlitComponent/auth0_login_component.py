@@ -11,7 +11,7 @@ import settings
 from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
 BlockContainerStyler().set_default_block_container_style()
 
-from app import session_state, messageboard
+from __init__ import session_state, messageboard, check_token
 messageboard.empty()
 
 # --------------------------------------------------------------------------------
@@ -112,7 +112,7 @@ async def component_event_consumer(queue):
         print_report(report)
 
 async def component_event_producer(queue):
-    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Dummy App', initial_state={'message': session_state.message})
+    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Web Scraper App', initial_state={'message': session_state.message})
     if event:
         await queue.put(event)
 
@@ -142,7 +142,7 @@ def run_component_async():
 # SYNCHRONOUS VERSION
 
 def run_component_sync():
-    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Dummy App', initial_state={'message': session_state.message})
+    event = ComponentHost(key='login', events=DEFAULT_EVENTS, hostname='Web Scraper & Text Analysis', initial_state={'message': session_state.message})
     if event:
         report = handle_event(event)
         print_report(report)
@@ -151,21 +151,6 @@ def run_component_sync():
 def print_report(report):
     print(f'\n### [{datetime.now()}] Component event handler report ####')
     print(report)
-
-# --------------------------------------------------------------------------------
-def check_token(token):
-    token_value = token['value']
-    if token_value:
-        token_expiry = datetime.fromtimestamp(int(token['expiry']))
-
-        tnow = datetime.now()
-        expired = tnow >= token_expiry
-
-        if not expired:
-            return True
-        else:
-            session_state.token['value'] = None
-            return False
 
 # --------------------------------------------------------------------------------
 def handle_event(event):
