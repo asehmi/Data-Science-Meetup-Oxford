@@ -190,7 +190,7 @@ const StreamlitComponent = (props: ComponentProps) => {
     const top = (height - H) / 2 / systemZoom + dualScreenTop
     const settings = `scrollbars=yes, width=${W / systemZoom}, height=${H / systemZoom}, top=${top}, left=${left}`
     // console.log(settings)
-    const popup = window.open('/','Login', settings)
+    const popup = window.open('/','_blank', settings)
 
     if (window.focus) popup.focus()
   }

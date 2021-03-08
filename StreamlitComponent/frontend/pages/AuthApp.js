@@ -54,7 +54,7 @@ export default function AuthApp({ session }) {
                         <div className="flex flex-col mx-20 gap-3">
                             <p className="text-xl">Sign into the application...</p>
                             <div>
-                                <a  href="/api/login"
+                                <a  href="/api/auth/login"
                                     className="inline-flex px-4 py-1 border border-transparent
                                     rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
                                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -68,7 +68,7 @@ export default function AuthApp({ session }) {
                             <div className="text-xl">Signed in.</div>
                             <div className="text-xl">Return to the application, or sign out...</div>
                             <div>
-                                <a  href="/api/logout"
+                                <a  href="/api/auth/logout"
                                     className="inline-flex px-4 py-1 border border-transparent
                                     rounded-md shadow-sm text-md font-small text-white bg-indigo-600 hover:bg-pink-600
                                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">

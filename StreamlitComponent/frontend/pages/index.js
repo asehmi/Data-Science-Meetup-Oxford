@@ -1,6 +1,6 @@
 import Head from 'next/head';
+import { getSession } from '@auth0/nextjs-auth0';
 import AuthApp from './AuthApp'
-import auth0 from './api/utils/auth0';
 
 export default function Home({ session }) {
 
@@ -45,19 +45,7 @@ export default function Home({ session }) {
 export async function getServerSideProps(context) {
     try {
     
-        // EXPLORING: NOT REQUIRED
-        // try {
-        //     const tokenCache = auth0.tokenCache(context.req, context.res);
-        //     const { accessToken } = await tokenCache.getAccessToken();
-        
-        //     console.log('Home AccessToken cache hit...')
-        //     console.log(accessToken)
-        
-        // } catch (AccessTokenError) {
-        //     console.log('Home AccessToken cache miss!')
-        // }
-    
-        const session = await auth0.getSession(context.req);
+        const session = await getSession(context.req, context.res);
 
         console.log('======== Home getServerSideProps ========')
         console.log(session ? session : 'Null session')
