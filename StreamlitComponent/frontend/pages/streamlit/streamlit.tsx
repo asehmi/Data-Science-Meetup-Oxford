@@ -10,51 +10,44 @@ import STORAGE from '../../utils/storage'
 // All values in seconds
 const HEARTBEAT_INTERVAL_SECONDS = 5
 
-const FRAME_HEIGHT = 45
+const FRAME_HEIGHT = 25
 
 const StreamlitComponent = (props: ComponentProps) => {
 
   console.log('======== Streamlit component ========')
 
-  const getToken = async () => {
-    const ret = await STORAGE.getItem('token')
-    return ret
-  }
-  const getTokenExpiry = async () => {
-    const ret = await STORAGE.getItem('tokenExpiry')
-    return ret
-  }
-  const getUserInfo = async () => {
-    // const resp = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/me`)
-    // const me = await resp.json()
-    const user = await STORAGE.getItem('user')
-    console.log('STC getUserInfo: ' + user)
-    const me = JSON.parse(String(user))
-    if (me) {
-      const name = me.name || `${me.given_name} ${me.family_name}` || me.nickname || me.email
-      const email = me.email || me.sub
-      console.log('STC getUserInfo: ' + name + ' | ' + email)
-      return { user: name, email: email }
-    } else {
-      return { user: null, email: null }
+  const getSessionInfo = async () => {
+    const sessionInfoStr = await STORAGE.getItem('sessionInfo')
+    if (sessionInfoStr) {
+      const sessionInfo = JSON.parse(String(sessionInfoStr))
+      const me = sessionInfo.user
+      if (me) {
+        const name = me.name || `${me.given_name} ${me.family_name}` || me.nickname || me.email
+        const email = me.email || me.sub
+        const user = { user: me, name: name, email: email }
+        const token = sessionInfo.token // {value: accessToken, value_id_token: idToken, expiry: tokenExpiresAt}
+        console.log('STC getSessionInfo (user): ' + JSON.stringify(user))
+        console.log('STC getSessionInfo (token): ' + JSON.stringify(token))
+        return {user: user, token: token}
+      }
     }
+    console.log('STC getSessionInfo (NULL)')
+    return {user: null, token: null}
   }
 
   const [heartbeater, setHeartbeater] = useState(true)
 
   const [hostname, setHostname] = useState('None')
   const [message, setMessage] = useState('None')
-  const [userInfo, setUserInfo] = useState({ user: null, email: null })
-  const [token, setToken] = useState(null)
-  const [tokenExpiry, setTokenExpiry] = useState(null)
+  const [sessionInfo, setSessionInfo] = useState({user: null, token: null})
   const [state, setState] = useState({
     hostname: hostname, message: message, isError: false, error: null,
-    token: { value: null, expiry: null },
-    userinfo: null
+    sessioninfo: null
   })
 
   const initializeProps = async (props: ComponentProps) => {
     if ('hostname' in props.args && 'initial_state' in props.args) {
+      console.log('STC initializeProps')
       setHostname(props.args.hostname)
       setMessage(props.args.initial_state['message'])
       delete props.args.hostname
@@ -73,39 +66,35 @@ const StreamlitComponent = (props: ComponentProps) => {
   const updateStateAndNotifyHost = async (msg: string = null, error: string = null) => {
     setMessage(msg || message)
     try {
-      const _userInfo = await getUserInfo()
-      setUserInfo(_userInfo)
-      const _token = await getToken()
-      setToken(_token)
-      const _tokenExpiry = await getTokenExpiry()
-      setTokenExpiry(_tokenExpiry)
-      var _state = {
+      const currSessionInfo = await getSessionInfo()
+      setSessionInfo(currSessionInfo)
+      const currState = {
         hostname: hostname, message: msg || message, isError: false, error: error,
-        token: { value: _token, expiry: _tokenExpiry }, userinfo: _userInfo
+        sessioninfo: currSessionInfo
       }
-      setState(_state)
+      setState(currState)
+      await sendEvent('onStatusUpdate', currState)
     } catch (err) {
       console.log(`updateStateAndNotifyHost error: ${err}`)
     }
-    await sendEvent('onStatusUpdate', _state)
   }
 
   // !! This function is the main driver of events in this component !!
   // Must be run inside useEffect hook... see below hook with heartbeater dependency
   // (i.e. runs everytime the beat pulses)
-  const listenForTokenChangeAndNotifyHost = async () => {
+  const listenForAuthChangeAndNotifyHost = async () => {
     const heartbeat = setTimeout(async () => {
 
-      const currToken = await getToken()
-      console.log(`>> STC BEAT << (${token}, ${currToken})`)
-      if (token !== currToken) {
+      const currSessionInfo = await getSessionInfo()
+      console.log(`>> STC BEAT <<`)
+      if ((sessionInfo?.token?.value || null) !== (currSessionInfo?.token?.value || null)) {
         // logged in change
-        if (currToken) {
-          console.log('STC User, Token, Expiry set')
+        if (currSessionInfo) {
+          console.log('STC User, Token, Expiry set on login')
           updateStateAndNotifyHost('Logged in')
         // logged out change
         } else {
-          console.log('STC User, Token, Expiry cleared')
+          console.log('STC User, Token, Expiry cleared on logout')
           updateStateAndNotifyHost('Logged out')
         }
       }
@@ -126,7 +115,7 @@ const StreamlitComponent = (props: ComponentProps) => {
   }
 
   useEffect(() => {
-    const heartbeat = listenForTokenChangeAndNotifyHost()
+    const heartbeat = listenForAuthChangeAndNotifyHost()
     heartbeat.then(() => clearTimeout())
   }, [heartbeater])
 
@@ -140,12 +129,8 @@ const StreamlitComponent = (props: ComponentProps) => {
   useEffect(() => {
     const initState = async () => {
       try {
-        const _userInfo = await getUserInfo()
-        setUserInfo(_userInfo)
-        const _token = await getToken()
-        setToken(_token)
-        const _tokenExpiry = await getTokenExpiry()
-        setTokenExpiry(_tokenExpiry)
+        const currSessionInfo = await getSessionInfo()
+        setSessionInfo(currSessionInfo)
       } catch (err) {
         console.log(`useEffect initializer error: ${err}`)
       }
@@ -200,10 +185,10 @@ const StreamlitComponent = (props: ComponentProps) => {
   return (
     <header>
       <span className="text-md text-pink-600">
-        <button onClick={handleLoginWindowOpener}>{token ? 'Logout' : 'Login'}</button>
+        <button onClick={handleLoginWindowOpener}>{sessionInfo.user ? 'Click to logout...' : 'Click to login...'}</button>
       </span>
       <span className="text-md text-gray-600">
-        {' | '}{hostname} {tokenExpiry ? ` (current login valid till ${timestampToDateString(tokenExpiry)})` : ' (logged out)'}
+        {' | '}{hostname} {sessionInfo.token?.expiry ? ` (current login valid till ${timestampToDateString(sessionInfo.token.expiry)})` : ' (logged out)'}
       </span>
     </header>
   )

@@ -8,37 +8,33 @@ export default function AuthApp({ session }) {
     console.log('======== AuthApp ========')
 
     // Initialy there will be no session, then the post-login callback will pass in the session object
-    const [user, setUser] = useState(session?.user)
-    const [accessToken, setAccessToken] = useState(session?.accessToken)
-    const [accessTokenExpiresAt, setAccessTokenExpiresAt] = useState(session?.accessTokenExpiresAt)
+    const [sessionInfo, setSessionInfo] = useState({user: session?.user, token: {value: session?.accessToken, value_id_token: session?.idToken, expiry: session?.accessTokenExpiresAt}})
 
-    console.log('AuthApp:')
-    console.log(user ? user : 'Null user')
-    console.log(accessToken ? accessToken : 'Null token')
-    console.log(accessTokenExpiresAt ? accessTokenExpiresAt : 'Null token expiry')
+    console.log(session ? session.user : 'Null user')
+    console.log(session ? session.idToken : 'Null id token')
+    console.log(session ? session.accessToken : 'Null access token')
+    console.log(session ? session.accessTokenExpiresAt : 'Null token expiry')
 
     useEffect(() => {
-        const setItems = async () => {
-            console.log('AuthApp (set user, token, expiry)')
-            await STORAGE.setItem('user', JSON.stringify(user))
-            await STORAGE.setItem('token', accessToken)
-            await STORAGE.setItem('tokenExpiry', accessTokenExpiresAt)
-        }
-        const removeItems = async () => {
-            console.log('AuthApp (remove user, token, expiry)')
-            await STORAGE.removeItem('user')
-            await STORAGE.removeItem('token')
-            await STORAGE.removeItem('tokenExpiry')
-        }
+        setSessionInfo({
+            user: session?.user,
+            token: {
+                value: session?.accessToken,
+                value_id_token: session?.idToken,
+                expiry: session?.accessTokenExpiresAt
+            }
+        })
+    }, [])
 
-        if (user && accessToken && accessTokenExpiresAt) {
-            setItems()
+    useEffect(async () => {
+        if (sessionInfo) {
+            console.log('AuthApp (set session info: user, token, expiry)')
+            await STORAGE.setItem('sessionInfo', JSON.stringify(sessionInfo))
+        } else {
+            console.log('AuthApp (remove session info: user, token, expiry)')
+            await STORAGE.removeItem('sessionInfo')
         }
-        if (!user || !accessToken || !accessTokenExpiresAt) {
-            removeItems()
-        }
-
-    }, [user, accessToken, accessTokenExpiresAt])
+    }, [sessionInfo])
 
     return (
         <div>
@@ -50,7 +46,7 @@ export default function AuthApp({ session }) {
                     <div className="flex flex-col mx-20 my-10">
                         <img src='/logo.jpg'/>
                     </div>
-                    {!user?.email && (
+                    {!sessionInfo.user?.email && (
                         <div className="flex flex-col mx-20 gap-3">
                             <p className="text-xl">Sign into the application...</p>
                             <div>
@@ -63,7 +59,7 @@ export default function AuthApp({ session }) {
                             </div>
                         </div>
                     )}
-                    {user?.email && (
+                    {sessionInfo.user?.email && (
                         <div className="flex flex-col mx-20 gap-3">
                             <div className="text-xl">Signed in.</div>
                             <div className="text-xl">Return to the application, or sign out...</div>

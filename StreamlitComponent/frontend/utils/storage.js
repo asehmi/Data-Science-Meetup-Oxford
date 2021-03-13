@@ -5,7 +5,7 @@ import * as localforage from 'localforage'
 import * as memoryDriver from 'localforage-driver-memory';
 
 localforage.defineDriver(memoryDriver)
-localforage.setDriver([localforage.LOCALSTORAGE, memoryDriver._driver, localforage.INDEXEDDB, localforage.WEBSQL])
+localforage.setDriver([localforage.INDEXEDDB, localforage.WEBSQL, localforage.LOCALSTORAGE, memoryDriver._driver])
 const STORAGE = localforage.createInstance({
   name: 'streamlit-login-app-0.1',
   storeName: 'streamlit-login-app-0.1'

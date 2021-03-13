@@ -1,17 +1,11 @@
 import streamlit as st
 
-from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
-BlockContainerStyler().set_default_block_container_style()
-
-from __init__ import session_state, messageboard, check_token
-
-def main():
-    is_authenticated = check_token(session_state.token)
-    if not is_authenticated:
-        return
-
-    st.sidebar.write(f'({session_state.user} logged in)')
+def main(title):
     st.sidebar.header('Settings')
 
-    st.title('DUmmmY ApP')
-    st.write('## Welcome to another app that does nothing! :sunglasses:')
+    actions = {'nothing': ':frowning:', 'something': ':smile:', 'everything': ':sunglasses:'}
+    competence = st.sidebar.slider('Select competence level', min_value=1, max_value=3)
+    action = list(actions.keys())[competence-1]
+
+    st.title(title)
+    st.write(f'## Welcome to another app that does {action}! {actions[action]}')

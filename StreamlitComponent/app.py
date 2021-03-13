@@ -10,6 +10,7 @@ from LayoutAndStyleUtils  import (Grid, Cell, BlockContainerStyler)
 BlockContainerStyler().set_default_block_container_style()
 
 from __init__ import session_state, messageboard, check_token
+import auth_component_handler
 
 # --------------------------------------------------------------------------------
 
@@ -18,20 +19,43 @@ import dumb_app, dumber_app
 
 # --------------------------------------------------------------------------------
 
+# !! Appears to throw errors if initialized using messageboard.empty() !!
+messageboard = st.empty()
+
 if settings.USE_AUTHENTICATION:
-    from auth0_login_component import run_login_component
-    run_login_component()
+    AUTH_LABEL = 'Authenticate'
+
+    label = AUTH_LABEL
+    if (check_token(session_state.token)):
+        label = f'{session_state.user} ({session_state.email})'
+    with st.beta_expander(label):
+        auth_component_handler.init()
+        # force a rerun to flip the expander label
+        logged_in_but_showing_login_label = (check_token(session_state.token) and label == AUTH_LABEL)
+        logged_out_but_showing_logged_in_label = (not check_token(session_state.token) and label != AUTH_LABEL)
+        if (logged_in_but_showing_login_label or logged_out_but_showing_logged_in_label):
+            st.experimental_rerun()
 
 # --------------------------------------------------------------------------------
 
 def main():
     pages = {
-        'DuMMMy aPp [1]': [dumb_app.main],      # DUMMY APP 1
-        'DUmmmY ApP [2]': [dumber_app.main],    # DUMMY APP 2
+        'DuMMMy aPp 1': [dumb_app.main],      # DUMMY APP 1
+        'DUmmmY ApP 2': [dumber_app.main],    # DUMMY APP 2
     }
 
-    choice = st.sidebar.radio('What do you want to do?', tuple(pages.keys()))
-    pages[choice][0](*pages[choice][1:])
+    def _launch_apps():
+        messageboard.empty()
+        choice = st.sidebar.radio('What do you want to do?', tuple(pages.keys()))
+        pages[choice][0](title=choice, *pages[choice][1:])
+
+    if settings.USE_AUTHENTICATION:
+        if (check_token(session_state.token)):
+            _launch_apps()
+        else:
+            messageboard.info('Please login below...')
+    else:
+        _launch_apps()
 
     # ABOUT
     st.sidebar.header('About')

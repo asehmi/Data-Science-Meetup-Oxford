@@ -1,7 +1,7 @@
 # Streamlit Next.js Component, Auth0 Authentication, Event-Based Messaging & Serverless APIs
 
 > Arvindra Sehmi, Oxford Economics Ltd. | [Website](https://www.oxfordeconomics.com/) | [LinkedIn](https://www.linkedin.com/in/asehmi/)
-> (Updated: 5 March, 2021)
+> (Updated: 13 March, 2021)
 
 Let me put it out there, I'm a big, big fan of [Streamlit](https://www.streamlit.io/) and use it a lot at work and play. Thank you Team Streamlit!
 
@@ -31,13 +31,13 @@ The [Next.js](https://nextjs.org/) app is based on the [with-typescript](https:/
 
 The component implementation is in `/pages/streamlit` and similar to the one described in `Streamlit Component-template`, reference 2, with some extras motivated by the `ReactPlayer integration` in reference 3.
 
-The component UI is minimal and simply displays the user's authentication status. It's primary job is to listen for `window.localstorage` changes in an authentication `jwt` token, and send these as `OnStatusUpdate` events to the Streamlit host application, which can act accordingly to authenticate the user. The component has a minimal `handle_event()` implementation that stores the token in `SessionState` which is accessible application-wide. The event handler uses `report_event()` to print output to the console. Change this to suit your needs.
+The component UI is minimal and simply displays the user's authentication status. It's primary job is to listen for `window.localstorage` changes in an authentication `jwt` token, and send these as `OnStatusUpdate` events to the Streamlit host application, which can act accordingly to authenticate the user. The Python wrapper part of the component takes an `event_handler` function, and a minimal implementation of this, `handle_event()`, is provided. This stores the token in `SessionState` which is accessible application-wide. The event handler contructs an array of reporting information/data which is passed to the wrapper's `report_event()` function to print output to the console. Change this to suit your needs.
 
 If the Streamlit app needs to make authenticated API calls, it uses the session state token to do so. Session state ensures the token survives script reruns and isolates different user sessions from each other.
 
 Authentication is provided using Auth0's identity provider integration for Next.js. The Auth0 login screen is presented in a Streamlit component iframe. The `jwt` authentication token state is saved in local storage by the component auth implementation. The component listener notifies the host with this information. The component app can use the `jwt` to make authenticated remote API calls.
 
-I didn't create a nice wrapper to manage local storage (or indeed use a fancy js library). My requirement is modest and the native browser `window.localstorage` API is sufficient.
+I use the `localforage` library to manage local storage, despite my requirement being very modest and the native browser `window.localstorage` API would have been sufficient.
 
 The stored token is passed to the Streamlit component host application using `Streamlit.setComponentValue()`.
 
@@ -130,50 +130,41 @@ You'll need to add a `.env.local` file to the root of the repository and include
 See `.env_sample` which is template for `.env.local`
 
 ```bash
-# THIS FILE IS FOR ENV VARS WHICH SHOULD NOT BE IN THE MACHINE ENV
+# https://github.com/auth0/nextjs-auth0/blob/main/V1_MIGRATION_GUIDE.md
 
-# NEXT_PUBLIC_* ARE AVAILABLE TO THE CLIENT APP
+# PUT VARS HERE WHICH SHOULD NOT BE IN MACHINE ENV OR SETTINGS
 
-# Auth0 Settings, from your account for a specific application
-# (Takes a few minutes to set up for a free trial!)
-NEXT_PUBLIC_AUTH0_DOMAIN='<---X--->.auth0.com'
-NEXT_PUBLIC_AUTH0_SECRET='<---X--->'
-NEXT_PUBLIC_AUTH0_CLIENT_ID='<---X--->'
-NEXT_PUBLIC_AUTH0_CALLBACK_URL='http://localhost:3001/api/callback'
-NEXT_PUBLIC_AUTH0_LOGOUT_URL='http://localhost:3001/'
-NEXT_PUBLIC_COOKIE_SECRET='YouWillNeverGuessThisSecretKey32'
-NEXT_PUBLIC_COOKIE_DOMAIN='http://www.<---X--->.com'
+# Nextjs - Auth0 SDK v1.0 settings (must use these exact names)
+AUTH0_BASE_URL='http://localhost:3001/'
+AUTH0_ISSUER_BASE_URL='https://<--X-->.auth0.com'
+AUTH0_SECRET='YouWillNeverGuessThisSecretKey32'
+AUTH0_CLIENT_ID='<--X-->'
+AUTH0_CLIENT_SECRET='<--X-->'
+AUTH0_SCOPE='openid profile email ClientId ContactId CompanyName name'
+AUTH0_AUDIENCE='<--X-->'
+AUTH0_ALGORITHMS=['RS256']
 
-# Auth0 settings we want in teh client app
-NEXT_PUBLIC_AUTH0_AUTHORITY = 'https://<---X--->.auth0.com/'
-NEXT_PUBLIC_AUTH0_ISSUER = 'https://<---X--->.auth0.com/'
-NEXT_PUBLIC_AUTH0_DOMAIN = '<---X--->.auth0.com'
-NEXT_PUBLIC_ALGORITHMS = ['RS256']
-
-# SPA App
-NEXT_PUBLIC_NAME = 'StreamlitApp'
-NEXT_PUBLIC_CLIENT_ID = '<---SAME AS AUTH0_CLIENT_ID---> '
-NEXT_PUBLIC_CLIENT_SECRET = '<---SAME AS AUTH0_SECRET---> '
+# Not used in SDK auto-config
+# AUTH0_COOKIE_SECRET='YouWillNeverGuessThisSecretKey32'
+# AUTH0_COOKIE_DOMAIN='<--X-->'
+# AUTH0_CALLBACK='/api/auth/callback'
+# AUTH0_LOGOUT_REDIRECT='/'
 
 # API General
 NEXT_PUBLIC_REMOTE_API_BASE_URL='http://localhost:8888'
 NEXT_PUBLIC_API_BASE_URL='http://localhost:3001'
 
 # API Server
-API_NAME = 'OEStreamlitApi'
-API_ID = '5e9cbe59270c2e09097096a5'
-API_AUDIENCE = 'http://oe.streamlit.app/api'
+API_ID='<--X-->'
+API_AUDIENCE='http://oe.streamlit.app/api'
 
 # API Client
-# https://manage.auth0.com/dashboard/us/<---YOUR AUTH0 DASHBOARD--->/settings
-API_CLIENT_NAME = '<---X--->'
-API_CLIENT_ID = '<---X--->'
-API_CLIENT_SECRET = '<---X--->'
+API_CLIENT_ID='<--X-->'
+API_CLIENT_SECRET='<--X-->'
 
-NEXT_RUN_PORT = 3001
+NEXT_RUN_PORT=3001
 
-# Next.js app, Flask app
-NEXT_PUBLIC_CORS_ORIGINS = ['http://localhost:3001', 'http://localhost:8888']
+NEXT_PUBLIC_CORS_ORIGINS=['http://localhost:3001', 'http://localhost:8888']
 ```
 
 ### Run the login service
