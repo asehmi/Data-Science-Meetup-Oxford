@@ -1,0 +1,7 @@
+# Generated using:
+#     pipreqs --force --encoding 'utf-8' .
+# Install:
+#     pip install -r requirements.txt
+pandas==1.0.5
+numpy==1.19.5
+streamlit==0.82.0

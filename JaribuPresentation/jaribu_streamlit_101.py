@@ -1,4 +1,3 @@
-from random import randint
 import streamlit as st
 from jaribu_app import *
 
