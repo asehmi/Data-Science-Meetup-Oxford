@@ -9,3 +9,4 @@ altair
 numpy
 plotly
 environ
+debugpy

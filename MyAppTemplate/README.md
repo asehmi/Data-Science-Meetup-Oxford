@@ -1,5 +1,7 @@
 # My Streamlit Template App
 
+**UPDATE** (13 May 2022) - _This template may be useful still, but is a little outdated, so YMMV. There are newer approaches to styling, debugging and managing app environment settings._
+
 Small Streamlit app template Using Streamlit to build a Web App 
 
 # Getting started

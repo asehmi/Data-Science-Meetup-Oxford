@@ -1,7 +1,8 @@
-streamlit>=0.66.0
+streamlit>=0.56.0
 numpy
 pandas
 django-environ
+pysolr
 altair
 matplotlib
 plotly

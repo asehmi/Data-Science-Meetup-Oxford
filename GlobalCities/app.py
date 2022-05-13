@@ -7,17 +7,23 @@ import pydeck as pdk
 
 import settings
 
+st.set_page_config(
+    page_title='Global Cities Explorer',
+    layout='wide',
+    page_icon='🌍'
+)
+
+import streamlit_debug
+streamlit_debug.set(flag=False, wait_for_client=True, host='localhost', port=8765)
+
 from data import (load_data, load_geojson, clean_and_reshape_data)
-from LayoutAndStyleUtils import (Grid, Cell, BlockContainerStyler)
 from TestFixtures import (Tests_DeckGlMap, Tests_PyDeckMap, Tests_CAGR, Tests_AVG)
 
 import unittest
 
-BlockContainerStyler().set_default_block_container_style()
-
-st.image('./images/logo.jpg', output_format='jpg')
+st.image('./images/a12i_logo.png', output_format='png')
 '''
-# Global cities explorer
+# Global Cities Explorer
 
 Mapping global cities GDP, population, employment and household income
 
@@ -26,6 +32,29 @@ _educational purposes only. A 5yr rolling mean transformation has been applied t
 _and so is still representative of actual level values. Please do not redistribute this data without the express_
 _permission of the owner, Oxford Economics._
 '''
+
+# First, import the elements you need
+from streamlit_elements import elements, mui, html, dashboard
+with elements("dashboard"):
+    layout = [
+        # Parameters: element_identifier, x_pos, y_pos, width, height, [item properties...]
+        dashboard.item("first_item", 0, 0, 2, 2),
+        dashboard.item("second_item", 2, 0, 2, 2, is_draggable=False, moved=False),
+        dashboard.item("third_item", 0, 2, 1, 1, is_resizable=False),
+    ]
+
+    with dashboard(layout):
+        mui.paper("First item", key="first_item")
+        mui.paper("Second item (cannot drag)", key="second_item")
+        mui.paper("Third item (cannot resize)", key="third_item")
+
+    def handle_layout_change(updated_layout):
+        print(updated_layout)
+    
+    with dashboard(layout, on_layout_change=handle_layout_change):
+        mui.paper("First item", key="first_item")
+        mui.paper("Second item (cannot drag)", key="second_item")
+        mui.paper("Third item (cannot resize)", key="third_item")
 
 st.sidebar.header("Settings")
 region_type = st.sidebar.selectbox('Select region type', ['Cities', 'Countries', 'Both'])
@@ -205,8 +234,8 @@ if data_choice == 'Selected Region':
 # ABOUT
 st.sidebar.header('About')
 st.sidebar.info('An example of using Streamlit to create a simple Global Cities data web app.\n\n' + \
-    '(c) 2020. Oxford Economics Ltd. All rights reserved.\n\n' + \
-    'Contact: Arvindra Sehmi\nasehmi@oxfordeconomics.com')
+    '(c) 2022. CloudOpti Ltd. All rights reserved.\n\n' + \
+    'Contact: Arvindra Sehmi\nvin@cloudopti.com')
 
 # Display Readme.md
 if st.sidebar.checkbox('Readme', False):
@@ -224,16 +253,6 @@ st.sidebar.markdown('---')
 result = None
 
 st.markdown('---')
-if st.sidebar.checkbox('Deck GL test'):
-    st.title('Deck.GL test')
-    suite = unittest.TestLoader().loadTestsFromTestCase(Tests_DeckGlMap)
-    result = unittest.TextTestRunner(verbosity=2).run(suite)
-    if result != None and result.wasSuccessful():
-        st.info(f'Test PASSED :-)')
-        # st.balloons()
-    elif result != None:
-        st.error(f'Test FAILED :-(')
-
 if st.sidebar.checkbox('PyDeck test'):
     st.title('PyDeck test')
     suite = unittest.TestLoader().loadTestsFromTestCase(Tests_PyDeckMap)
@@ -263,12 +282,6 @@ if st.sidebar.checkbox('AVG tests'):
         # st.balloons()
     elif result != None:
         st.error(f'Test FAILED :-(')
-
-# Style
-st.sidebar.markdown('---')
-if st.sidebar.checkbox('Configure Style'):
-    BlockContainerStyler().block_container_styler()
-    
 
 # === NOTES ===
 #

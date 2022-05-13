@@ -80,6 +80,7 @@ class Tests_PyDeckMap(unittest.TestCase):
 
         self.assertTrue(test_success_outcome == True)
 
+# DEPRECATED
 class Tests_DeckGlMap(unittest.TestCase):
 
     def setUp(self):
