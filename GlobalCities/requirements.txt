@@ -2,7 +2,7 @@ Markdown
 pydeck
 django_environ
 matplotlib
-streamlit
+streamlit>=1.11.1
 pandas
 openpyxl
 altair
