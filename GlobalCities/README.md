@@ -1,8 +1,8 @@
 # Global cities explorer
 
-This is application gives a snapshot of Oxford's Global Cities Forecasts Service, providing an insight into global cities GDP, population, employment and household income.
+This application gives a snapshot of Oxford Economics' Global Cities Forecasts Service, providing an insight into global cities GDP, population, employment and household income.
 
-The Global Cities Forecasts and other data services can be found on the [Global Data Workstation](https://www.oxfordeconomics.com/global-data-workstation-2.0).
+The Global Cities Forecasts and other data services can be found on the [Global Data Workstation](https://data.oxfordeconomics.com/).
 
 ## Global cities
 
@@ -10,15 +10,21 @@ In this era of market transformation and rapid urbanisation, cities are fast bec
 
 Oxford Economics' Cities and Regions services provide historical data and forecasts on over 3,000 worldwide cities and sub-regions. This unparalleled set of forecast databanks measures, benchmarks and forecasts performance in key locations around the world. We offer regularly updated annual forecasts for key economic, labour-market and industry variables. Our Cities & Regions services provide economic and demographic projections to 2030 that are consistent with our global economic and industry forecasts, in addition to an archive for historical trend analysis.
 
-The service includes separate databanks for 
+Detailed economic forecasts to 2040 for 900 cities using consistent definitions of cities, sectors, demographics, and spending behaviour to allow comparison of the prospects and trends for cities across different continents. Clients can make top-level decisions about market and investment strategies, comparing like with like.
 
-* **Africa**, covering 96 locations
-* **Asia**, covering 41 locations
-* **China**, covering more than 300 locations
-* **Europe**, covering more than 2,000 locations
-* **Latin America**, covering 32 locations
-* **North America**, covering 37 key metros, plus all states and provinces
-* **United Kindom**, covering 13 regions, 486 Local Authority Districts, and all London boroughs
+What’s included?
+
+- **Broad Global Coverage**. Forecasts for 900 cities in 164 countries. All forecasts are consistent with our country and industry forecasts, providing a level basis for analysis.
+- **Extensive data by location**. Consistent and comparable annual data and forecasts for total GDP, the labour market, population and income, consumer spending by category, and retail sales.
+- **Long-term forecasts**. The data generally refers back to 2000, and the forecast horizon is 2040. To ensure you have the latest information for these dynamic and rapidly changing markets, we update our forecasts on an annual basis.
+- **Methodology report**. Explanation of data sources, urban definitions, forecast methods and approaches to estimate and fill missing data, as well as an outline of the linkages to our Global Economic Model.
+- **Advanced analytical functions**. Our web-based databank allows users to quickly build custom queries with complete flexibility and view the data in tables, charts, and maps. Numbers may be represented as absolutes, percentages, and even differences between time periods. All data are annotated by source, date of update, and analyst. Searches can be saved for later reference and downloaded to Excel.
+
+## Find out more about Oxford Economics data services
+
+[Data Solutions](https://www.oxfordeconomics.com/our-data-solutions/)
+
+[Data API](https://support.oxfordeconomics.com/support/solutions/articles/52000028728)
 
 # Getting started
 
@@ -84,114 +90,5 @@ headless = true
 3. Or, when running your app from the command line, pass the `--server.headless true` parameter like:
 
 `streamlit run --server.headless true <your_app>.py `
-
-# Debugging in VS Code
-
-## Basic
-
-* Use a Python unit testing framework. I've used `unittest`. See [unittest docs](https://docs.python.org/2/library/unittest.html).
-* **Or**... add an environment DEBUG flag to your project's VS Code `launch.json` file (in `.vscode` folder), like this, which you can use like a DEBUG switch:
-
-```json
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "env": {"DEBUG": "true"}
-        }
-    ]
-}
-```
-
-* **Or..** to be `12factor` compliant, it's a good idea to `pip install django-environ`, and `import settings`. Read [the docs](https://django-environ.readthedocs.io/en/latest/).
-* Always `import logging` and use `logging.info()`, `logging.debug()`, `logging.error()` to report to the console (`print()` doesn't work in Streamlit unless run from the console).
-
-## Advanced
-
-See this artcile for details: [How to use Streamlit with VS Code](https://awesome-streamlit.readthedocs.io/en/latest/vscode.html)
-
-Essentially follow these steps:
-
-1. `pip install ptvsd`
-2. Add the following snippet in your `<your-app_name>.py` file.
-
-```python
-import ptvsd
-ptvsd.enable_attach(address=('localhost', 5678))
-ptvsd.wait_for_attach() # Only include this line if you always wan't to attach the debugger
-```
-
-3. Then start your Streamlit app
-
-`streamlit run <your-app_name>.py`
-
-4. From the `Debug` sidebar menu configure `Remote Attach: Attach to a remote ptvsd debug server` and update your `launch.json` file with the details below.
-```json
-{
-    "name": "Python: Remote Attach",
-    "type": "python",
-    "request": "attach",
-    "port": 5678,
-    "host": "localhost",
-    "justMyCode": true,
-    "redirectOutput": true,
-    "pathMappings": [
-        {
-            "localRoot": "${workspaceFolder}",
-            "remoteRoot": "."
-        }
-    ]
-}
-```
-
-5. Make sure you manually insert the `redirectOutput` setting.
-6. By default you will be debugging your own code only. If you wan’t to debug into streamlit code, then change `justMyCode` setting from `true` to `false`.
-7. Finally, attach the debugger by clicking the debugger play button.
-
-## Profiling your app
-
-Since `Streamlit` apps are stateless and executed top-down in full at every change, you need to be wary of performance issues. At some point you'll hit
-some unacceptable limits. Good server app design principles still apply with `Streamlit` apps. So, when `@st.cache()` just isn't enough, profile you code,
-and consider using well-understood server design techniques such as using a database, search index, or microservices.
-
-```python
-import contextlib
-import time
-import pandas as pd
-import streamlit as st
-
-@contextlib.contextmanager
-def profile(name):
-    start_time = time.time()
-    yield  # <-- your code will execute here
-    total_time = time.time() - start_time
-    print('%s: %.4f ms' % (name, total_time * 1000.0))
-
-with profile('load_data'):
-    df = pd.read_excel('very_large_file.xlsx',nrows=1000000)
-```
-
-## Crosstalk!
-
-The `Streamlit` architecture is such that each connected user has her own session object in the server, and her own separate thread where the app’s source 
-file is executed. While the source file executes, the `Streamlit` library in that thread can only write to that specific session object
-(because that’s the only session it has a reference to).
-
-Then, the `Streamlit` server periodically loops through its `websocket-to-session` dict and writes any outstanding messages from each session 
-into its corresponding websocket.
-
-In theory, there should be no crosstalk between sessions! Issues have been reported when running on Google Compute Engine in a Docker container.
-if the app is behind a proxy, it might make all users appear to be visiting from the same IP address.
-
-Ensure you have the latest `Streamlit` version installed as [this issue](https://discuss.streamlit.io/t/crosstalk-between-streamlit-sessions-with-multiple-users/319/3)
-is being actively adressed by the developers.
-
----
-See this video by Dan Taylor: [Get Productive with Python in Visual Studio Code](https://www.youtube.com/watch?v=6YLMWU-5H9o), for useful tips on using vscode for Python development.
 
 Enjoy!
