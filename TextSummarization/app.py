@@ -13,8 +13,6 @@ import unittest
 from data import load_data
 from TF_IDF import tf_idf
 
-from LayoutAndStyleUtils import (Grid, Cell, BlockContainerStyler)
-
 def main():
     st.sidebar.header("Settings")
 
@@ -86,14 +84,7 @@ def main():
             readme = f.read()
             st.markdown(readme)
 
-    # Style
-    st.sidebar.markdown('---')
-    if st.sidebar.checkbox('Configure Style'):
-        BlockContainerStyler().block_container_styler()
-
 if __name__ == '__main__':
-    BlockContainerStyler().set_default_block_container_style()
-
     # >> DISPLAY WIDGETS <<
     st.image('./images/logo.jpg', output_format='jpg')
     '''

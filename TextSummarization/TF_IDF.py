@@ -26,9 +26,9 @@ class tf_idf():
         for token in doc:
             ignore = token.is_stop or token.is_punct or token.is_quote or token.is_oov or token.text in ['.',',',';',':','%','-']
             if not ignore and token.text in word_freq_table:
-                word_freq_table[token.lower_] += 1
+                word_freq_table[token.text.lower()] += 1
             elif not ignore:
-                word_freq_table[token.lower_] = 1
+                word_freq_table[token.text.lower()] = 1
 
         return word_freq_table
 
@@ -40,8 +40,8 @@ class tf_idf():
         doc = self.nlp(text)
         sent_word_freq_table = {}
         for sent in doc.sents:
-            word_freq_table = self.word_freq(sent.lower_)
-            sent_word_freq_table[sent.lower_[:15]] = word_freq_table
+            word_freq_table = self.word_freq(sent.text.lower())
+            sent_word_freq_table[sent.text.lower()[:15]] = word_freq_table
 
         return sent_word_freq_table
 
@@ -118,7 +118,7 @@ class tf_idf():
     def generate_summary(self, sents, sentenceScores, threshold) -> str:
         summary = ' '.join([
             sent.text.strip() for sent in sents
-            if ((sent.lower_[:15] in sentenceScores) and (sentenceScores[sent.lower_[:15]] <= (threshold)))
+            if ((sent.text.lower()[:15] in sentenceScores) and (sentenceScores[sent.text.lower()[:15]] <= (threshold)))
         ])
         return summary
 

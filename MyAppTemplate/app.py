@@ -7,7 +7,6 @@ import plotly.express as px
 import unittest
 
 from data import (load_data, clean_and_reshape_data)
-from LayoutAndStyleUtils import (Grid, Cell, BlockContainerStyler)
 
 import TestFixtures
 
@@ -95,14 +94,7 @@ def main():
         else:
             st.error(f'Test FAILED :-(')
 
-    # Style
-    st.sidebar.markdown('---')
-    if st.sidebar.checkbox('Configure Style'):
-        BlockContainerStyler().block_container_styler()
-
 if __name__ == '__main__':
-    BlockContainerStyler().set_default_block_container_style()
-
     # >> DISPLAY WIDGETS <<
     st.image('./images/logo.jpg', output_format='jpg')
     '''

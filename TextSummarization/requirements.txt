@@ -7,7 +7,7 @@ altair
 matplotlib
 plotly
 plotly_express
-gensim
+gensim==3.8.3
 sumy
 spacy
 

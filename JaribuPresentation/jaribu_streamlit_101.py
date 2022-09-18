@@ -35,10 +35,10 @@ if menu == 'Home':
 
     `Arvindra Sehmi | asehmi@oxfordeconomics.com`
     '''
-    c1, c2 = st.beta_columns(2)
+    c1, c2 = st.columns(2)
     with c1:
         st.image('./images/DataFestAfrica-ASEHMI.jpg')
-    with c2.beta_expander('About me'):
+    with c2.expander('About me'):
         st.image('./images/cv-in-logos.png')
 
 
@@ -53,7 +53,7 @@ if menu == 'Introduction':
 
     st.info ('_I see these crazy scientific computing games as precursors to Streamlit, because what we did was sort of translate one world into another… `Computing`, basically. In Streamlit, we are essentially `translating the world of app development` into a sort of `language of machine learning`._')
 
-    with st.beta_expander('What does Streamlit aim to achieve?'):
+    with st.expander('What does Streamlit aim to achieve?'):
         '''
         ## What does Streamlit aim to achieve?
 
@@ -64,7 +64,7 @@ if menu == 'Introduction':
 
         st.info('"_How can we make a machine learning script and convert it into an app as simply as possible, so that it basically feels like a scripting exercise?_"')
 
-    with st.beta_expander('Simplicity'):
+    with st.expander('Simplicity'):
         '''
         * A single package that you can install through `pip`, which gives you a bunch of functions which can be:
             * `Interleaved` into an existing `ML code script`
@@ -76,7 +76,7 @@ if menu == 'Introduction':
 
         st.info('"_We have a multi-threaded server that starts in the background, there’s `WebSockets shuttling information back and forth to the browser`, there’s a whole `browser app that’s interpreting this and creating what you see on the screen`... But all of that kind of goes away from the user’s perspective, and you just get really a couple dozen magical Python commands that transform a machine learning script or a data science script into an app that you can use and share with others._"')
 
-    with st.beta_expander('Many use cases'):
+    with st.expander('Many use cases'):
         '''
         * Every single data analysis team needs to create apps. They're a focal point - like the bonfire of the team. It’s where team members get together and communicate.
         * App are actually a really crucial part of the ML (data analysis) workflow, especially in a non-trivial project.
@@ -92,7 +92,7 @@ if menu == 'Getting started':
     Learn all about Streamlit here: [API Docs](https://docs.streamlit.io/index.html) **|** [GitHub](https://github.com/streamlit/streamlit)
     '''
 
-    with st.beta_expander('Installation'):
+    with st.expander('Installation'):
         '''
         ## Installation
 
@@ -128,7 +128,7 @@ if menu == 'Getting started':
         `streamlit cache clear`
     '''
 
-    with st.beta_expander('Running your app'):
+    with st.expander('Running your app'):
         if st.checkbox('Local', value=True):
             '''
             ## Running your app (local)
@@ -168,7 +168,7 @@ if menu == 'Let\'s code':
     '''
     demos = st.multiselect('Select demo', ['Demo 1', 'Demo 2', 'Demo 3', 'Demo 4'])
     if 'Demo 1' in demos:
-        c1, c2 = st.beta_columns(2)
+        c1, c2 = st.columns(2)
         choice = c1.radio('', ['Card', 'Annotated Card', 'App'])
         with c2:
             if choice == 'Card':
@@ -188,7 +188,7 @@ if menu == 'Debugging in VS Code':
     '''
     # Debugging in VS Code
     '''
-    with st.beta_expander('Basic', expanded=True):
+    with st.expander('Basic', expanded=True):
         '''
         ## Basic
 
@@ -215,7 +215,7 @@ if menu == 'Debugging in VS Code':
         * Always `import logging` and use `logging.info()`, `logging.debug()`, `logging.error()` to report to the console (`print()` doesn't work in Streamlit unless run from the console).
         '''
 
-    with st.beta_expander('Advanced'):
+    with st.expander('Advanced'):
         '''
         ## Advanced
 
@@ -260,7 +260,7 @@ if menu == 'Debugging in VS Code':
         7. Finally, attach the debugger by clicking the debugger play button.
         '''
 
-    with st.beta_expander('Profiling'):
+    with st.expander('Profiling'):
         '''
         ## Profiling your app
 
@@ -286,7 +286,7 @@ if menu == 'Debugging in VS Code':
         ```
         '''
 
-    with st.beta_expander('Crosstalk'):
+    with st.expander('Crosstalk'):
         '''
         ## Crosstalk!
 
@@ -312,12 +312,12 @@ if menu == 'Advanced demos':
     '''
     # Advanced demos
     '''
-    c1, c2, c3 = st.beta_columns(3)
+    c1, c2, c3 = st.columns(3)
     c1.write('### Useful App Template')
     c2.write('### Time Series Data App')
     c3.write('### Web Scraper & NLP Processing App')
 
-    c1, c2, c3 = st.beta_columns(3)
+    c1, c2, c3 = st.columns(3)
     c1.write('### ML Algorithms Explorer')
     c2.write('### APINESS - Automatic Excel Data Files to APIs Generator')
     c3.write('### TigerGraph')
@@ -365,7 +365,7 @@ if menu == 'Summary':
     '''
     # Summary
     '''
-    with st.beta_expander('Impressions', expanded=True):
+    with st.expander('Impressions', expanded=True):
         '''
         ## My impressions of Streamlit
 
@@ -382,7 +382,7 @@ if menu == 'Summary':
             * The app state is always consistent because the code is executed from the top whenever any change event is raised. That sounds awfully slow, but it isn't in practice - remember the primary use case is supposed to be about building _simple UI_ for simple _data analysis tools_, and native data caching helps with speed a lot.
             * You can run apps normally in the console even though they contain some Streamlit UI magic in the source code.
         '''
-    with st.beta_expander('🙏🏾'):
+    with st.expander('🙏🏾'):
         '''
         ## Eat.
         ## Sleep.
