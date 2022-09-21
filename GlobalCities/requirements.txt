@@ -10,3 +10,4 @@ numpy
 plotly
 environ
 debugpy
+streamlit-tree-select

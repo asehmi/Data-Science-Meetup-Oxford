@@ -1,0 +1,3612 @@
+{
+    "label": "Global Cities Forecast Service",
+    "value": "Global Cities Forecast Service",
+    "children": [
+        {
+            "label": "Cities",
+            "value": "Cities",
+            "children": [
+                {
+                    "label": "A Coruna",
+                    "value": "{\"name\": \"A Coruna\", \"code\": \"ES026C\"}"
+                },
+                {
+                    "label": "Aachen",
+                    "value": "{\"name\": \"Aachen\", \"code\": \"DE507C\"}"
+                },
+                {
+                    "label": "Aarhus",
+                    "value": "{\"name\": \"Aarhus\", \"code\": \"DK002C\"}"
+                },
+                {
+                    "label": "Aba",
+                    "value": "{\"name\": \"Aba\", \"code\": \"NGA06556\"}"
+                },
+                {
+                    "label": "Abeokuta",
+                    "value": "{\"name\": \"Abeokuta\", \"code\": \"NGA01217\"}"
+                },
+                {
+                    "label": "Aberdeen",
+                    "value": "{\"name\": \"Aberdeen\", \"code\": \"UK016C\"}"
+                },
+                {
+                    "label": "Abidjan",
+                    "value": "{\"name\": \"Abidjan\", \"code\": \"CIV02629\"}"
+                },
+                {
+                    "label": "Abu Dhabi",
+                    "value": "{\"name\": \"Abu Dhabi\", \"code\": \"ARE00195\"}"
+                },
+                {
+                    "label": "Abuja",
+                    "value": "{\"name\": \"Abuja\", \"code\": \"NGA06502\"}"
+                },
+                {
+                    "label": "Acapulco",
+                    "value": "{\"name\": \"Acapulco\", \"code\": \"MEX22C\"}"
+                },
+                {
+                    "label": "Accra",
+                    "value": "{\"name\": \"Accra\", \"code\": \"GHA02940\"}"
+                },
+                {
+                    "label": "Adana",
+                    "value": "{\"name\": \"Adana\", \"code\": \"TR04475\"}"
+                },
+                {
+                    "label": "Adapazar\u0131",
+                    "value": "{\"name\": \"Adapazar\\u0131\", \"code\": \"TR03022\"}"
+                },
+                {
+                    "label": "Addis Ababa",
+                    "value": "{\"name\": \"Addis Ababa\", \"code\": \"ETH05821\"}"
+                },
+                {
+                    "label": "Adelaide",
+                    "value": "{\"name\": \"Adelaide\", \"code\": \"AUS05C\"}"
+                },
+                {
+                    "label": "Agadir",
+                    "value": "{\"name\": \"Agadir\", \"code\": \"MAR00581\"}"
+                },
+                {
+                    "label": "Agra",
+                    "value": "{\"name\": \"Agra\", \"code\": \"IND07957\"}"
+                },
+                {
+                    "label": "Aguascalientes",
+                    "value": "{\"name\": \"Aguascalientes\", \"code\": \"MEX21C\"}"
+                },
+                {
+                    "label": "Ahmedabad",
+                    "value": "{\"name\": \"Ahmedabad\", \"code\": \"IND05991\"}"
+                },
+                {
+                    "label": "Ahvaz",
+                    "value": "{\"name\": \"Ahvaz\", \"code\": \"IRN04397\"}"
+                },
+                {
+                    "label": "Akron",
+                    "value": "{\"name\": \"Akron\", \"code\": \"USM101\"}"
+                },
+                {
+                    "label": "Albany",
+                    "value": "{\"name\": \"Albany\", \"code\": \"USM64\"}"
+                },
+                {
+                    "label": "Albuquerque",
+                    "value": "{\"name\": \"Albuquerque\", \"code\": \"USM65\"}"
+                },
+                {
+                    "label": "Alexandria",
+                    "value": "{\"name\": \"Alexandria\", \"code\": \"EGY00233\"}"
+                },
+                {
+                    "label": "Algiers",
+                    "value": "{\"name\": \"Algiers\", \"code\": \"DZA03145\"}"
+                },
+                {
+                    "label": "Alicante",
+                    "value": "{\"name\": \"Alicante\", \"code\": \"ES021C\"}"
+                },
+                {
+                    "label": "Aligarh",
+                    "value": "{\"name\": \"Aligarh\", \"code\": \"IND07895\"}"
+                },
+                {
+                    "label": "Allentown",
+                    "value": "{\"name\": \"Allentown\", \"code\": \"USM57\"}"
+                },
+                {
+                    "label": "Almaty",
+                    "value": "{\"name\": \"Almaty\", \"code\": \"KAZ02583\"}"
+                },
+                {
+                    "label": "Amman",
+                    "value": "{\"name\": \"Amman\", \"code\": \"JOR00567\"}"
+                },
+                {
+                    "label": "Amravati",
+                    "value": "{\"name\": \"Amravati\", \"code\": \"IND08611\"}"
+                },
+                {
+                    "label": "Amritsar",
+                    "value": "{\"name\": \"Amritsar\", \"code\": \"IND04396\"}"
+                },
+                {
+                    "label": "Amsterdam",
+                    "value": "{\"name\": \"Amsterdam\", \"code\": \"NL002C\"}"
+                },
+                {
+                    "label": "Angeles City",
+                    "value": "{\"name\": \"Angeles City\", \"code\": \"PHL01797\"}"
+                },
+                {
+                    "label": "Ankara",
+                    "value": "{\"name\": \"Ankara\", \"code\": \"TR03650\"}"
+                },
+                {
+                    "label": "Anqing",
+                    "value": "{\"name\": \"Anqing\", \"code\": \"CHN09617\"}"
+                },
+                {
+                    "label": "Anshan",
+                    "value": "{\"name\": \"Anshan\", \"code\": \"CHN08753\"}"
+                },
+                {
+                    "label": "Antalya",
+                    "value": "{\"name\": \"Antalya\", \"code\": \"TR03471\"}"
+                },
+                {
+                    "label": "Antananarivo",
+                    "value": "{\"name\": \"Antananarivo\", \"code\": \"MDG00723\"}"
+                },
+                {
+                    "label": "Antwerp",
+                    "value": "{\"name\": \"Antwerp\", \"code\": \"BE002C\"}"
+                },
+                {
+                    "label": "Anyang",
+                    "value": "{\"name\": \"Anyang\", \"code\": \"CHN08057\"}"
+                },
+                {
+                    "label": "Aracaju",
+                    "value": "{\"name\": \"Aracaju\", \"code\": \"BRA07353\"}"
+                },
+                {
+                    "label": "Arequipa",
+                    "value": "{\"name\": \"Arequipa\", \"code\": \"PER03271\"}"
+                },
+                {
+                    "label": "Arusha",
+                    "value": "{\"name\": \"Arusha\", \"code\": \"TZA03023\"}"
+                },
+                {
+                    "label": "Asansol",
+                    "value": "{\"name\": \"Asansol\", \"code\": \"IND10313\"}"
+                },
+                {
+                    "label": "Ashgabat",
+                    "value": "{\"name\": \"Ashgabat\", \"code\": \"TKM01138\"}"
+                },
+                {
+                    "label": "Asmara",
+                    "value": "{\"name\": \"Asmara\", \"code\": \"ERI00542\"}"
+                },
+                {
+                    "label": "Astrakhan",
+                    "value": "{\"name\": \"Astrakhan\", \"code\": \"RU05686\"}"
+                },
+                {
+                    "label": "Asunci\u00f3n",
+                    "value": "{\"name\": \"Asunci\\u00f3n\", \"code\": \"PRY00465\"}"
+                },
+                {
+                    "label": "Athens",
+                    "value": "{\"name\": \"Athens\", \"code\": \"EL001C\"}"
+                },
+                {
+                    "label": "Atlanta",
+                    "value": "{\"name\": \"Atlanta\", \"code\": \"USM01\"}"
+                },
+                {
+                    "label": "Auckland",
+                    "value": "{\"name\": \"Auckland\", \"code\": \"NZL00869\"}"
+                },
+                {
+                    "label": "Augsburg",
+                    "value": "{\"name\": \"Augsburg\", \"code\": \"DE033C\"}"
+                },
+                {
+                    "label": "Aurangabad",
+                    "value": "{\"name\": \"Aurangabad\", \"code\": \"IND07961\"}"
+                },
+                {
+                    "label": "Austin",
+                    "value": "{\"name\": \"Austin\", \"code\": \"USM31\"}"
+                },
+                {
+                    "label": "Bacolod",
+                    "value": "{\"name\": \"Bacolod\", \"code\": \"PHL04101\"}"
+                },
+                {
+                    "label": "Baghdad",
+                    "value": "{\"name\": \"Baghdad\", \"code\": \"IRQ02709\"}"
+                },
+                {
+                    "label": "Baixada Santista",
+                    "value": "{\"name\": \"Baixada Santista\", \"code\": \"BRA06700\"}"
+                },
+                {
+                    "label": "Bakersfield",
+                    "value": "{\"name\": \"Bakersfield\", \"code\": \"USM67\"}"
+                },
+                {
+                    "label": "Baku",
+                    "value": "{\"name\": \"Baku\", \"code\": \"AZE01744\"}"
+                },
+                {
+                    "label": "Baltimore",
+                    "value": "{\"name\": \"Baltimore\", \"code\": \"USM02\"}"
+                },
+                {
+                    "label": "Bamako",
+                    "value": "{\"name\": \"Bamako\", \"code\": \"MLI00586\"}"
+                },
+                {
+                    "label": "Bandar Lampung",
+                    "value": "{\"name\": \"Bandar Lampung\", \"code\": \"IDN04593\"}"
+                },
+                {
+                    "label": "Bandjarmasin",
+                    "value": "{\"name\": \"Bandjarmasin\", \"code\": \"IDN06674\"}"
+                },
+                {
+                    "label": "Bandung",
+                    "value": "{\"name\": \"Bandung\", \"code\": \"IDN05107\"}"
+                },
+                {
+                    "label": "Bangkok",
+                    "value": "{\"name\": \"Bangkok\", \"code\": \"THA01894\"}"
+                },
+                {
+                    "label": "Bangui",
+                    "value": "{\"name\": \"Bangui\", \"code\": \"CAF00524\"}"
+                },
+                {
+                    "label": "Banjul",
+                    "value": "{\"name\": \"Banjul\", \"code\": \"GMB00066\"}"
+                },
+                {
+                    "label": "Baoding",
+                    "value": "{\"name\": \"Baoding\", \"code\": \"CHN07798\"}"
+                },
+                {
+                    "label": "Baoji",
+                    "value": "{\"name\": \"Baoji\", \"code\": \"CHN06206\"}"
+                },
+                {
+                    "label": "Baotou",
+                    "value": "{\"name\": \"Baotou\", \"code\": \"CHN04760\"}"
+                },
+                {
+                    "label": "Barcelona",
+                    "value": "{\"name\": \"Barcelona\", \"code\": \"ES002C\"}"
+                },
+                {
+                    "label": "Bareilly",
+                    "value": "{\"name\": \"Bareilly\", \"code\": \"IND08224\"}"
+                },
+                {
+                    "label": "Bari",
+                    "value": "{\"name\": \"Bari\", \"code\": \"IT008C\"}"
+                },
+                {
+                    "label": "Barnaul",
+                    "value": "{\"name\": \"Barnaul\", \"code\": \"RU06280\"}"
+                },
+                {
+                    "label": "Barquisimeto",
+                    "value": "{\"name\": \"Barquisimeto\", \"code\": \"VEN02801\"}"
+                },
+                {
+                    "label": "Barranquilla",
+                    "value": "{\"name\": \"Barranquilla\", \"code\": \"COL04C\"}"
+                },
+                {
+                    "label": "Basel",
+                    "value": "{\"name\": \"Basel\", \"code\": \"CH003C\"}"
+                },
+                {
+                    "label": "Batman",
+                    "value": "{\"name\": \"Batman\", \"code\": \"TR05494\"}"
+                },
+                {
+                    "label": "Baton Rouge",
+                    "value": "{\"name\": \"Baton Rouge\", \"code\": \"USM84\"}"
+                },
+                {
+                    "label": "Beijing",
+                    "value": "{\"name\": \"Beijing\", \"code\": \"CHN07704\"}"
+                },
+                {
+                    "label": "Beira",
+                    "value": "{\"name\": \"Beira\", \"code\": \"MOZ01789\"}"
+                },
+                {
+                    "label": "Beirut",
+                    "value": "{\"name\": \"Beirut\", \"code\": \"LBN00431\"}"
+                },
+                {
+                    "label": "Bel\u00e9m",
+                    "value": "{\"name\": \"Bel\\u00e9m\", \"code\": \"BRA04483\"}"
+                },
+                {
+                    "label": "Belfast",
+                    "value": "{\"name\": \"Belfast\", \"code\": \"UK012C\"}"
+                },
+                {
+                    "label": "Belgaum",
+                    "value": "{\"name\": \"Belgaum\", \"code\": \"IND08052\"}"
+                },
+                {
+                    "label": "Belgrade",
+                    "value": "{\"name\": \"Belgrade\", \"code\": \"RS00758\"}"
+                },
+                {
+                    "label": "Belo Horizonte",
+                    "value": "{\"name\": \"Belo Horizonte\", \"code\": \"BRA06870\"}"
+                },
+                {
+                    "label": "Bengaluru",
+                    "value": "{\"name\": \"Bengaluru\", \"code\": \"IND09099\"}"
+                },
+                {
+                    "label": "Benin City",
+                    "value": "{\"name\": \"Benin City\", \"code\": \"NGA05294\"}"
+                },
+                {
+                    "label": "Bergamo",
+                    "value": "{\"name\": \"Bergamo\", \"code\": \"IT511C\"}"
+                },
+                {
+                    "label": "Bergen",
+                    "value": "{\"name\": \"Bergen\", \"code\": \"NO002C\"}"
+                },
+                {
+                    "label": "Berlin",
+                    "value": "{\"name\": \"Berlin\", \"code\": \"DE001C\"}"
+                },
+                {
+                    "label": "Bern",
+                    "value": "{\"name\": \"Bern\", \"code\": \"CH004C\"}"
+                },
+                {
+                    "label": "Bhavnagar",
+                    "value": "{\"name\": \"Bhavnagar\", \"code\": \"IND06016\"}"
+                },
+                {
+                    "label": "Bhilai Nagar",
+                    "value": "{\"name\": \"Bhilai Nagar\", \"code\": \"IND09564\"}"
+                },
+                {
+                    "label": "Bhopal",
+                    "value": "{\"name\": \"Bhopal\", \"code\": \"IND08258\"}"
+                },
+                {
+                    "label": "Bhubaneswar",
+                    "value": "{\"name\": \"Bhubaneswar\", \"code\": \"IND10354\"}"
+                },
+                {
+                    "label": "Bialystok",
+                    "value": "{\"name\": \"Bialystok\", \"code\": \"PL011C\"}"
+                },
+                {
+                    "label": "Bikaner",
+                    "value": "{\"name\": \"Bikaner\", \"code\": \"IND04685\"}"
+                },
+                {
+                    "label": "Bilbao",
+                    "value": "{\"name\": \"Bilbao\", \"code\": \"ES019C\"}"
+                },
+                {
+                    "label": "Binzhou",
+                    "value": "{\"name\": \"Binzhou\", \"code\": \"CHN08556\"}"
+                },
+                {
+                    "label": "Birmingham (UK)",
+                    "value": "{\"name\": \"Birmingham (UK)\", \"code\": \"UK002C\"}"
+                },
+                {
+                    "label": "Birmingham (US)",
+                    "value": "{\"name\": \"Birmingham (US)\", \"code\": \"USM51\"}"
+                },
+                {
+                    "label": "Bishkek",
+                    "value": "{\"name\": \"Bishkek\", \"code\": \"KYR01091\"}"
+                },
+                {
+                    "label": "Bissau",
+                    "value": "{\"name\": \"Bissau\", \"code\": \"GNB00067\"}"
+                },
+                {
+                    "label": "Blantyre City",
+                    "value": "{\"name\": \"Blantyre City\", \"code\": \"MWI00730\"}"
+                },
+                {
+                    "label": "Bloemfontein",
+                    "value": "{\"name\": \"Bloemfontein\", \"code\": \"ZAF02060\"}"
+                },
+                {
+                    "label": "Bogot\u00e1",
+                    "value": "{\"name\": \"Bogot\\u00e1\", \"code\": \"COL01C\"}"
+                },
+                {
+                    "label": "Boise City",
+                    "value": "{\"name\": \"Boise City\", \"code\": \"USM104\"}"
+                },
+                {
+                    "label": "Bokaro",
+                    "value": "{\"name\": \"Bokaro\", \"code\": \"IND10237\"}"
+                },
+                {
+                    "label": "Bologna",
+                    "value": "{\"name\": \"Bologna\", \"code\": \"IT009C\"}"
+                },
+                {
+                    "label": "Bonn",
+                    "value": "{\"name\": \"Bonn\", \"code\": \"DE034C\"}"
+                },
+                {
+                    "label": "Bordeaux",
+                    "value": "{\"name\": \"Bordeaux\", \"code\": \"FR007C\"}"
+                },
+                {
+                    "label": "Boston",
+                    "value": "{\"name\": \"Boston\", \"code\": \"USM03\"}"
+                },
+                {
+                    "label": "Bournemouth",
+                    "value": "{\"name\": \"Bournemouth\", \"code\": \"UK539C\"}"
+                },
+                {
+                    "label": "Bozhou",
+                    "value": "{\"name\": \"Bozhou\", \"code\": \"CHN08781\"}"
+                },
+                {
+                    "label": "Bras\u00edlia",
+                    "value": "{\"name\": \"Bras\\u00edlia\", \"code\": \"BRA05465\"}"
+                },
+                {
+                    "label": "Bratislava",
+                    "value": "{\"name\": \"Bratislava\", \"code\": \"SK001C\"}"
+                },
+                {
+                    "label": "Braunschweig-Salzgitter Wolfsburg",
+                    "value": "{\"name\": \"Braunschweig-Salzgitter Wolfsburg\", \"code\": \"DE083C\"}"
+                },
+                {
+                    "label": "Brazzaville",
+                    "value": "{\"name\": \"Brazzaville\", \"code\": \"COG00811\"}"
+                },
+                {
+                    "label": "Bremen",
+                    "value": "{\"name\": \"Bremen\", \"code\": \"DE012C\"}"
+                },
+                {
+                    "label": "Bridgeport",
+                    "value": "{\"name\": \"Bridgeport\", \"code\": \"USM52\"}"
+                },
+                {
+                    "label": "Bridgetown",
+                    "value": "{\"name\": \"Bridgetown\", \"code\": \"BRB00023\"}"
+                },
+                {
+                    "label": "Brighton and Hove",
+                    "value": "{\"name\": \"Brighton and Hove\", \"code\": \"UK515C\"}"
+                },
+                {
+                    "label": "Brisbane",
+                    "value": "{\"name\": \"Brisbane\", \"code\": \"AUS03C\"}"
+                },
+                {
+                    "label": "Bristol",
+                    "value": "{\"name\": \"Bristol\", \"code\": \"UK011C\"}"
+                },
+                {
+                    "label": "Brno",
+                    "value": "{\"name\": \"Brno\", \"code\": \"CZ002C\"}"
+                },
+                {
+                    "label": "Brussels",
+                    "value": "{\"name\": \"Brussels\", \"code\": \"BE001C\"}"
+                },
+                {
+                    "label": "Bucaramanga",
+                    "value": "{\"name\": \"Bucaramanga\", \"code\": \"COL06C\"}"
+                },
+                {
+                    "label": "Bucharest",
+                    "value": "{\"name\": \"Bucharest\", \"code\": \"RO001C\"}"
+                },
+                {
+                    "label": "Budapest",
+                    "value": "{\"name\": \"Budapest\", \"code\": \"HU001C\"}"
+                },
+                {
+                    "label": "Buenos Aires",
+                    "value": "{\"name\": \"Buenos Aires\", \"code\": \"ARG04215\"}"
+                },
+                {
+                    "label": "Buffalo",
+                    "value": "{\"name\": \"Buffalo\", \"code\": \"USM32\"}"
+                },
+                {
+                    "label": "Buffalo City",
+                    "value": "{\"name\": \"Buffalo City\", \"code\": \"ZAF02681\"}"
+                },
+                {
+                    "label": "Bujumbura",
+                    "value": "{\"name\": \"Bujumbura\", \"code\": \"BDI00363\"}"
+                },
+                {
+                    "label": "Bulawayo",
+                    "value": "{\"name\": \"Bulawayo\", \"code\": \"ZWE00191\"}"
+                },
+                {
+                    "label": "Bursa",
+                    "value": "{\"name\": \"Bursa\", \"code\": \"TR02199\"}"
+                },
+                {
+                    "label": "Busan",
+                    "value": "{\"name\": \"Busan\", \"code\": \"KOR02C\"}"
+                },
+                {
+                    "label": "Bydgoszcz",
+                    "value": "{\"name\": \"Bydgoszcz\", \"code\": \"PL008C\"}"
+                },
+                {
+                    "label": "Caen",
+                    "value": "{\"name\": \"Caen\", \"code\": \"FR023C\"}"
+                },
+                {
+                    "label": "Cagayan de Oro",
+                    "value": "{\"name\": \"Cagayan de Oro\", \"code\": \"PHL04750\"}"
+                },
+                {
+                    "label": "Cairo",
+                    "value": "{\"name\": \"Cairo\", \"code\": \"EGY03981\"}"
+                },
+                {
+                    "label": "Calgary",
+                    "value": "{\"name\": \"Calgary\", \"code\": \"CANA_1\"}"
+                },
+                {
+                    "label": "Cali",
+                    "value": "{\"name\": \"Cali\", \"code\": \"COL03C\"}"
+                },
+                {
+                    "label": "Cambridge",
+                    "value": "{\"name\": \"Cambridge\", \"code\": \"UK017C\"}"
+                },
+                {
+                    "label": "Campo Grande",
+                    "value": "{\"name\": \"Campo Grande\", \"code\": \"BRA02559\"}"
+                },
+                {
+                    "label": "Can Tho",
+                    "value": "{\"name\": \"Can Tho\", \"code\": \"VNM04545\"}"
+                },
+                {
+                    "label": "Canberra",
+                    "value": "{\"name\": \"Canberra\", \"code\": \"AUS07C\"}"
+                },
+                {
+                    "label": "Canc\u00fan",
+                    "value": "{\"name\": \"Canc\\u00fan\", \"code\": \"MEX28C\"}"
+                },
+                {
+                    "label": "Cangzhou",
+                    "value": "{\"name\": \"Cangzhou\", \"code\": \"CHN08185\"}"
+                },
+                {
+                    "label": "Cape Town",
+                    "value": "{\"name\": \"Cape Town\", \"code\": \"ZAF00189\"}"
+                },
+                {
+                    "label": "Caracas",
+                    "value": "{\"name\": \"Caracas\", \"code\": \"VEN04040\"}"
+                },
+                {
+                    "label": "Cardiff",
+                    "value": "{\"name\": \"Cardiff\", \"code\": \"UK009C\"}"
+                },
+                {
+                    "label": "Cartagena",
+                    "value": "{\"name\": \"Cartagena\", \"code\": \"COL05C\"}"
+                },
+                {
+                    "label": "Casablanca",
+                    "value": "{\"name\": \"Casablanca\", \"code\": \"MAR01785\"}"
+                },
+                {
+                    "label": "Catania",
+                    "value": "{\"name\": \"Catania\", \"code\": \"IT010C\"}"
+                },
+                {
+                    "label": "Cebu City",
+                    "value": "{\"name\": \"Cebu City\", \"code\": \"PHL04372\"}"
+                },
+                {
+                    "label": "Chandigarh",
+                    "value": "{\"name\": \"Chandigarh\", \"code\": \"IND06781\"}"
+                },
+                {
+                    "label": "Changchun",
+                    "value": "{\"name\": \"Changchun\", \"code\": \"CHN08510\"}"
+                },
+                {
+                    "label": "Changde",
+                    "value": "{\"name\": \"Changde\", \"code\": \"CHN08658\"}"
+                },
+                {
+                    "label": "Changsha",
+                    "value": "{\"name\": \"Changsha\", \"code\": \"CHN09100\"}"
+                },
+                {
+                    "label": "Changwon",
+                    "value": "{\"name\": \"Changwon\", \"code\": \"KOR06C\"}"
+                },
+                {
+                    "label": "Changzhou",
+                    "value": "{\"name\": \"Changzhou\", \"code\": \"CHN09917\"}"
+                },
+                {
+                    "label": "Charleroi",
+                    "value": "{\"name\": \"Charleroi\", \"code\": \"BE004C\"}"
+                },
+                {
+                    "label": "Charleston",
+                    "value": "{\"name\": \"Charleston\", \"code\": \"USM100\"}"
+                },
+                {
+                    "label": "Charlotte",
+                    "value": "{\"name\": \"Charlotte\", \"code\": \"USM04\"}"
+                },
+                {
+                    "label": "Chelyabinsk",
+                    "value": "{\"name\": \"Chelyabinsk\", \"code\": \"RU06046\"}"
+                },
+                {
+                    "label": "Chengdu",
+                    "value": "{\"name\": \"Chengdu\", \"code\": \"CHN05723\"}"
+                },
+                {
+                    "label": "Chennai",
+                    "value": "{\"name\": \"Chennai\", \"code\": \"IND09850\"}"
+                },
+                {
+                    "label": "Chenzhou",
+                    "value": "{\"name\": \"Chenzhou\", \"code\": \"CHN09469\"}"
+                },
+                {
+                    "label": "Chicago",
+                    "value": "{\"name\": \"Chicago\", \"code\": \"USM05\"}"
+                },
+                {
+                    "label": "Chiclayo",
+                    "value": "{\"name\": \"Chiclayo\", \"code\": \"PER01330\"}"
+                },
+                {
+                    "label": "Chifeng",
+                    "value": "{\"name\": \"Chifeng\", \"code\": \"CHN07748\"}"
+                },
+                {
+                    "label": "Chihuahua",
+                    "value": "{\"name\": \"Chihuahua\", \"code\": \"MEX18C\"}"
+                },
+                {
+                    "label": "Chi\u015fin\u0103u",
+                    "value": "{\"name\": \"Chi\\u015fin\\u0103u\", \"code\": \"MDA00282\"}"
+                },
+                {
+                    "label": "Chittagong",
+                    "value": "{\"name\": \"Chittagong\", \"code\": \"BGD04833\"}"
+                },
+                {
+                    "label": "Chongqing",
+                    "value": "{\"name\": \"Chongqing\", \"code\": \"CHN07578\"}"
+                },
+                {
+                    "label": "Christchurch",
+                    "value": "{\"name\": \"Christchurch\", \"code\": \"NZL00300\"}"
+                },
+                {
+                    "label": "Cincinnati",
+                    "value": "{\"name\": \"Cincinnati\", \"code\": \"USM29\"}"
+                },
+                {
+                    "label": "Clermont-Ferrand",
+                    "value": "{\"name\": \"Clermont-Ferrand\", \"code\": \"FR022C\"}"
+                },
+                {
+                    "label": "Cleveland",
+                    "value": "{\"name\": \"Cleveland\", \"code\": \"USM26\"}"
+                },
+                {
+                    "label": "Cochabamba",
+                    "value": "{\"name\": \"Cochabamba\", \"code\": \"BOL00800\"}"
+                },
+                {
+                    "label": "Coimbatore",
+                    "value": "{\"name\": \"Coimbatore\", \"code\": \"IND09069\"}"
+                },
+                {
+                    "label": "Cologne",
+                    "value": "{\"name\": \"Cologne\", \"code\": \"DE004C\"}"
+                },
+                {
+                    "label": "Colombo",
+                    "value": "{\"name\": \"Colombo\", \"code\": \"LKA00434\"}"
+                },
+                {
+                    "label": "Colorado Springs",
+                    "value": "{\"name\": \"Colorado Springs\", \"code\": \"USM102\"}"
+                },
+                {
+                    "label": "Columbia",
+                    "value": "{\"name\": \"Columbia\", \"code\": \"USM85\"}"
+                },
+                {
+                    "label": "Columbus",
+                    "value": "{\"name\": \"Columbus\", \"code\": \"USM33\"}"
+                },
+                {
+                    "label": "Conakry",
+                    "value": "{\"name\": \"Conakry\", \"code\": \"GIN00550\"}"
+                },
+                {
+                    "label": "Concepci\u00f3n",
+                    "value": "{\"name\": \"Concepci\\u00f3n\", \"code\": \"CHL020C\"}"
+                },
+                {
+                    "label": "Constantine",
+                    "value": "{\"name\": \"Constantine\", \"code\": \"DZA04709\"}"
+                },
+                {
+                    "label": "Copenhagen",
+                    "value": "{\"name\": \"Copenhagen\", \"code\": \"DK001C\"}"
+                },
+                {
+                    "label": "C\u00f3rdoba",
+                    "value": "{\"name\": \"C\\u00f3rdoba\", \"code\": \"ARG02285\"}"
+                },
+                {
+                    "label": "Cotonou",
+                    "value": "{\"name\": \"Cotonou\", \"code\": \"BEN01657\"}"
+                },
+                {
+                    "label": "Coventry",
+                    "value": "{\"name\": \"Coventry\", \"code\": \"UK025C\"}"
+                },
+                {
+                    "label": "C\u00facuta",
+                    "value": "{\"name\": \"C\\u00facuta\", \"code\": \"COL07C\"}"
+                },
+                {
+                    "label": "Cuernavaca",
+                    "value": "{\"name\": \"Cuernavaca\", \"code\": \"MEX14C\"}"
+                },
+                {
+                    "label": "Cuiab\u00e1",
+                    "value": "{\"name\": \"Cuiab\\u00e1\", \"code\": \"BRA02219\"}"
+                },
+                {
+                    "label": "Culiac\u00e1n",
+                    "value": "{\"name\": \"Culiac\\u00e1n\", \"code\": \"MEX16C\"}"
+                },
+                {
+                    "label": "Curitiba",
+                    "value": "{\"name\": \"Curitiba\", \"code\": \"BRA05926\"}"
+                },
+                {
+                    "label": "Cuttack",
+                    "value": "{\"name\": \"Cuttack\", \"code\": \"IND10350\"}"
+                },
+                {
+                    "label": "Da Nang",
+                    "value": "{\"name\": \"Da Nang\", \"code\": \"VNM05080\"}"
+                },
+                {
+                    "label": "Daegu",
+                    "value": "{\"name\": \"Daegu\", \"code\": \"KOR03C\"}"
+                },
+                {
+                    "label": "Daejeon",
+                    "value": "{\"name\": \"Daejeon\", \"code\": \"KOR05C\"}"
+                },
+                {
+                    "label": "Dagupan",
+                    "value": "{\"name\": \"Dagupan\", \"code\": \"PHL00604\"}"
+                },
+                {
+                    "label": "Dakar",
+                    "value": "{\"name\": \"Dakar\", \"code\": \"SEN00153\"}"
+                },
+                {
+                    "label": "Dalian",
+                    "value": "{\"name\": \"Dalian\", \"code\": \"CHN08973\"}"
+                },
+                {
+                    "label": "Dallas",
+                    "value": "{\"name\": \"Dallas\", \"code\": \"USM06\"}"
+                },
+                {
+                    "label": "Dammam",
+                    "value": "{\"name\": \"Dammam\", \"code\": \"SAU03691\"}"
+                },
+                {
+                    "label": "Daqing",
+                    "value": "{\"name\": \"Daqing\", \"code\": \"CHN07832\"}"
+                },
+                {
+                    "label": "Dar Es Salaam",
+                    "value": "{\"name\": \"Dar Es Salaam\", \"code\": \"TZA03280\"}"
+                },
+                {
+                    "label": "Datong",
+                    "value": "{\"name\": \"Datong\", \"code\": \"CHN06640\"}"
+                },
+                {
+                    "label": "Davao City",
+                    "value": "{\"name\": \"Davao City\", \"code\": \"PHL04985\"}"
+                },
+                {
+                    "label": "Dayton",
+                    "value": "{\"name\": \"Dayton\", \"code\": \"USM68\"}"
+                },
+                {
+                    "label": "Dazhou",
+                    "value": "{\"name\": \"Dazhou\", \"code\": \"CHN07540\"}"
+                },
+                {
+                    "label": "Delhi",
+                    "value": "{\"name\": \"Delhi\", \"code\": \"IND07466\"}"
+                },
+                {
+                    "label": "Denizli",
+                    "value": "{\"name\": \"Denizli\", \"code\": \"TR02734\"}"
+                },
+                {
+                    "label": "Denpasar",
+                    "value": "{\"name\": \"Denpasar\", \"code\": \"IDN06666\"}"
+                },
+                {
+                    "label": "Denver",
+                    "value": "{\"name\": \"Denver\", \"code\": \"USM07\"}"
+                },
+                {
+                    "label": "Derby",
+                    "value": "{\"name\": \"Derby\", \"code\": \"UK518C\"}"
+                },
+                {
+                    "label": "Des Moines",
+                    "value": "{\"name\": \"Des Moines\", \"code\": \"USM89\"}"
+                },
+                {
+                    "label": "Detroit",
+                    "value": "{\"name\": \"Detroit\", \"code\": \"USM08\"}"
+                },
+                {
+                    "label": "Deyang",
+                    "value": "{\"name\": \"Deyang\", \"code\": \"CHN05939\"}"
+                },
+                {
+                    "label": "Dezhou",
+                    "value": "{\"name\": \"Dezhou\", \"code\": \"CHN08249\"}"
+                },
+                {
+                    "label": "Dhaka",
+                    "value": "{\"name\": \"Dhaka\", \"code\": \"BGD03705\"}"
+                },
+                {
+                    "label": "Dhanbad",
+                    "value": "{\"name\": \"Dhanbad\", \"code\": \"IND10243\"}"
+                },
+                {
+                    "label": "Dijon",
+                    "value": "{\"name\": \"Dijon\", \"code\": \"FR020C\"}"
+                },
+                {
+                    "label": "Diyarbakir",
+                    "value": "{\"name\": \"Diyarbakir\", \"code\": \"TR05414\"}"
+                },
+                {
+                    "label": "Djibouti City",
+                    "value": "{\"name\": \"Djibouti City\", \"code\": \"DJI00045\"}"
+                },
+                {
+                    "label": "Dnipro",
+                    "value": "{\"name\": \"Dnipro\", \"code\": \"UR03608\"}"
+                },
+                {
+                    "label": "Dodoma",
+                    "value": "{\"name\": \"Dodoma\", \"code\": \"TZA02797\"}"
+                },
+                {
+                    "label": "Doha",
+                    "value": "{\"name\": \"Doha\", \"code\": \"QAT00146\"}"
+                },
+                {
+                    "label": "Dongguan",
+                    "value": "{\"name\": \"Dongguan\", \"code\": \"CHN09718\"}"
+                },
+                {
+                    "label": "Dongying",
+                    "value": "{\"name\": \"Dongying\", \"code\": \"CHN08626\"}"
+                },
+                {
+                    "label": "Douala",
+                    "value": "{\"name\": \"Douala\", \"code\": \"CMR00809\"}"
+                },
+                {
+                    "label": "Dresden",
+                    "value": "{\"name\": \"Dresden\", \"code\": \"DE009C\"}"
+                },
+                {
+                    "label": "Dubai-Sharjah-Ajman",
+                    "value": "{\"name\": \"Dubai-Sharjah-Ajman\", \"code\": \"ARE00357\"}"
+                },
+                {
+                    "label": "Dublin",
+                    "value": "{\"name\": \"Dublin\", \"code\": \"IE001C\"}"
+                },
+                {
+                    "label": "Durban",
+                    "value": "{\"name\": \"Durban\", \"code\": \"ZAF04513\"}"
+                },
+                {
+                    "label": "Durham",
+                    "value": "{\"name\": \"Durham\", \"code\": \"USM53\"}"
+                },
+                {
+                    "label": "Dushanbe",
+                    "value": "{\"name\": \"Dushanbe\", \"code\": \"TJK01022\"}"
+                },
+                {
+                    "label": "Dusseldorf",
+                    "value": "{\"name\": \"Dusseldorf\", \"code\": \"DE011C\"}"
+                },
+                {
+                    "label": "Edinburgh",
+                    "value": "{\"name\": \"Edinburgh\", \"code\": \"UK007C\"}"
+                },
+                {
+                    "label": "Edmonton",
+                    "value": "{\"name\": \"Edmonton\", \"code\": \"CANA_2\"}"
+                },
+                {
+                    "label": "Eindhoven",
+                    "value": "{\"name\": \"Eindhoven\", \"code\": \"NL005C\"}"
+                },
+                {
+                    "label": "Ekaterinburg",
+                    "value": "{\"name\": \"Ekaterinburg\", \"code\": \"RU05972\"}"
+                },
+                {
+                    "label": "El Paso",
+                    "value": "{\"name\": \"El Paso\", \"code\": \"USM34\"}"
+                },
+                {
+                    "label": "El-Mansoura",
+                    "value": "{\"name\": \"El-Mansoura\", \"code\": \"EGY04710\"}"
+                },
+                {
+                    "label": "Enugu",
+                    "value": "{\"name\": \"Enugu\", \"code\": \"NGA06644\"}"
+                },
+                {
+                    "label": "Erfurt",
+                    "value": "{\"name\": \"Erfurt\", \"code\": \"DE032C\"}"
+                },
+                {
+                    "label": "Esfahan",
+                    "value": "{\"name\": \"Esfahan\", \"code\": \"IRN05291\"}"
+                },
+                {
+                    "label": "Faisalabad",
+                    "value": "{\"name\": \"Faisalabad\", \"code\": \"PAK06153\"}"
+                },
+                {
+                    "label": "Faizabad",
+                    "value": "{\"name\": \"Faizabad\", \"code\": \"IND09195\"}"
+                },
+                {
+                    "label": "Fes",
+                    "value": "{\"name\": \"Fes\", \"code\": \"MAR03845\"}"
+                },
+                {
+                    "label": "Florence",
+                    "value": "{\"name\": \"Florence\", \"code\": \"IT007C\"}"
+                },
+                {
+                    "label": "Florian\u00f3polis",
+                    "value": "{\"name\": \"Florian\\u00f3polis\", \"code\": \"BRA06369\"}"
+                },
+                {
+                    "label": "Fort Myers",
+                    "value": "{\"name\": \"Fort Myers\", \"code\": \"USM103\"}"
+                },
+                {
+                    "label": "Fortaleza",
+                    "value": "{\"name\": \"Fortaleza\", \"code\": \"BRA07226\"}"
+                },
+                {
+                    "label": "Foshan",
+                    "value": "{\"name\": \"Foshan\", \"code\": \"CHN09711B\"}"
+                },
+                {
+                    "label": "Frankfurt am Main",
+                    "value": "{\"name\": \"Frankfurt am Main\", \"code\": \"DE005C\"}"
+                },
+                {
+                    "label": "Freetown",
+                    "value": "{\"name\": \"Freetown\", \"code\": \"SLE00156\"}"
+                },
+                {
+                    "label": "Freiburg im Breisgau",
+                    "value": "{\"name\": \"Freiburg im Breisgau\", \"code\": \"DE027C\"}"
+                },
+                {
+                    "label": "Fresno",
+                    "value": "{\"name\": \"Fresno\", \"code\": \"USM69\"}"
+                },
+                {
+                    "label": "Fukuoka",
+                    "value": "{\"name\": \"Fukuoka\", \"code\": \"JPN04C\"}"
+                },
+                {
+                    "label": "Fushun",
+                    "value": "{\"name\": \"Fushun\", \"code\": \"CHN08747\"}"
+                },
+                {
+                    "label": "Fuyang",
+                    "value": "{\"name\": \"Fuyang\", \"code\": \"CHN08963\"}"
+                },
+                {
+                    "label": "Fuzhou",
+                    "value": "{\"name\": \"Fuzhou\", \"code\": \"CHN10328\"}"
+                },
+                {
+                    "label": "Gaborone",
+                    "value": "{\"name\": \"Gaborone\", \"code\": \"BWA00666\"}"
+                },
+                {
+                    "label": "Ganzhou",
+                    "value": "{\"name\": \"Ganzhou\", \"code\": \"CHN09793\"}"
+                },
+                {
+                    "label": "Gaziantep",
+                    "value": "{\"name\": \"Gaziantep\", \"code\": \"TR05137\"}"
+                },
+                {
+                    "label": "Gdansk",
+                    "value": "{\"name\": \"Gdansk\", \"code\": \"PL006C\"}"
+                },
+                {
+                    "label": "General Santos",
+                    "value": "{\"name\": \"General Santos\", \"code\": \"PHL04910\"}"
+                },
+                {
+                    "label": "Geneva",
+                    "value": "{\"name\": \"Geneva\", \"code\": \"CH002C\"}"
+                },
+                {
+                    "label": "Genoa",
+                    "value": "{\"name\": \"Genoa\", \"code\": \"IT006C\"}"
+                },
+                {
+                    "label": "Gent",
+                    "value": "{\"name\": \"Gent\", \"code\": \"BE003C\"}"
+                },
+                {
+                    "label": "Georgetown (Guyana)",
+                    "value": "{\"name\": \"Georgetown (Guyana)\", \"code\": \"GUY00251\"}"
+                },
+                {
+                    "label": "Georgetown (Malaysia)",
+                    "value": "{\"name\": \"Georgetown (Malaysia)\", \"code\": \"MYS00123\"}"
+                },
+                {
+                    "label": "Glasgow",
+                    "value": "{\"name\": \"Glasgow\", \"code\": \"UK004C\"}"
+                },
+                {
+                    "label": "Goi\u00e2nia",
+                    "value": "{\"name\": \"Goi\\u00e2nia\", \"code\": \"BRA04809\"}"
+                },
+                {
+                    "label": "Gomel",
+                    "value": "{\"name\": \"Gomel\", \"code\": \"BLR01569\"}"
+                },
+                {
+                    "label": "Gorakhpur",
+                    "value": "{\"name\": \"Gorakhpur\", \"code\": \"IND09500\"}"
+                },
+                {
+                    "label": "Gothenburg",
+                    "value": "{\"name\": \"Gothenburg\", \"code\": \"SE002C\"}"
+                },
+                {
+                    "label": "Granada",
+                    "value": "{\"name\": \"Granada\", \"code\": \"ES501C\"}"
+                },
+                {
+                    "label": "Grand Rapids",
+                    "value": "{\"name\": \"Grand Rapids\", \"code\": \"USM79\"}"
+                },
+                {
+                    "label": "Grande S\u00e3o Lu\u00eds",
+                    "value": "{\"name\": \"Grande S\\u00e3o Lu\\u00eds\", \"code\": \"BRA06639\"}"
+                },
+                {
+                    "label": "Graz",
+                    "value": "{\"name\": \"Graz\", \"code\": \"AT002C\"}"
+                },
+                {
+                    "label": "Greensboro",
+                    "value": "{\"name\": \"Greensboro\", \"code\": \"USM70\"}"
+                },
+                {
+                    "label": "Greenville",
+                    "value": "{\"name\": \"Greenville\", \"code\": \"USM71\"}"
+                },
+                {
+                    "label": "Grenoble",
+                    "value": "{\"name\": \"Grenoble\", \"code\": \"FR026C\"}"
+                },
+                {
+                    "label": "Groningen",
+                    "value": "{\"name\": \"Groningen\", \"code\": \"NL007C\"}"
+                },
+                {
+                    "label": "Guadalajara",
+                    "value": "{\"name\": \"Guadalajara\", \"code\": \"MEX02C\"}"
+                },
+                {
+                    "label": "Guangzhou",
+                    "value": "{\"name\": \"Guangzhou\", \"code\": \"CHN09711A\"}"
+                },
+                {
+                    "label": "Guatemala City",
+                    "value": "{\"name\": \"Guatemala City\", \"code\": \"GTM02162\"}"
+                },
+                {
+                    "label": "Guayana City",
+                    "value": "{\"name\": \"Guayana City\", \"code\": \"VEN04610\"}"
+                },
+                {
+                    "label": "Guayaquil",
+                    "value": "{\"name\": \"Guayaquil\", \"code\": \"ECU00818\"}"
+                },
+                {
+                    "label": "Guigang",
+                    "value": "{\"name\": \"Guigang\", \"code\": \"CHN09030\"}"
+                },
+                {
+                    "label": "Guilin",
+                    "value": "{\"name\": \"Guilin\", \"code\": \"CHN08891\"}"
+                },
+                {
+                    "label": "Guiyang",
+                    "value": "{\"name\": \"Guiyang\", \"code\": \"CHN07952\"}"
+                },
+                {
+                    "label": "Gujranwala",
+                    "value": "{\"name\": \"Gujranwala\", \"code\": \"PAK06422\"}"
+                },
+                {
+                    "label": "Guntur",
+                    "value": "{\"name\": \"Guntur\", \"code\": \"IND09732\"}"
+                },
+                {
+                    "label": "Guwahati",
+                    "value": "{\"name\": \"Guwahati\", \"code\": \"IND10496\"}"
+                },
+                {
+                    "label": "Gwalior",
+                    "value": "{\"name\": \"Gwalior\", \"code\": \"IND08144\"}"
+                },
+                {
+                    "label": "Gwangju",
+                    "value": "{\"name\": \"Gwangju\", \"code\": \"KOR04C\"}"
+                },
+                {
+                    "label": "Haifa",
+                    "value": "{\"name\": \"Haifa\", \"code\": \"ISR00564\"}"
+                },
+                {
+                    "label": "Haikou",
+                    "value": "{\"name\": \"Haikou\", \"code\": \"CHN09511\"}"
+                },
+                {
+                    "label": "Haiphong",
+                    "value": "{\"name\": \"Haiphong\", \"code\": \"VNM03569\"}"
+                },
+                {
+                    "label": "Halifax",
+                    "value": "{\"name\": \"Halifax\", \"code\": \"CANG_1\"}"
+                },
+                {
+                    "label": "Halle an der Saale",
+                    "value": "{\"name\": \"Halle an der Saale\", \"code\": \"DE018C\"}"
+                },
+                {
+                    "label": "Hamamatsu",
+                    "value": "{\"name\": \"Hamamatsu\", \"code\": \"JPN14C\"}"
+                },
+                {
+                    "label": "Hamburg",
+                    "value": "{\"name\": \"Hamburg\", \"code\": \"DE002C\"}"
+                },
+                {
+                    "label": "Hamilton",
+                    "value": "{\"name\": \"Hamilton\", \"code\": \"CANH_3\"}"
+                },
+                {
+                    "label": "Handan",
+                    "value": "{\"name\": \"Handan\", \"code\": \"CHN08043\"}"
+                },
+                {
+                    "label": "Hangzhou",
+                    "value": "{\"name\": \"Hangzhou\", \"code\": \"CHN10078\"}"
+                },
+                {
+                    "label": "Hanoi",
+                    "value": "{\"name\": \"Hanoi\", \"code\": \"VNM02207\"}"
+                },
+                {
+                    "label": "Hanover",
+                    "value": "{\"name\": \"Hanover\", \"code\": \"DE013C\"}"
+                },
+                {
+                    "label": "Harare",
+                    "value": "{\"name\": \"Harare\", \"code\": \"ZWE01558\"}"
+                },
+                {
+                    "label": "Harbin",
+                    "value": "{\"name\": \"Harbin\", \"code\": \"CHN08332\"}"
+                },
+                {
+                    "label": "Harrisburg",
+                    "value": "{\"name\": \"Harrisburg\", \"code\": \"USM58\"}"
+                },
+                {
+                    "label": "Hartford",
+                    "value": "{\"name\": \"Hartford\", \"code\": \"USM54\"}"
+                },
+                {
+                    "label": "Havana",
+                    "value": "{\"name\": \"Havana\", \"code\": \"CUB00225\"}"
+                },
+                {
+                    "label": "Hefei",
+                    "value": "{\"name\": \"Hefei\", \"code\": \"CHN09459\"}"
+                },
+                {
+                    "label": "Helsinki",
+                    "value": "{\"name\": \"Helsinki\", \"code\": \"FI001C\"}"
+                },
+                {
+                    "label": "Hengshui",
+                    "value": "{\"name\": \"Hengshui\", \"code\": \"CHN08075\"}"
+                },
+                {
+                    "label": "Hengyang",
+                    "value": "{\"name\": \"Hengyang\", \"code\": \"CHN09192\"}"
+                },
+                {
+                    "label": "Hermosillo",
+                    "value": "{\"name\": \"Hermosillo\", \"code\": \"MEX20C\"}"
+                },
+                {
+                    "label": "Heze",
+                    "value": "{\"name\": \"Heze\", \"code\": \"CHN08456\"}"
+                },
+                {
+                    "label": "Hiroshima",
+                    "value": "{\"name\": \"Hiroshima\", \"code\": \"JPN08C\"}"
+                },
+                {
+                    "label": "Ho Chi Minh City",
+                    "value": "{\"name\": \"Ho Chi Minh City\", \"code\": \"VNM05038\"}"
+                },
+                {
+                    "label": "Hohhot",
+                    "value": "{\"name\": \"Hohhot\", \"code\": \"CHN05335\"}"
+                },
+                {
+                    "label": "Hong Kong (City)",
+                    "value": "{\"name\": \"Hong Kong (City)\", \"code\": \"HKG00073\"}"
+                },
+                {
+                    "label": "Honolulu",
+                    "value": "{\"name\": \"Honolulu\", \"code\": \"USM35\"}"
+                },
+                {
+                    "label": "Houston",
+                    "value": "{\"name\": \"Houston\", \"code\": \"USM09\"}"
+                },
+                {
+                    "label": "Hsinchu",
+                    "value": "{\"name\": \"Hsinchu\", \"code\": \"TAI00491\"}"
+                },
+                {
+                    "label": "Huaian",
+                    "value": "{\"name\": \"Huaian\", \"code\": \"CHN09525\"}"
+                },
+                {
+                    "label": "Huaihua",
+                    "value": "{\"name\": \"Huaihua\", \"code\": \"CHN08506\"}"
+                },
+                {
+                    "label": "Huainan",
+                    "value": "{\"name\": \"Huainan\", \"code\": \"CHN09261\"}"
+                },
+                {
+                    "label": "Huambo",
+                    "value": "{\"name\": \"Huambo\", \"code\": \"AGO02746\"}"
+                },
+                {
+                    "label": "Huanggang",
+                    "value": "{\"name\": \"Huanggang\", \"code\": \"CHN09184\"}"
+                },
+                {
+                    "label": "Huangshi",
+                    "value": "{\"name\": \"Huangshi\", \"code\": \"CHN09263\"}"
+                },
+                {
+                    "label": "Hubli-Dharwad",
+                    "value": "{\"name\": \"Hubli-Dharwad\", \"code\": \"IND08226\"}"
+                },
+                {
+                    "label": "Huizhou",
+                    "value": "{\"name\": \"Huizhou\", \"code\": \"CHN09947\"}"
+                },
+                {
+                    "label": "Huzhou",
+                    "value": "{\"name\": \"Huzhou\", \"code\": \"CHN10024\"}"
+                },
+                {
+                    "label": "Hyderabad (India)",
+                    "value": "{\"name\": \"Hyderabad (India)\", \"code\": \"IND09045\"}"
+                },
+                {
+                    "label": "Hyderabad (Pakistan)",
+                    "value": "{\"name\": \"Hyderabad (Pakistan)\", \"code\": \"PAK04692\"}"
+                },
+                {
+                    "label": "Iasi",
+                    "value": "{\"name\": \"Iasi\", \"code\": \"RO502C\"}"
+                },
+                {
+                    "label": "Ibadan",
+                    "value": "{\"name\": \"Ibadan\", \"code\": \"NGA02526\"}"
+                },
+                {
+                    "label": "Ibagu\u00e9",
+                    "value": "{\"name\": \"Ibagu\\u00e9\", \"code\": \"COL09C\"}"
+                },
+                {
+                    "label": "Ilorin",
+                    "value": "{\"name\": \"Ilorin\", \"code\": \"NGA03810\"}"
+                },
+                {
+                    "label": "Indianapolis",
+                    "value": "{\"name\": \"Indianapolis\", \"code\": \"USM36\"}"
+                },
+                {
+                    "label": "Indore",
+                    "value": "{\"name\": \"Indore\", \"code\": \"IND07839\"}"
+                },
+                {
+                    "label": "Ipoh",
+                    "value": "{\"name\": \"Ipoh\", \"code\": \"MYS01103\"}"
+                },
+                {
+                    "label": "Irkutsk",
+                    "value": "{\"name\": \"Irkutsk\", \"code\": \"RU06423\"}"
+                },
+                {
+                    "label": "Islamabad-Rawalpindi",
+                    "value": "{\"name\": \"Islamabad-Rawalpindi\", \"code\": \"PAK05621\"}"
+                },
+                {
+                    "label": "Istanbul",
+                    "value": "{\"name\": \"Istanbul\", \"code\": \"TR01637\"}"
+                },
+                {
+                    "label": "Izhevsk",
+                    "value": "{\"name\": \"Izhevsk\", \"code\": \"RU05429\"}"
+                },
+                {
+                    "label": "Izmir",
+                    "value": "{\"name\": \"Izmir\", \"code\": \"TR00633\"}"
+                },
+                {
+                    "label": "Jabalpur",
+                    "value": "{\"name\": \"Jabalpur\", \"code\": \"IND09007\"}"
+                },
+                {
+                    "label": "Jacksonville",
+                    "value": "{\"name\": \"Jacksonville\", \"code\": \"USM37\"}"
+                },
+                {
+                    "label": "Jaipur",
+                    "value": "{\"name\": \"Jaipur\", \"code\": \"IND07320\"}"
+                },
+                {
+                    "label": "Jakarta",
+                    "value": "{\"name\": \"Jakarta\", \"code\": \"IDN04897\"}"
+                },
+                {
+                    "label": "Jalandhar",
+                    "value": "{\"name\": \"Jalandhar\", \"code\": \"IND05617\"}"
+                },
+                {
+                    "label": "Jambi",
+                    "value": "{\"name\": \"Jambi\", \"code\": \"IDN04090\"}"
+                },
+                {
+                    "label": "Jammu",
+                    "value": "{\"name\": \"Jammu\", \"code\": \"IND03357\"}"
+                },
+                {
+                    "label": "Jamshedpur",
+                    "value": "{\"name\": \"Jamshedpur\", \"code\": \"IND10285\"}"
+                },
+                {
+                    "label": "Jeddah",
+                    "value": "{\"name\": \"Jeddah\", \"code\": \"SAU01234\"}"
+                },
+                {
+                    "label": "Jerusalem",
+                    "value": "{\"name\": \"Jerusalem\", \"code\": \"ISR01507\"}"
+                },
+                {
+                    "label": "Jiangmen",
+                    "value": "{\"name\": \"Jiangmen\", \"code\": \"CHN09715\"}"
+                },
+                {
+                    "label": "Jiaozuo",
+                    "value": "{\"name\": \"Jiaozuo\", \"code\": \"CHN08039\"}"
+                },
+                {
+                    "label": "Jiaxing",
+                    "value": "{\"name\": \"Jiaxing\", \"code\": \"CHN10118\"}"
+                },
+                {
+                    "label": "Jilin",
+                    "value": "{\"name\": \"Jilin\", \"code\": \"CHN08777\"}"
+                },
+                {
+                    "label": "Jinan",
+                    "value": "{\"name\": \"Jinan\", \"code\": \"CHN08476\"}"
+                },
+                {
+                    "label": "Jingzhou",
+                    "value": "{\"name\": \"Jingzhou\", \"code\": \"CHN08578\"}"
+                },
+                {
+                    "label": "Jinhua",
+                    "value": "{\"name\": \"Jinhua\", \"code\": \"CHN10136\"}"
+                },
+                {
+                    "label": "Jining",
+                    "value": "{\"name\": \"Jining\", \"code\": \"CHN08644\"}"
+                },
+                {
+                    "label": "Jiujiang",
+                    "value": "{\"name\": \"Jiujiang\", \"code\": \"CHN09531\"}"
+                },
+                {
+                    "label": "Jo\u00e3o Pessoa",
+                    "value": "{\"name\": \"Jo\\u00e3o Pessoa\", \"code\": \"BRA07434\"}"
+                },
+                {
+                    "label": "Jodhpur",
+                    "value": "{\"name\": \"Jodhpur\", \"code\": \"IND05324\"}"
+                },
+                {
+                    "label": "Johannesburg",
+                    "value": "{\"name\": \"Johannesburg\", \"code\": \"ZAF03337\"}"
+                },
+                {
+                    "label": "Johor Bahru",
+                    "value": "{\"name\": \"Johor Bahru\", \"code\": \"MYS02524\"}"
+                },
+                {
+                    "label": "Joinville",
+                    "value": "{\"name\": \"Joinville\", \"code\": \"BRA06169\"}"
+                },
+                {
+                    "label": "Jos",
+                    "value": "{\"name\": \"Jos\", \"code\": \"NGA07140\"}"
+                },
+                {
+                    "label": "Ju\u00e1rez",
+                    "value": "{\"name\": \"Ju\\u00e1rez\", \"code\": \"MEX10C\"}"
+                },
+                {
+                    "label": "Kabul",
+                    "value": "{\"name\": \"Kabul\", \"code\": \"AFG02352\"}"
+                },
+                {
+                    "label": "Kaduna",
+                    "value": "{\"name\": \"Kaduna\", \"code\": \"NGA06529\"}"
+                },
+                {
+                    "label": "Kagoshima",
+                    "value": "{\"name\": \"Kagoshima\", \"code\": \"JPN19C\"}"
+                },
+                {
+                    "label": "Kahramanmaras",
+                    "value": "{\"name\": \"Kahramanmaras\", \"code\": \"TR04988\"}"
+                },
+                {
+                    "label": "Kaifeng",
+                    "value": "{\"name\": \"Kaifeng\", \"code\": \"CHN08330\"}"
+                },
+                {
+                    "label": "Kampala",
+                    "value": "{\"name\": \"Kampala\", \"code\": \"UGA01899\"}"
+                },
+                {
+                    "label": "Kannur",
+                    "value": "{\"name\": \"Kannur\", \"code\": \"IND08497\"}"
+                },
+                {
+                    "label": "Kano",
+                    "value": "{\"name\": \"Kano\", \"code\": \"NGA06995\"}"
+                },
+                {
+                    "label": "Kanpur",
+                    "value": "{\"name\": \"Kanpur\", \"code\": \"IND08722\"}"
+                },
+                {
+                    "label": "Kansas City",
+                    "value": "{\"name\": \"Kansas City\", \"code\": \"USM28\"}"
+                },
+                {
+                    "label": "Kaohsiung",
+                    "value": "{\"name\": \"Kaohsiung\", \"code\": \"TAI01897\"}"
+                },
+                {
+                    "label": "Karachi",
+                    "value": "{\"name\": \"Karachi\", \"code\": \"PAK02034\"}"
+                },
+                {
+                    "label": "Karlsruhe",
+                    "value": "{\"name\": \"Karlsruhe\", \"code\": \"DE035C\"}"
+                },
+                {
+                    "label": "Kathmandu",
+                    "value": "{\"name\": \"Kathmandu\", \"code\": \"NPL01525\"}"
+                },
+                {
+                    "label": "Katowice",
+                    "value": "{\"name\": \"Katowice\", \"code\": \"PL010C\"}"
+                },
+                {
+                    "label": "Kayseri",
+                    "value": "{\"name\": \"Kayseri\", \"code\": \"TR04376\"}"
+                },
+                {
+                    "label": "Kazan",
+                    "value": "{\"name\": \"Kazan\", \"code\": \"RU04829\"}"
+                },
+                {
+                    "label": "Kerman",
+                    "value": "{\"name\": \"Kerman\", \"code\": \"IRN06042\"}"
+                },
+                {
+                    "label": "Kermanshah",
+                    "value": "{\"name\": \"Kermanshah\", \"code\": \"IRN03000\"}"
+                },
+                {
+                    "label": "Khabarovsk",
+                    "value": "{\"name\": \"Khabarovsk\", \"code\": \"RU06495\"}"
+                },
+                {
+                    "label": "Kharkiv",
+                    "value": "{\"name\": \"Kharkiv\", \"code\": \"UR03818\"}"
+                },
+                {
+                    "label": "Khartoum",
+                    "value": "{\"name\": \"Khartoum\", \"code\": \"SDN03226\"}"
+                },
+                {
+                    "label": "Khulna",
+                    "value": "{\"name\": \"Khulna\", \"code\": \"BGD03529\"}"
+                },
+                {
+                    "label": "Kiel",
+                    "value": "{\"name\": \"Kiel\", \"code\": \"DE039C\"}"
+                },
+                {
+                    "label": "Kiev",
+                    "value": "{\"name\": \"Kiev\", \"code\": \"UR02203\"}"
+                },
+                {
+                    "label": "Kigali",
+                    "value": "{\"name\": \"Kigali\", \"code\": \"RWA01338\"}"
+                },
+                {
+                    "label": "Kimberley",
+                    "value": "{\"name\": \"Kimberley\", \"code\": \"ZAF01737\"}"
+                },
+                {
+                    "label": "Kingston",
+                    "value": "{\"name\": \"Kingston\", \"code\": \"JAM00566\"}"
+                },
+                {
+                    "label": "Kingston upon Hull",
+                    "value": "{\"name\": \"Kingston upon Hull\", \"code\": \"UK026C\"}"
+                },
+                {
+                    "label": "Kinshasa",
+                    "value": "{\"name\": \"Kinshasa\", \"code\": \"COD01385\"}"
+                },
+                {
+                    "label": "Kitakyushu",
+                    "value": "{\"name\": \"Kitakyushu\", \"code\": \"JPN09C\"}"
+                },
+                {
+                    "label": "Kitwe",
+                    "value": "{\"name\": \"Kitwe\", \"code\": \"ZMB02061\"}"
+                },
+                {
+                    "label": "Knoxville",
+                    "value": "{\"name\": \"Knoxville\", \"code\": \"USM62\"}"
+                },
+                {
+                    "label": "Kochi",
+                    "value": "{\"name\": \"Kochi\", \"code\": \"IND08900\"}"
+                },
+                {
+                    "label": "Kolkata",
+                    "value": "{\"name\": \"Kolkata\", \"code\": \"IND10452\"}"
+                },
+                {
+                    "label": "Konya",
+                    "value": "{\"name\": \"Konya\", \"code\": \"TR03779\"}"
+                },
+                {
+                    "label": "Kota",
+                    "value": "{\"name\": \"Kota\", \"code\": \"IND07601\"}"
+                },
+                {
+                    "label": "Kota Bharu",
+                    "value": "{\"name\": \"Kota Bharu\", \"code\": \"MYS01790\"}"
+                },
+                {
+                    "label": "Kota Kinabalu",
+                    "value": "{\"name\": \"Kota Kinabalu\", \"code\": \"MYS03010\"}"
+                },
+                {
+                    "label": "Kozhikode",
+                    "value": "{\"name\": \"Kozhikode\", \"code\": \"IND08673\"}"
+                },
+                {
+                    "label": "Kracow",
+                    "value": "{\"name\": \"Kracow\", \"code\": \"PL003C\"}"
+                },
+                {
+                    "label": "Krasnodar",
+                    "value": "{\"name\": \"Krasnodar\", \"code\": \"RU04139\"}"
+                },
+                {
+                    "label": "Krasnoyarsk",
+                    "value": "{\"name\": \"Krasnoyarsk\", \"code\": \"RU06340\"}"
+                },
+                {
+                    "label": "Kuala Lumpur",
+                    "value": "{\"name\": \"Kuala Lumpur\", \"code\": \"MYS01322\"}"
+                },
+                {
+                    "label": "Kuala Muda",
+                    "value": "{\"name\": \"Kuala Muda\", \"code\": \"MYS00591\"}"
+                },
+                {
+                    "label": "Kuantan",
+                    "value": "{\"name\": \"Kuantan\", \"code\": \"MYS02178\"}"
+                },
+                {
+                    "label": "Kuching",
+                    "value": "{\"name\": \"Kuching\", \"code\": \"MYS02656\"}"
+                },
+                {
+                    "label": "Kumamoto",
+                    "value": "{\"name\": \"Kumamoto\", \"code\": \"JPN11C\"}"
+                },
+                {
+                    "label": "Kumasi",
+                    "value": "{\"name\": \"Kumasi\", \"code\": \"GHA01296\"}"
+                },
+                {
+                    "label": "Kunming",
+                    "value": "{\"name\": \"Kunming\", \"code\": \"CHN07076\"}"
+                },
+                {
+                    "label": "Kuwait City",
+                    "value": "{\"name\": \"Kuwait City\", \"code\": \"KWT00429\"}"
+                },
+                {
+                    "label": "La Paz",
+                    "value": "{\"name\": \"La Paz\", \"code\": \"BOL00209\"}"
+                },
+                {
+                    "label": "La Plata",
+                    "value": "{\"name\": \"La Plata\", \"code\": \"ARG04349\"}"
+                },
+                {
+                    "label": "Lagos",
+                    "value": "{\"name\": \"Lagos\", \"code\": \"NGA00865\"}"
+                },
+                {
+                    "label": "Lahore",
+                    "value": "{\"name\": \"Lahore\", \"code\": \"PAK06458\"}"
+                },
+                {
+                    "label": "Langfang",
+                    "value": "{\"name\": \"Langfang\", \"code\": \"CHN07912\"}"
+                },
+                {
+                    "label": "Lanzhou",
+                    "value": "{\"name\": \"Lanzhou\", \"code\": \"CHN03828\"}"
+                },
+                {
+                    "label": "Las Palmas",
+                    "value": "{\"name\": \"Las Palmas\", \"code\": \"ES008C\"}"
+                },
+                {
+                    "label": "Las Vegas",
+                    "value": "{\"name\": \"Las Vegas\", \"code\": \"USM30\"}"
+                },
+                {
+                    "label": "Lausanne",
+                    "value": "{\"name\": \"Lausanne\", \"code\": \"CH005C\"}"
+                },
+                {
+                    "label": "Leeds",
+                    "value": "{\"name\": \"Leeds\", \"code\": \"UK003C\"}"
+                },
+                {
+                    "label": "Leicester",
+                    "value": "{\"name\": \"Leicester\", \"code\": \"UK014C\"}"
+                },
+                {
+                    "label": "Leipzig",
+                    "value": "{\"name\": \"Leipzig\", \"code\": \"DE008C\"}"
+                },
+                {
+                    "label": "Le\u00f3n",
+                    "value": "{\"name\": \"Le\\u00f3n\", \"code\": \"MEX07C\"}"
+                },
+                {
+                    "label": "Lianyungang",
+                    "value": "{\"name\": \"Lianyungang\", \"code\": \"CHN09393\"}"
+                },
+                {
+                    "label": "Liaocheng",
+                    "value": "{\"name\": \"Liaocheng\", \"code\": \"CHN08358\"}"
+                },
+                {
+                    "label": "Libreville",
+                    "value": "{\"name\": \"Libreville\", \"code\": \"GAB00241\"}"
+                },
+                {
+                    "label": "Liege",
+                    "value": "{\"name\": \"Liege\", \"code\": \"BE005C\"}"
+                },
+                {
+                    "label": "Lille",
+                    "value": "{\"name\": \"Lille\", \"code\": \"FR009C\"}"
+                },
+                {
+                    "label": "Lilongwe",
+                    "value": "{\"name\": \"Lilongwe\", \"code\": \"MWI00446\"}"
+                },
+                {
+                    "label": "Lima",
+                    "value": "{\"name\": \"Lima\", \"code\": \"PER02327\"}"
+                },
+                {
+                    "label": "Linfen",
+                    "value": "{\"name\": \"Linfen\", \"code\": \"CHN07590\"}"
+                },
+                {
+                    "label": "Linyi",
+                    "value": "{\"name\": \"Linyi\", \"code\": \"CHN09062\"}"
+                },
+                {
+                    "label": "Linz",
+                    "value": "{\"name\": \"Linz\", \"code\": \"AT003C\"}"
+                },
+                {
+                    "label": "Lipetsk",
+                    "value": "{\"name\": \"Lipetsk\", \"code\": \"RU03515\"}"
+                },
+                {
+                    "label": "Lisbon",
+                    "value": "{\"name\": \"Lisbon\", \"code\": \"PT001C\"}"
+                },
+                {
+                    "label": "Little Rock",
+                    "value": "{\"name\": \"Little Rock\", \"code\": \"USM87\"}"
+                },
+                {
+                    "label": "Liuan",
+                    "value": "{\"name\": \"Liuan\", \"code\": \"CHN09333\"}"
+                },
+                {
+                    "label": "Liuzhou",
+                    "value": "{\"name\": \"Liuzhou\", \"code\": \"CHN08809\"}"
+                },
+                {
+                    "label": "Liverpool",
+                    "value": "{\"name\": \"Liverpool\", \"code\": \"UK006C\"}"
+                },
+                {
+                    "label": "Ljubljana",
+                    "value": "{\"name\": \"Ljubljana\", \"code\": \"SI001C\"}"
+                },
+                {
+                    "label": "Lodz",
+                    "value": "{\"name\": \"Lodz\", \"code\": \"PL002C\"}"
+                },
+                {
+                    "label": "Lom\u00e9",
+                    "value": "{\"name\": \"Lom\\u00e9\", \"code\": \"TGO01245\"}"
+                },
+                {
+                    "label": "London",
+                    "value": "{\"name\": \"London\", \"code\": \"UK001C\"}"
+                },
+                {
+                    "label": "Los Angeles",
+                    "value": "{\"name\": \"Los Angeles\", \"code\": \"USM10\"}"
+                },
+                {
+                    "label": "Louisville",
+                    "value": "{\"name\": \"Louisville\", \"code\": \"USM38\"}"
+                },
+                {
+                    "label": "Luanda",
+                    "value": "{\"name\": \"Luanda\", \"code\": \"AGO00506\"}"
+                },
+                {
+                    "label": "Lublin",
+                    "value": "{\"name\": \"Lublin\", \"code\": \"PL009C\"}"
+                },
+                {
+                    "label": "Lucknow",
+                    "value": "{\"name\": \"Lucknow\", \"code\": \"IND08848\"}"
+                },
+                {
+                    "label": "Ludhiana",
+                    "value": "{\"name\": \"Ludhiana\", \"code\": \"IND06065\"}"
+                },
+                {
+                    "label": "Luoyang",
+                    "value": "{\"name\": \"Luoyang\", \"code\": \"CHN07962\"}"
+                },
+                {
+                    "label": "Lusaka",
+                    "value": "{\"name\": \"Lusaka\", \"code\": \"ZMB01986\"}"
+                },
+                {
+                    "label": "Luxembourg",
+                    "value": "{\"name\": \"Luxembourg\", \"code\": \"LU001C\"}"
+                },
+                {
+                    "label": "Luxor",
+                    "value": "{\"name\": \"Luxor\", \"code\": \"EGY06229\"}"
+                },
+                {
+                    "label": "Lvov",
+                    "value": "{\"name\": \"Lvov\", \"code\": \"UR00773\"}"
+                },
+                {
+                    "label": "Lyon",
+                    "value": "{\"name\": \"Lyon\", \"code\": \"FR003C\"}"
+                },
+                {
+                    "label": "Maanshan",
+                    "value": "{\"name\": \"Maanshan\", \"code\": \"CHN09703\"}"
+                },
+                {
+                    "label": "Macao",
+                    "value": "{\"name\": \"Macao\", \"code\": \"MAC00105\"}"
+                },
+                {
+                    "label": "Macei\u00f3",
+                    "value": "{\"name\": \"Macei\\u00f3\", \"code\": \"BRA07390\"}"
+                },
+                {
+                    "label": "Madison",
+                    "value": "{\"name\": \"Madison\", \"code\": \"USM88\"}"
+                },
+                {
+                    "label": "Madrid",
+                    "value": "{\"name\": \"Madrid\", \"code\": \"ES001C\"}"
+                },
+                {
+                    "label": "Madurai",
+                    "value": "{\"name\": \"Madurai\", \"code\": \"IND09444\"}"
+                },
+                {
+                    "label": "Mahalla el-Kubra",
+                    "value": "{\"name\": \"Mahalla el-Kubra\", \"code\": \"EGY03715\"}"
+                },
+                {
+                    "label": "Maiduguri",
+                    "value": "{\"name\": \"Maiduguri\", \"code\": \"NGA07524\"}"
+                },
+                {
+                    "label": "Mainz",
+                    "value": "{\"name\": \"Mainz\", \"code\": \"DE037C\"}"
+                },
+                {
+                    "label": "Makassar",
+                    "value": "{\"name\": \"Makassar\", \"code\": \"IDN06878\"}"
+                },
+                {
+                    "label": "Makhachkala",
+                    "value": "{\"name\": \"Makhachkala\", \"code\": \"RU05816\"}"
+                },
+                {
+                    "label": "Malabo",
+                    "value": "{\"name\": \"Malabo\", \"code\": \"GNQ00068\"}"
+                },
+                {
+                    "label": "Malacca",
+                    "value": "{\"name\": \"Malacca\", \"code\": \"MYS01874\"}"
+                },
+                {
+                    "label": "Malaga",
+                    "value": "{\"name\": \"Malaga\", \"code\": \"ES006C\"}"
+                },
+                {
+                    "label": "Malatya",
+                    "value": "{\"name\": \"Malatya\", \"code\": \"TR05155\"}"
+                },
+                {
+                    "label": "Male",
+                    "value": "{\"name\": \"Male\", \"code\": \"MDV00110\"}"
+                },
+                {
+                    "label": "Malmo",
+                    "value": "{\"name\": \"Malmo\", \"code\": \"SE003C\"}"
+                },
+                {
+                    "label": "Managua",
+                    "value": "{\"name\": \"Managua\", \"code\": \"NIC00594\"}"
+                },
+                {
+                    "label": "Manama",
+                    "value": "{\"name\": \"Manama\", \"code\": \"BHR00016\"}"
+                },
+                {
+                    "label": "Manaus",
+                    "value": "{\"name\": \"Manaus\", \"code\": \"BRA01477\"}"
+                },
+                {
+                    "label": "Manchester",
+                    "value": "{\"name\": \"Manchester\", \"code\": \"UK008C\"}"
+                },
+                {
+                    "label": "Mandalay",
+                    "value": "{\"name\": \"Mandalay\", \"code\": \"MMR01872\"}"
+                },
+                {
+                    "label": "Mangalore",
+                    "value": "{\"name\": \"Mangalore\", \"code\": \"IND08319\"}"
+                },
+                {
+                    "label": "Manila",
+                    "value": "{\"name\": \"Manila\", \"code\": \"PHL02845\"}"
+                },
+                {
+                    "label": "Mannheim-Ludwigshafen",
+                    "value": "{\"name\": \"Mannheim-Ludwigshafen\", \"code\": \"DE084C\"}"
+                },
+                {
+                    "label": "Maoming",
+                    "value": "{\"name\": \"Maoming\", \"code\": \"CHN09471\"}"
+                },
+                {
+                    "label": "Maputo",
+                    "value": "{\"name\": \"Maputo\", \"code\": \"MOZ00118\"}"
+                },
+                {
+                    "label": "Maracaibo",
+                    "value": "{\"name\": \"Maracaibo\", \"code\": \"VEN01459\"}"
+                },
+                {
+                    "label": "Maracay",
+                    "value": "{\"name\": \"Maracay\", \"code\": \"VEN03611\"}"
+                },
+                {
+                    "label": "Marrakech",
+                    "value": "{\"name\": \"Marrakech\", \"code\": \"MAR01515\"}"
+                },
+                {
+                    "label": "Marseille",
+                    "value": "{\"name\": \"Marseille\", \"code\": \"FR203C\"}"
+                },
+                {
+                    "label": "Maseru",
+                    "value": "{\"name\": \"Maseru\", \"code\": \"LSO00101\"}"
+                },
+                {
+                    "label": "Mashhad",
+                    "value": "{\"name\": \"Mashhad\", \"code\": \"IRN06030\"}"
+                },
+                {
+                    "label": "Matamoros",
+                    "value": "{\"name\": \"Matamoros\", \"code\": \"MEX35C\"}"
+                },
+                {
+                    "label": "Matsuyama",
+                    "value": "{\"name\": \"Matsuyama\", \"code\": \"JPN25C\"}"
+                },
+                {
+                    "label": "Mbabane",
+                    "value": "{\"name\": \"Mbabane\", \"code\": \"SWZ99999\"}"
+                },
+                {
+                    "label": "Mecca",
+                    "value": "{\"name\": \"Mecca\", \"code\": \"SAU01625\"}"
+                },
+                {
+                    "label": "Medan",
+                    "value": "{\"name\": \"Medan\", \"code\": \"IDN01596\"}"
+                },
+                {
+                    "label": "Medell\u00edn",
+                    "value": "{\"name\": \"Medell\\u00edn\", \"code\": \"COL02C\"}"
+                },
+                {
+                    "label": "Medina",
+                    "value": "{\"name\": \"Medina\", \"code\": \"SAU01009\"}"
+                },
+                {
+                    "label": "Meerut",
+                    "value": "{\"name\": \"Meerut\", \"code\": \"IND07643\"}"
+                },
+                {
+                    "label": "Meknes",
+                    "value": "{\"name\": \"Meknes\", \"code\": \"MAR03457\"}"
+                },
+                {
+                    "label": "Melbourne",
+                    "value": "{\"name\": \"Melbourne\", \"code\": \"AUS02C\"}"
+                },
+                {
+                    "label": "Memphis",
+                    "value": "{\"name\": \"Memphis\", \"code\": \"USM39\"}"
+                },
+                {
+                    "label": "Mendoza",
+                    "value": "{\"name\": \"Mendoza\", \"code\": \"ARG00358\"}"
+                },
+                {
+                    "label": "M\u00e9rida",
+                    "value": "{\"name\": \"M\\u00e9rida\", \"code\": \"MEX09C\"}"
+                },
+                {
+                    "label": "Mexicali",
+                    "value": "{\"name\": \"Mexicali\", \"code\": \"MEX13C\"}"
+                },
+                {
+                    "label": "Mexico City",
+                    "value": "{\"name\": \"Mexico City\", \"code\": \"MEX01C\"}"
+                },
+                {
+                    "label": "Miami",
+                    "value": "{\"name\": \"Miami\", \"code\": \"USM11\"}"
+                },
+                {
+                    "label": "Mianyang",
+                    "value": "{\"name\": \"Mianyang\", \"code\": \"CHN05963\"}"
+                },
+                {
+                    "label": "Milan",
+                    "value": "{\"name\": \"Milan\", \"code\": \"IT002C\"}"
+                },
+                {
+                    "label": "Milwaukee",
+                    "value": "{\"name\": \"Milwaukee\", \"code\": \"USM40\"}"
+                },
+                {
+                    "label": "Minneapolis",
+                    "value": "{\"name\": \"Minneapolis\", \"code\": \"USM12\"}"
+                },
+                {
+                    "label": "Minsk",
+                    "value": "{\"name\": \"Minsk\", \"code\": \"BLR00799\"}"
+                },
+                {
+                    "label": "Mombasa",
+                    "value": "{\"name\": \"Mombasa\", \"code\": \"KEN03056\"}"
+                },
+                {
+                    "label": "Monrovia",
+                    "value": "{\"name\": \"Monrovia\", \"code\": \"LBR00098\"}"
+                },
+                {
+                    "label": "Monterrey",
+                    "value": "{\"name\": \"Monterrey\", \"code\": \"MEX03C\"}"
+                },
+                {
+                    "label": "Montevideo",
+                    "value": "{\"name\": \"Montevideo\", \"code\": \"URY00906\"}"
+                },
+                {
+                    "label": "Montpellier",
+                    "value": "{\"name\": \"Montpellier\", \"code\": \"FR010C\"}"
+                },
+                {
+                    "label": "Montr\u00e9al",
+                    "value": "{\"name\": \"Montr\\u00e9al\", \"code\": \"CANI_1\"}"
+                },
+                {
+                    "label": "Moradabad",
+                    "value": "{\"name\": \"Moradabad\", \"code\": \"IND07933\"}"
+                },
+                {
+                    "label": "Morelia",
+                    "value": "{\"name\": \"Morelia\", \"code\": \"MEX17C\"}"
+                },
+                {
+                    "label": "Moscow",
+                    "value": "{\"name\": \"Moscow\", \"code\": \"RU02262\"}"
+                },
+                {
+                    "label": "Muenster",
+                    "value": "{\"name\": \"Muenster\", \"code\": \"DE504C\"}"
+                },
+                {
+                    "label": "Multan",
+                    "value": "{\"name\": \"Multan\", \"code\": \"PAK05717\"}"
+                },
+                {
+                    "label": "Mumbai",
+                    "value": "{\"name\": \"Mumbai\", \"code\": \"IND07163\"}"
+                },
+                {
+                    "label": "Munich",
+                    "value": "{\"name\": \"Munich\", \"code\": \"DE003C\"}"
+                },
+                {
+                    "label": "Murcia",
+                    "value": "{\"name\": \"Murcia\", \"code\": \"ES007C\"}"
+                },
+                {
+                    "label": "Muscat",
+                    "value": "{\"name\": \"Muscat\", \"code\": \"OMN01110\"}"
+                },
+                {
+                    "label": "Muzaffarpur",
+                    "value": "{\"name\": \"Muzaffarpur\", \"code\": \"IND10007\"}"
+                },
+                {
+                    "label": "Mwanza",
+                    "value": "{\"name\": \"Mwanza\", \"code\": \"TZA01639\"}"
+                },
+                {
+                    "label": "Mykolaiv",
+                    "value": "{\"name\": \"Mykolaiv\", \"code\": \"UR03128\"}"
+                },
+                {
+                    "label": "Mysore",
+                    "value": "{\"name\": \"Mysore\", \"code\": \"IND08896\"}"
+                },
+                {
+                    "label": "Nagoya",
+                    "value": "{\"name\": \"Nagoya\", \"code\": \"JPN03C\"}"
+                },
+                {
+                    "label": "Nagpur",
+                    "value": "{\"name\": \"Nagpur\", \"code\": \"IND08952\"}"
+                },
+                {
+                    "label": "Nairobi",
+                    "value": "{\"name\": \"Nairobi\", \"code\": \"KEN02171\"}"
+                },
+                {
+                    "label": "Nanchang",
+                    "value": "{\"name\": \"Nanchang\", \"code\": \"CHN09629\"}"
+                },
+                {
+                    "label": "Nanchong",
+                    "value": "{\"name\": \"Nanchong\", \"code\": \"CHN07052\"}"
+                },
+                {
+                    "label": "Nancy",
+                    "value": "{\"name\": \"Nancy\", \"code\": \"FR016C\"}"
+                },
+                {
+                    "label": "Nanjing",
+                    "value": "{\"name\": \"Nanjing\", \"code\": \"CHN09701\"}"
+                },
+                {
+                    "label": "Nanning",
+                    "value": "{\"name\": \"Nanning\", \"code\": \"CHN08717\"}"
+                },
+                {
+                    "label": "Nantes",
+                    "value": "{\"name\": \"Nantes\", \"code\": \"FR008C\"}"
+                },
+                {
+                    "label": "Nantong",
+                    "value": "{\"name\": \"Nantong\", \"code\": \"CHN09987\"}"
+                },
+                {
+                    "label": "Nanyang",
+                    "value": "{\"name\": \"Nanyang\", \"code\": \"CHN08274\"}"
+                },
+                {
+                    "label": "Naples",
+                    "value": "{\"name\": \"Naples\", \"code\": \"IT003C\"}"
+                },
+                {
+                    "label": "Nashik",
+                    "value": "{\"name\": \"Nashik\", \"code\": \"IND07499\"}"
+                },
+                {
+                    "label": "Nashville",
+                    "value": "{\"name\": \"Nashville\", \"code\": \"USM41\"}"
+                },
+                {
+                    "label": "Nassau",
+                    "value": "{\"name\": \"Nassau\", \"code\": \"BHS00017\"}"
+                },
+                {
+                    "label": "Natal",
+                    "value": "{\"name\": \"Natal\", \"code\": \"BRA07406\"}"
+                },
+                {
+                    "label": "Nay Pyi Taw",
+                    "value": "{\"name\": \"Nay Pyi Taw\", \"code\": \"MMR03596\"}"
+                },
+                {
+                    "label": "N'Djamena",
+                    "value": "{\"name\": \"N'Djamena\", \"code\": \"TCD00483\"}"
+                },
+                {
+                    "label": "Ndola",
+                    "value": "{\"name\": \"Ndola\", \"code\": \"ZMB02351\"}"
+                },
+                {
+                    "label": "New Haven",
+                    "value": "{\"name\": \"New Haven\", \"code\": \"USM82\"}"
+                },
+                {
+                    "label": "New Orleans",
+                    "value": "{\"name\": \"New Orleans\", \"code\": \"USM42\"}"
+                },
+                {
+                    "label": "New York",
+                    "value": "{\"name\": \"New York\", \"code\": \"USM13\"}"
+                },
+                {
+                    "label": "Newcastle upon Tyne",
+                    "value": "{\"name\": \"Newcastle upon Tyne\", \"code\": \"UK013C\"}"
+                },
+                {
+                    "label": "Niamey",
+                    "value": "{\"name\": \"Niamey\", \"code\": \"NER00448\"}"
+                },
+                {
+                    "label": "Nice",
+                    "value": "{\"name\": \"Nice\", \"code\": \"FR205C\"}"
+                },
+                {
+                    "label": "Nicosia",
+                    "value": "{\"name\": \"Nicosia\", \"code\": \"CY001C\"}"
+                },
+                {
+                    "label": "Niigata",
+                    "value": "{\"name\": \"Niigata\", \"code\": \"JPN15C\"}"
+                },
+                {
+                    "label": "Ningbo",
+                    "value": "{\"name\": \"Ningbo\", \"code\": \"CHN10282\"}"
+                },
+                {
+                    "label": "Nizhniy Novgorod",
+                    "value": "{\"name\": \"Nizhniy Novgorod\", \"code\": \"RU03736\"}"
+                },
+                {
+                    "label": "North Port",
+                    "value": "{\"name\": \"North Port\", \"code\": \"USM86\"}"
+                },
+                {
+                    "label": "Northampton",
+                    "value": "{\"name\": \"Northampton\", \"code\": \"UK528C\"}"
+                },
+                {
+                    "label": "Nottingham",
+                    "value": "{\"name\": \"Nottingham\", \"code\": \"UK029C\"}"
+                },
+                {
+                    "label": "Nouakchott",
+                    "value": "{\"name\": \"Nouakchott\", \"code\": \"MRT00289\"}"
+                },
+                {
+                    "label": "Novokuznetsk",
+                    "value": "{\"name\": \"Novokuznetsk\", \"code\": \"RU06311\"}"
+                },
+                {
+                    "label": "Novosibirsk",
+                    "value": "{\"name\": \"Novosibirsk\", \"code\": \"RU06191\"}"
+                },
+                {
+                    "label": "Nuremberg",
+                    "value": "{\"name\": \"Nuremberg\", \"code\": \"DE014C\"}"
+                },
+                {
+                    "label": "Nur-Sultan",
+                    "value": "{\"name\": \"Nur-Sultan\", \"code\": \"KAZ01510\"}"
+                },
+                {
+                    "label": "Oaxaca",
+                    "value": "{\"name\": \"Oaxaca\", \"code\": \"MEX24C\"}"
+                },
+                {
+                    "label": "Odesa",
+                    "value": "{\"name\": \"Odesa\", \"code\": \"UR02737\"}"
+                },
+                {
+                    "label": "Ogbomosho",
+                    "value": "{\"name\": \"Ogbomosho\", \"code\": \"NGA03367\"}"
+                },
+                {
+                    "label": "Okayama",
+                    "value": "{\"name\": \"Okayama\", \"code\": \"JPN07C\"}"
+                },
+                {
+                    "label": "Oklahoma City",
+                    "value": "{\"name\": \"Oklahoma City\", \"code\": \"USM43\"}"
+                },
+                {
+                    "label": "Omaha",
+                    "value": "{\"name\": \"Omaha\", \"code\": \"USM81\"}"
+                },
+                {
+                    "label": "Omsk",
+                    "value": "{\"name\": \"Omsk\", \"code\": \"RU06167\"}"
+                },
+                {
+                    "label": "Onitsha",
+                    "value": "{\"name\": \"Onitsha\", \"code\": \"NGA06116\"}"
+                },
+                {
+                    "label": "Oran",
+                    "value": "{\"name\": \"Oran\", \"code\": \"DZA00947\"}"
+                },
+                {
+                    "label": "Orenburg",
+                    "value": "{\"name\": \"Orenburg\", \"code\": \"RU05936\"}"
+                },
+                {
+                    "label": "Orlando",
+                    "value": "{\"name\": \"Orlando\", \"code\": \"USM27\"}"
+                },
+                {
+                    "label": "Orleans",
+                    "value": "{\"name\": \"Orleans\", \"code\": \"FR019C\"}"
+                },
+                {
+                    "label": "Orumiyeh",
+                    "value": "{\"name\": \"Orumiyeh\", \"code\": \"IRN00417\"}"
+                },
+                {
+                    "label": "Osaka-Kyoto",
+                    "value": "{\"name\": \"Osaka-Kyoto\", \"code\": \"JPN02C\"}"
+                },
+                {
+                    "label": "Oslo",
+                    "value": "{\"name\": \"Oslo\", \"code\": \"NO001C\"}"
+                },
+                {
+                    "label": "Ostrava",
+                    "value": "{\"name\": \"Ostrava\", \"code\": \"CZ003C\"}"
+                },
+                {
+                    "label": "Ottawa-Gatineau",
+                    "value": "{\"name\": \"Ottawa-Gatineau\", \"code\": \"CANH_2\"}"
+                },
+                {
+                    "label": "Ouagadougou",
+                    "value": "{\"name\": \"Ouagadougou\", \"code\": \"BFA01834\"}"
+                },
+                {
+                    "label": "Oxford",
+                    "value": "{\"name\": \"Oxford\", \"code\": \"UK560C\"}"
+                },
+                {
+                    "label": "Oxnard",
+                    "value": "{\"name\": \"Oxnard\", \"code\": \"USM59\"}"
+                },
+                {
+                    "label": "Padang",
+                    "value": "{\"name\": \"Padang\", \"code\": \"IDN02706\"}"
+                },
+                {
+                    "label": "Padua",
+                    "value": "{\"name\": \"Padua\", \"code\": \"IT028C\"}"
+                },
+                {
+                    "label": "Palembang",
+                    "value": "{\"name\": \"Palembang\", \"code\": \"IDN04395\"}"
+                },
+                {
+                    "label": "Palermo",
+                    "value": "{\"name\": \"Palermo\", \"code\": \"IT005C\"}"
+                },
+                {
+                    "label": "Palma de Mallorca",
+                    "value": "{\"name\": \"Palma de Mallorca\", \"code\": \"ES010C\"}"
+                },
+                {
+                    "label": "Panama City",
+                    "value": "{\"name\": \"Panama City\", \"code\": \"PAN00740\"}"
+                },
+                {
+                    "label": "Paramaribo",
+                    "value": "{\"name\": \"Paramaribo\", \"code\": \"SUR00162\"}"
+                },
+                {
+                    "label": "Paris",
+                    "value": "{\"name\": \"Paris\", \"code\": \"FR001C\"}"
+                },
+                {
+                    "label": "Patna",
+                    "value": "{\"name\": \"Patna\", \"code\": \"IND10017\"}"
+                },
+                {
+                    "label": "Pekanbaru",
+                    "value": "{\"name\": \"Pekanbaru\", \"code\": \"IDN03255\"}"
+                },
+                {
+                    "label": "Penza",
+                    "value": "{\"name\": \"Penza\", \"code\": \"RU04407\"}"
+                },
+                {
+                    "label": "Perm",
+                    "value": "{\"name\": \"Perm\", \"code\": \"RU05654\"}"
+                },
+                {
+                    "label": "Perth",
+                    "value": "{\"name\": \"Perth\", \"code\": \"AUS04C\"}"
+                },
+                {
+                    "label": "Peshawar",
+                    "value": "{\"name\": \"Peshawar\", \"code\": \"PAK03270\"}"
+                },
+                {
+                    "label": "Philadelphia",
+                    "value": "{\"name\": \"Philadelphia\", \"code\": \"USM14\"}"
+                },
+                {
+                    "label": "Phnom Penh",
+                    "value": "{\"name\": \"Phnom Penh\", \"code\": \"KHM00976\"}"
+                },
+                {
+                    "label": "Phoenix",
+                    "value": "{\"name\": \"Phoenix\", \"code\": \"USM15\"}"
+                },
+                {
+                    "label": "Pingdingshan",
+                    "value": "{\"name\": \"Pingdingshan\", \"code\": \"CHN08298\"}"
+                },
+                {
+                    "label": "Pittsburgh",
+                    "value": "{\"name\": \"Pittsburgh\", \"code\": \"USM16\"}"
+                },
+                {
+                    "label": "Plovdiv",
+                    "value": "{\"name\": \"Plovdiv\", \"code\": \"BG002C\"}"
+                },
+                {
+                    "label": "Podgorica",
+                    "value": "{\"name\": \"Podgorica\", \"code\": \"MNE00116\"}"
+                },
+                {
+                    "label": "Pointe-Noire",
+                    "value": "{\"name\": \"Pointe-Noire\", \"code\": \"COG00035\"}"
+                },
+                {
+                    "label": "Polokwane",
+                    "value": "{\"name\": \"Polokwane\", \"code\": \"ZAF04314\"}"
+                },
+                {
+                    "label": "Pondicherry",
+                    "value": "{\"name\": \"Pondicherry\", \"code\": \"IND09834\"}"
+                },
+                {
+                    "label": "Pontianak",
+                    "value": "{\"name\": \"Pontianak\", \"code\": \"IDN05834\"}"
+                },
+                {
+                    "label": "Port Elizabeth",
+                    "value": "{\"name\": \"Port Elizabeth\", \"code\": \"ZAF01647\"}"
+                },
+                {
+                    "label": "Port Harcourt",
+                    "value": "{\"name\": \"Port Harcourt\", \"code\": \"NGA06256\"}"
+                },
+                {
+                    "label": "Port Louis",
+                    "value": "{\"name\": \"Port Louis\", \"code\": \"MUS00121\"}"
+                },
+                {
+                    "label": "Port Moresby",
+                    "value": "{\"name\": \"Port Moresby\", \"code\": \"PNG00875\"}"
+                },
+                {
+                    "label": "Port Said",
+                    "value": "{\"name\": \"Port Said\", \"code\": \"EGY05952\"}"
+                },
+                {
+                    "label": "Port-Au-Prince",
+                    "value": "{\"name\": \"Port-Au-Prince\", \"code\": \"HTI01302\"}"
+                },
+                {
+                    "label": "Portland",
+                    "value": "{\"name\": \"Portland\", \"code\": \"USM17\"}"
+                },
+                {
+                    "label": "Porto",
+                    "value": "{\"name\": \"Porto\", \"code\": \"PT002C\"}"
+                },
+                {
+                    "label": "Porto Alegre",
+                    "value": "{\"name\": \"Porto Alegre\", \"code\": \"BRA05593\"}"
+                },
+                {
+                    "label": "Portsmouth",
+                    "value": "{\"name\": \"Portsmouth\", \"code\": \"UK023C\"}"
+                },
+                {
+                    "label": "Poznan",
+                    "value": "{\"name\": \"Poznan\", \"code\": \"PL005C\"}"
+                },
+                {
+                    "label": "Prague",
+                    "value": "{\"name\": \"Prague\", \"code\": \"CZ001C\"}"
+                },
+                {
+                    "label": "Praia",
+                    "value": "{\"name\": \"Praia\", \"code\": \"CPV99999\"}"
+                },
+                {
+                    "label": "Prayagraj",
+                    "value": "{\"name\": \"Prayagraj\", \"code\": \"IND09282\"}"
+                },
+                {
+                    "label": "Pretoria",
+                    "value": "{\"name\": \"Pretoria\", \"code\": \"ZAF03700\"}"
+                },
+                {
+                    "label": "Providence",
+                    "value": "{\"name\": \"Providence\", \"code\": \"USM44\"}"
+                },
+                {
+                    "label": "Puebla",
+                    "value": "{\"name\": \"Puebla\", \"code\": \"MEX04C\"}"
+                },
+                {
+                    "label": "Pune",
+                    "value": "{\"name\": \"Pune\", \"code\": \"IND07617\"}"
+                },
+                {
+                    "label": "Putian",
+                    "value": "{\"name\": \"Putian\", \"code\": \"CHN10353\"}"
+                },
+                {
+                    "label": "Puyang",
+                    "value": "{\"name\": \"Puyang\", \"code\": \"CHN08302\"}"
+                },
+                {
+                    "label": "Qingdao",
+                    "value": "{\"name\": \"Qingdao\", \"code\": \"CHN09309\"}"
+                },
+                {
+                    "label": "Qingyuan",
+                    "value": "{\"name\": \"Qingyuan\", \"code\": \"CHN09657\"}"
+                },
+                {
+                    "label": "Qinhuangdao",
+                    "value": "{\"name\": \"Qinhuangdao\", \"code\": \"CHN08372\"}"
+                },
+                {
+                    "label": "Qiqihar",
+                    "value": "{\"name\": \"Qiqihar\", \"code\": \"CHN07441\"}"
+                },
+                {
+                    "label": "Qom",
+                    "value": "{\"name\": \"Qom\", \"code\": \"IRN04845\"}"
+                },
+                {
+                    "label": "Quanzhou",
+                    "value": "{\"name\": \"Quanzhou\", \"code\": \"CHN10331\"}"
+                },
+                {
+                    "label": "Quebec City",
+                    "value": "{\"name\": \"Quebec City\", \"code\": \"CANI_2\"}"
+                },
+                {
+                    "label": "Quer\u00e9taro",
+                    "value": "{\"name\": \"Quer\\u00e9taro\", \"code\": \"MEX08C\"}"
+                },
+                {
+                    "label": "Quetta",
+                    "value": "{\"name\": \"Quetta\", \"code\": \"PAK01112\"}"
+                },
+                {
+                    "label": "Quito",
+                    "value": "{\"name\": \"Quito\", \"code\": \"ECU02569\"}"
+                },
+                {
+                    "label": "Qujing",
+                    "value": "{\"name\": \"Qujing\", \"code\": \"CHN07492\"}"
+                },
+                {
+                    "label": "Rabat",
+                    "value": "{\"name\": \"Rabat\", \"code\": \"MAR02317\"}"
+                },
+                {
+                    "label": "Raipur",
+                    "value": "{\"name\": \"Raipur\", \"code\": \"IND09620\"}"
+                },
+                {
+                    "label": "Rajkot",
+                    "value": "{\"name\": \"Rajkot\", \"code\": \"IND03722\"}"
+                },
+                {
+                    "label": "Rajshahi",
+                    "value": "{\"name\": \"Rajshahi\", \"code\": \"BGD01749\"}"
+                },
+                {
+                    "label": "Raleigh",
+                    "value": "{\"name\": \"Raleigh\", \"code\": \"USM55\"}"
+                },
+                {
+                    "label": "Ranchi",
+                    "value": "{\"name\": \"Ranchi\", \"code\": \"IND10168\"}"
+                },
+                {
+                    "label": "Rasht",
+                    "value": "{\"name\": \"Rasht\", \"code\": \"IRN03677\"}"
+                },
+                {
+                    "label": "Recife",
+                    "value": "{\"name\": \"Recife\", \"code\": \"BRA07418\"}"
+                },
+                {
+                    "label": "Rennes",
+                    "value": "{\"name\": \"Rennes\", \"code\": \"FR013C\"}"
+                },
+                {
+                    "label": "Reykjavik",
+                    "value": "{\"name\": \"Reykjavik\", \"code\": \"ISL001C\"}"
+                },
+                {
+                    "label": "Reynosa",
+                    "value": "{\"name\": \"Reynosa\", \"code\": \"MEX25C\"}"
+                },
+                {
+                    "label": "Ribeirao Pr\u00eato",
+                    "value": "{\"name\": \"Ribeirao Pr\\u00eato\", \"code\": \"BRA06108\"}"
+                },
+                {
+                    "label": "Richmond",
+                    "value": "{\"name\": \"Richmond\", \"code\": \"USM45\"}"
+                },
+                {
+                    "label": "Riga",
+                    "value": "{\"name\": \"Riga\", \"code\": \"LV001C\"}"
+                },
+                {
+                    "label": "Rio de Janeiro",
+                    "value": "{\"name\": \"Rio de Janeiro\", \"code\": \"BRA06961\"}"
+                },
+                {
+                    "label": "Riverside",
+                    "value": "{\"name\": \"Riverside\", \"code\": \"USM18\"}"
+                },
+                {
+                    "label": "Riyadh",
+                    "value": "{\"name\": \"Riyadh\", \"code\": \"SAU03327\"}"
+                },
+                {
+                    "label": "Rizhao",
+                    "value": "{\"name\": \"Rizhao\", \"code\": \"CHN09299\"}"
+                },
+                {
+                    "label": "Rochester",
+                    "value": "{\"name\": \"Rochester\", \"code\": \"USM78\"}"
+                },
+                {
+                    "label": "Rome",
+                    "value": "{\"name\": \"Rome\", \"code\": \"IT001C\"}"
+                },
+                {
+                    "label": "Rosario",
+                    "value": "{\"name\": \"Rosario\", \"code\": \"ARG03340\"}"
+                },
+                {
+                    "label": "Rostov-on-Don",
+                    "value": "{\"name\": \"Rostov-on-Don\", \"code\": \"RU04034\"}"
+                },
+                {
+                    "label": "Rotterdam",
+                    "value": "{\"name\": \"Rotterdam\", \"code\": \"NL003C\"}"
+                },
+                {
+                    "label": "Rouen",
+                    "value": "{\"name\": \"Rouen\", \"code\": \"FR215C\"}"
+                },
+                {
+                    "label": "Ruhr",
+                    "value": "{\"name\": \"Ruhr\", \"code\": \"DE038C\"}"
+                },
+                {
+                    "label": "Ryazan",
+                    "value": "{\"name\": \"Ryazan\", \"code\": \"RU03326\"}"
+                },
+                {
+                    "label": "Sacramento",
+                    "value": "{\"name\": \"Sacramento\", \"code\": \"USM46\"}"
+                },
+                {
+                    "label": "Saint-Etienne",
+                    "value": "{\"name\": \"Saint-Etienne\", \"code\": \"FR011C\"}"
+                },
+                {
+                    "label": "Salem",
+                    "value": "{\"name\": \"Salem\", \"code\": \"IND09368\"}"
+                },
+                {
+                    "label": "Salt Lake City",
+                    "value": "{\"name\": \"Salt Lake City\", \"code\": \"USM47\"}"
+                },
+                {
+                    "label": "Salta",
+                    "value": "{\"name\": \"Salta\", \"code\": \"ARG00652\"}"
+                },
+                {
+                    "label": "Saltillo",
+                    "value": "{\"name\": \"Saltillo\", \"code\": \"MEX27C\"}"
+                },
+                {
+                    "label": "Salvador",
+                    "value": "{\"name\": \"Salvador\", \"code\": \"BRA07303\"}"
+                },
+                {
+                    "label": "Samara",
+                    "value": "{\"name\": \"Samara\", \"code\": \"RU05413\"}"
+                },
+                {
+                    "label": "Samarinda",
+                    "value": "{\"name\": \"Samarinda\", \"code\": \"IDN06794\"}"
+                },
+                {
+                    "label": "Samsun",
+                    "value": "{\"name\": \"Samsun\", \"code\": \"TR04309\"}"
+                },
+                {
+                    "label": "San Antonio",
+                    "value": "{\"name\": \"San Antonio\", \"code\": \"USM48\"}"
+                },
+                {
+                    "label": "San Diego",
+                    "value": "{\"name\": \"San Diego\", \"code\": \"USM19\"}"
+                },
+                {
+                    "label": "San Francisco",
+                    "value": "{\"name\": \"San Francisco\", \"code\": \"USM20\"}"
+                },
+                {
+                    "label": "San Jos\u00e9 (Costa Rica)",
+                    "value": "{\"name\": \"San Jos\\u00e9 (Costa Rica)\", \"code\": \"CRI00224\"}"
+                },
+                {
+                    "label": "San Jose (US)",
+                    "value": "{\"name\": \"San Jose (US)\", \"code\": \"USM21\"}"
+                },
+                {
+                    "label": "San Juan",
+                    "value": "{\"name\": \"San Juan\", \"code\": \"PRI1\"}"
+                },
+                {
+                    "label": "San Luis Potos\u00ed",
+                    "value": "{\"name\": \"San Luis Potos\\u00ed\", \"code\": \"MEX11C\"}"
+                },
+                {
+                    "label": "San Miguel De Tucum\u00e1n",
+                    "value": "{\"name\": \"San Miguel De Tucum\\u00e1n\", \"code\": \"ARG01467\"}"
+                },
+                {
+                    "label": "San Salvador",
+                    "value": "{\"name\": \"San Salvador\", \"code\": \"SLV00888\"}"
+                },
+                {
+                    "label": "Santa Cruz",
+                    "value": "{\"name\": \"Santa Cruz\", \"code\": \"BOL01570\"}"
+                },
+                {
+                    "label": "Santa Cruz de Tenerife",
+                    "value": "{\"name\": \"Santa Cruz de Tenerife\", \"code\": \"ES025C\"}"
+                },
+                {
+                    "label": "Santiago",
+                    "value": "{\"name\": \"Santiago\", \"code\": \"CHL011C\"}"
+                },
+                {
+                    "label": "Santo Domingo",
+                    "value": "{\"name\": \"Santo Domingo\", \"code\": \"DOM01674\"}"
+                },
+                {
+                    "label": "Sao Jos\u00e9 dos Campos",
+                    "value": "{\"name\": \"Sao Jos\\u00e9 dos Campos\", \"code\": \"BRA06728\"}"
+                },
+                {
+                    "label": "S\u00e3o Paulo",
+                    "value": "{\"name\": \"S\\u00e3o Paulo\", \"code\": \"BRA06567\"}"
+                },
+                {
+                    "label": "Sapporo",
+                    "value": "{\"name\": \"Sapporo\", \"code\": \"JPN05C\"}"
+                },
+                {
+                    "label": "Sarajevo",
+                    "value": "{\"name\": \"Sarajevo\", \"code\": \"BIH00798\"}"
+                },
+                {
+                    "label": "Saratov",
+                    "value": "{\"name\": \"Saratov\", \"code\": \"RU04854\"}"
+                },
+                {
+                    "label": "Seattle",
+                    "value": "{\"name\": \"Seattle\", \"code\": \"USM22\"}"
+                },
+                {
+                    "label": "Semarang",
+                    "value": "{\"name\": \"Semarang\", \"code\": \"IDN05906\"}"
+                },
+                {
+                    "label": "Sendai",
+                    "value": "{\"name\": \"Sendai\", \"code\": \"JPN06C\"}"
+                },
+                {
+                    "label": "Seoul",
+                    "value": "{\"name\": \"Seoul\", \"code\": \"KOR01C\"}"
+                },
+                {
+                    "label": "Seremban",
+                    "value": "{\"name\": \"Seremban\", \"code\": \"MYS01702\"}"
+                },
+                {
+                    "label": "Seville",
+                    "value": "{\"name\": \"Seville\", \"code\": \"ES004C\"}"
+                },
+                {
+                    "label": "Sfax",
+                    "value": "{\"name\": \"Sfax\", \"code\": \"TUN02340\"}"
+                },
+                {
+                    "label": "Shanghai",
+                    "value": "{\"name\": \"Shanghai\", \"code\": \"CHN10097\"}"
+                },
+                {
+                    "label": "Shangqiu",
+                    "value": "{\"name\": \"Shangqiu\", \"code\": \"CHN08620\"}"
+                },
+                {
+                    "label": "Shangrao",
+                    "value": "{\"name\": \"Shangrao\", \"code\": \"CHN09981\"}"
+                },
+                {
+                    "label": "Shantou",
+                    "value": "{\"name\": \"Shantou\", \"code\": \"CHN10153\"}"
+                },
+                {
+                    "label": "Shaoyang",
+                    "value": "{\"name\": \"Shaoyang\", \"code\": \"CHN08909\"}"
+                },
+                {
+                    "label": "Sheffield",
+                    "value": "{\"name\": \"Sheffield\", \"code\": \"UK010C\"}"
+                },
+                {
+                    "label": "Shenyang",
+                    "value": "{\"name\": \"Shenyang\", \"code\": \"CHN08630\"}"
+                },
+                {
+                    "label": "Shenzhen",
+                    "value": "{\"name\": \"Shenzhen\", \"code\": \"CHN09725\"}"
+                },
+                {
+                    "label": "Shijiazhuang",
+                    "value": "{\"name\": \"Shijiazhuang\", \"code\": \"CHN07744\"}"
+                },
+                {
+                    "label": "Shiraz",
+                    "value": "{\"name\": \"Shiraz\", \"code\": \"IRN05666\"}"
+                },
+                {
+                    "label": "Singapore",
+                    "value": "{\"name\": \"Singapore\", \"code\": \"SGP00154\"}"
+                },
+                {
+                    "label": "Skopje",
+                    "value": "{\"name\": \"Skopje\", \"code\": \"MKD00441\"}"
+                },
+                {
+                    "label": "Sofia",
+                    "value": "{\"name\": \"Sofia\", \"code\": \"BG001C\"}"
+                },
+                {
+                    "label": "Solapur",
+                    "value": "{\"name\": \"Solapur\", \"code\": \"IND08341\"}"
+                },
+                {
+                    "label": "Sorocaba",
+                    "value": "{\"name\": \"Sorocaba\", \"code\": \"BRA06416\"}"
+                },
+                {
+                    "label": "Sousse",
+                    "value": "{\"name\": \"Sousse\", \"code\": \"TUN02049\"}"
+                },
+                {
+                    "label": "Southampton",
+                    "value": "{\"name\": \"Southampton\", \"code\": \"UK520C\"}"
+                },
+                {
+                    "label": "Srinagar",
+                    "value": "{\"name\": \"Srinagar\", \"code\": \"IND02091\"}"
+                },
+                {
+                    "label": "St Petersburg",
+                    "value": "{\"name\": \"St Petersburg\", \"code\": \"RU00750\"}"
+                },
+                {
+                    "label": "St. Louis",
+                    "value": "{\"name\": \"St. Louis\", \"code\": \"USM23\"}"
+                },
+                {
+                    "label": "Stockholm",
+                    "value": "{\"name\": \"Stockholm\", \"code\": \"SE001C\"}"
+                },
+                {
+                    "label": "Stockton",
+                    "value": "{\"name\": \"Stockton\", \"code\": \"USM60\"}"
+                },
+                {
+                    "label": "Strasbourg",
+                    "value": "{\"name\": \"Strasbourg\", \"code\": \"FR006C\"}"
+                },
+                {
+                    "label": "Stuttgart",
+                    "value": "{\"name\": \"Stuttgart\", \"code\": \"DE007C\"}"
+                },
+                {
+                    "label": "Suez",
+                    "value": "{\"name\": \"Suez\", \"code\": \"EGY06038\"}"
+                },
+                {
+                    "label": "Suqian",
+                    "value": "{\"name\": \"Suqian\", \"code\": \"CHN09325\"}"
+                },
+                {
+                    "label": "Surabaya",
+                    "value": "{\"name\": \"Surabaya\", \"code\": \"IDN06401\"}"
+                },
+                {
+                    "label": "Surat",
+                    "value": "{\"name\": \"Surat\", \"code\": \"IND06611\"}"
+                },
+                {
+                    "label": "Suva",
+                    "value": "{\"name\": \"Suva\", \"code\": \"FJI00057\"}"
+                },
+                {
+                    "label": "Suzhou (Anhui)",
+                    "value": "{\"name\": \"Suzhou (Anhui)\", \"code\": \"CHN09108\"}"
+                },
+                {
+                    "label": "Suzhou (Jiangsu)",
+                    "value": "{\"name\": \"Suzhou (Jiangsu)\", \"code\": \"CHN09963\"}"
+                },
+                {
+                    "label": "Sydney",
+                    "value": "{\"name\": \"Sydney\", \"code\": \"AUS01C\"}"
+                },
+                {
+                    "label": "Syracuse",
+                    "value": "{\"name\": \"Syracuse\", \"code\": \"USM105\"}"
+                },
+                {
+                    "label": "Szczecin",
+                    "value": "{\"name\": \"Szczecin\", \"code\": \"PL007C\"}"
+                },
+                {
+                    "label": "Tabriz",
+                    "value": "{\"name\": \"Tabriz\", \"code\": \"IRN00967\"}"
+                },
+                {
+                    "label": "Taian",
+                    "value": "{\"name\": \"Taian\", \"code\": \"CHN08604\"}"
+                },
+                {
+                    "label": "Taichung",
+                    "value": "{\"name\": \"Taichung\", \"code\": \"TAI00770\"}"
+                },
+                {
+                    "label": "Tainan",
+                    "value": "{\"name\": \"Tainan\", \"code\": \"TAI01815\"}"
+                },
+                {
+                    "label": "Taipei",
+                    "value": "{\"name\": \"Taipei\", \"code\": \"TAI01141\"}"
+                },
+                {
+                    "label": "Taiyuan",
+                    "value": "{\"name\": \"Taiyuan\", \"code\": \"CHN07359\"}"
+                },
+                {
+                    "label": "Taizhou (Jiangsu)",
+                    "value": "{\"name\": \"Taizhou (Jiangsu)\", \"code\": \"CHN09831\"}"
+                },
+                {
+                    "label": "Taizhou (Zhejiang)",
+                    "value": "{\"name\": \"Taizhou (Zhejiang)\", \"code\": \"CHN10392\"}"
+                },
+                {
+                    "label": "Tallinn",
+                    "value": "{\"name\": \"Tallinn\", \"code\": \"EE001C\"}"
+                },
+                {
+                    "label": "Tampa",
+                    "value": "{\"name\": \"Tampa\", \"code\": \"USM24\"}"
+                },
+                {
+                    "label": "Tampere",
+                    "value": "{\"name\": \"Tampere\", \"code\": \"FI002C\"}"
+                },
+                {
+                    "label": "Tampico",
+                    "value": "{\"name\": \"Tampico\", \"code\": \"MEX23C\"}"
+                },
+                {
+                    "label": "Tangier",
+                    "value": "{\"name\": \"Tangier\", \"code\": \"MAR03315\"}"
+                },
+                {
+                    "label": "Tangshan",
+                    "value": "{\"name\": \"Tangshan\", \"code\": \"CHN08159\"}"
+                },
+                {
+                    "label": "Tashkent",
+                    "value": "{\"name\": \"Tashkent\", \"code\": \"UZB02481\"}"
+                },
+                {
+                    "label": "Tbilisi",
+                    "value": "{\"name\": \"Tbilisi\", \"code\": \"GEO00826\"}"
+                },
+                {
+                    "label": "Tegucigalpa",
+                    "value": "{\"name\": \"Tegucigalpa\", \"code\": \"HND01301\"}"
+                },
+                {
+                    "label": "Tehran",
+                    "value": "{\"name\": \"Tehran\", \"code\": \"IRN04686\"}"
+                },
+                {
+                    "label": "Tel Aviv",
+                    "value": "{\"name\": \"Tel Aviv\", \"code\": \"ISR00419\"}"
+                },
+                {
+                    "label": "Teresina",
+                    "value": "{\"name\": \"Teresina\", \"code\": \"BRA06852\"}"
+                },
+                {
+                    "label": "The Hague",
+                    "value": "{\"name\": \"The Hague\", \"code\": \"NL001C\"}"
+                },
+                {
+                    "label": "Thessaloniki",
+                    "value": "{\"name\": \"Thessaloniki\", \"code\": \"EL002C\"}"
+                },
+                {
+                    "label": "Thiruvananthapuram",
+                    "value": "{\"name\": \"Thiruvananthapuram\", \"code\": \"IND09157\"}"
+                },
+                {
+                    "label": "Tianjin",
+                    "value": "{\"name\": \"Tianjin\", \"code\": \"CHN08055\"}"
+                },
+                {
+                    "label": "Tijuana",
+                    "value": "{\"name\": \"Tijuana\", \"code\": \"MEX06C\"}"
+                },
+                {
+                    "label": "Tirana",
+                    "value": "{\"name\": \"Tirana\", \"code\": \"ALB00650\"}"
+                },
+                {
+                    "label": "Tiruchirappalli",
+                    "value": "{\"name\": \"Tiruchirappalli\", \"code\": \"IND09544\"}"
+                },
+                {
+                    "label": "Tiruppur",
+                    "value": "{\"name\": \"Tiruppur\", \"code\": \"IND09165\"}"
+                },
+                {
+                    "label": "Tokyo",
+                    "value": "{\"name\": \"Tokyo\", \"code\": \"JPN01C\"}"
+                },
+                {
+                    "label": "Toledo",
+                    "value": "{\"name\": \"Toledo\", \"code\": \"USM72\"}"
+                },
+                {
+                    "label": "Toluca",
+                    "value": "{\"name\": \"Toluca\", \"code\": \"MEX05C\"}"
+                },
+                {
+                    "label": "Tomsk",
+                    "value": "{\"name\": \"Tomsk\", \"code\": \"RU06179\"}"
+                },
+                {
+                    "label": "Toronto",
+                    "value": "{\"name\": \"Toronto\", \"code\": \"CANH_1\"}"
+                },
+                {
+                    "label": "Toulon",
+                    "value": "{\"name\": \"Toulon\", \"code\": \"FR032C\"}"
+                },
+                {
+                    "label": "Toulouse",
+                    "value": "{\"name\": \"Toulouse\", \"code\": \"FR004C\"}"
+                },
+                {
+                    "label": "Tours",
+                    "value": "{\"name\": \"Tours\", \"code\": \"FR035C\"}"
+                },
+                {
+                    "label": "Tripoli",
+                    "value": "{\"name\": \"Tripoli\", \"code\": \"LBY00433\"}"
+                },
+                {
+                    "label": "Trujillo",
+                    "value": "{\"name\": \"Trujillo\", \"code\": \"PER01431\"}"
+                },
+                {
+                    "label": "Tucson",
+                    "value": "{\"name\": \"Tucson\", \"code\": \"USM49\"}"
+                },
+                {
+                    "label": "Tula",
+                    "value": "{\"name\": \"Tula\", \"code\": \"RU02907\"}"
+                },
+                {
+                    "label": "Tulsa",
+                    "value": "{\"name\": \"Tulsa\", \"code\": \"USM73\"}"
+                },
+                {
+                    "label": "Tunis",
+                    "value": "{\"name\": \"Tunis\", \"code\": \"TUN01545\"}"
+                },
+                {
+                    "label": "Turin",
+                    "value": "{\"name\": \"Turin\", \"code\": \"IT004C\"}"
+                },
+                {
+                    "label": "Tuxtla Guti\u00e9rrez",
+                    "value": "{\"name\": \"Tuxtla Guti\\u00e9rrez\", \"code\": \"MEX31C\"}"
+                },
+                {
+                    "label": "Tyumen",
+                    "value": "{\"name\": \"Tyumen\", \"code\": \"RU06106\"}"
+                },
+                {
+                    "label": "Ufa",
+                    "value": "{\"name\": \"Ufa\", \"code\": \"RU05864\"}"
+                },
+                {
+                    "label": "Ulaanbaatar",
+                    "value": "{\"name\": \"Ulaanbaatar\", \"code\": \"MON00117\"}"
+                },
+                {
+                    "label": "Ulsan",
+                    "value": "{\"name\": \"Ulsan\", \"code\": \"KOR07C\"}"
+                },
+                {
+                    "label": "Ulyanovsk",
+                    "value": "{\"name\": \"Ulyanovsk\", \"code\": \"RU05035\"}"
+                },
+                {
+                    "label": "Urumqi",
+                    "value": "{\"name\": \"Urumqi\", \"code\": \"CHN02293\"}"
+                },
+                {
+                    "label": "Utrecht",
+                    "value": "{\"name\": \"Utrecht\", \"code\": \"NL004C\"}"
+                },
+                {
+                    "label": "Utsunomiya",
+                    "value": "{\"name\": \"Utsunomiya\", \"code\": \"JPN16C\"}"
+                },
+                {
+                    "label": "Vadodara",
+                    "value": "{\"name\": \"Vadodara\", \"code\": \"IND06651\"}"
+                },
+                {
+                    "label": "Valencia (Spain)",
+                    "value": "{\"name\": \"Valencia (Spain)\", \"code\": \"ES003C\"}"
+                },
+                {
+                    "label": "Valencia (Venezuela)",
+                    "value": "{\"name\": \"Valencia (Venezuela)\", \"code\": \"VEN03284\"}"
+                },
+                {
+                    "label": "Valladolid",
+                    "value": "{\"name\": \"Valladolid\", \"code\": \"ES009C\"}"
+                },
+                {
+                    "label": "Valletta",
+                    "value": "{\"name\": \"Valletta\", \"code\": \"MT001C\"}"
+                },
+                {
+                    "label": "Valpara\u00edso",
+                    "value": "{\"name\": \"Valpara\\u00edso\", \"code\": \"CHL010C\"}"
+                },
+                {
+                    "label": "Vancouver",
+                    "value": "{\"name\": \"Vancouver\", \"code\": \"CANB_1\"}"
+                },
+                {
+                    "label": "Varanasi",
+                    "value": "{\"name\": \"Varanasi\", \"code\": \"IND09562\"}"
+                },
+                {
+                    "label": "Varna",
+                    "value": "{\"name\": \"Varna\", \"code\": \"BG003C\"}"
+                },
+                {
+                    "label": "Venice",
+                    "value": "{\"name\": \"Venice\", \"code\": \"IT011C\"}"
+                },
+                {
+                    "label": "Veracruz",
+                    "value": "{\"name\": \"Veracruz\", \"code\": \"MEX19C\"}"
+                },
+                {
+                    "label": "Verona",
+                    "value": "{\"name\": \"Verona\", \"code\": \"IT012C\"}"
+                },
+                {
+                    "label": "Vienna",
+                    "value": "{\"name\": \"Vienna\", \"code\": \"AT001C\"}"
+                },
+                {
+                    "label": "Vientiane",
+                    "value": "{\"name\": \"Vientiane\", \"code\": \"LAO00273\"}"
+                },
+                {
+                    "label": "Vigo",
+                    "value": "{\"name\": \"Vigo\", \"code\": \"ES022C\"}"
+                },
+                {
+                    "label": "Vijayawada",
+                    "value": "{\"name\": \"Vijayawada\", \"code\": \"IND09794\"}"
+                },
+                {
+                    "label": "Vilnius",
+                    "value": "{\"name\": \"Vilnius\", \"code\": \"LT001C\"}"
+                },
+                {
+                    "label": "Virginia Beach",
+                    "value": "{\"name\": \"Virginia Beach\", \"code\": \"USM50\"}"
+                },
+                {
+                    "label": "Visakhapatnam",
+                    "value": "{\"name\": \"Visakhapatnam\", \"code\": \"IND10142\"}"
+                },
+                {
+                    "label": "Vladivostok",
+                    "value": "{\"name\": \"Vladivostok\", \"code\": \"RU06522\"}"
+                },
+                {
+                    "label": "Volgograd",
+                    "value": "{\"name\": \"Volgograd\", \"code\": \"RU04937\"}"
+                },
+                {
+                    "label": "Voronezh",
+                    "value": "{\"name\": \"Voronezh\", \"code\": \"RU03560\"}"
+                },
+                {
+                    "label": "Warangal",
+                    "value": "{\"name\": \"Warangal\", \"code\": \"IND09376\"}"
+                },
+                {
+                    "label": "Warsaw",
+                    "value": "{\"name\": \"Warsaw\", \"code\": \"PL001C\"}"
+                },
+                {
+                    "label": "Washington, DC",
+                    "value": "{\"name\": \"Washington, DC\", \"code\": \"USM25\"}"
+                },
+                {
+                    "label": "Weifang",
+                    "value": "{\"name\": \"Weifang\", \"code\": \"CHN08935\"}"
+                },
+                {
+                    "label": "Weihai",
+                    "value": "{\"name\": \"Weihai\", \"code\": \"CHN09423\"}"
+                },
+                {
+                    "label": "Weinan",
+                    "value": "{\"name\": \"Weinan\", \"code\": \"CHN07364\"}"
+                },
+                {
+                    "label": "Wellington",
+                    "value": "{\"name\": \"Wellington\", \"code\": \"NZL00454\"}"
+                },
+                {
+                    "label": "Wenzhou",
+                    "value": "{\"name\": \"Wenzhou\", \"code\": \"CHN10339\"}"
+                },
+                {
+                    "label": "Wichita",
+                    "value": "{\"name\": \"Wichita\", \"code\": \"USM107\"}"
+                },
+                {
+                    "label": "Wiesbaden",
+                    "value": "{\"name\": \"Wiesbaden\", \"code\": \"DE020C\"}"
+                },
+                {
+                    "label": "Windhoek",
+                    "value": "{\"name\": \"Windhoek\", \"code\": \"NAM00292\"}"
+                },
+                {
+                    "label": "Winnipeg",
+                    "value": "{\"name\": \"Winnipeg\", \"code\": \"CANC_1\"}"
+                },
+                {
+                    "label": "Winston-Salem",
+                    "value": "{\"name\": \"Winston-Salem\", \"code\": \"USM106\"}"
+                },
+                {
+                    "label": "Worcester",
+                    "value": "{\"name\": \"Worcester\", \"code\": \"USM80\"}"
+                },
+                {
+                    "label": "Wroclaw",
+                    "value": "{\"name\": \"Wroclaw\", \"code\": \"PL004C\"}"
+                },
+                {
+                    "label": "Wuhan",
+                    "value": "{\"name\": \"Wuhan\", \"code\": \"CHN08989\"}"
+                },
+                {
+                    "label": "Wuhu",
+                    "value": "{\"name\": \"Wuhu\", \"code\": \"CHN09731\"}"
+                },
+                {
+                    "label": "Xalapa",
+                    "value": "{\"name\": \"Xalapa\", \"code\": \"MEX26C\"}"
+                },
+                {
+                    "label": "Xiamen",
+                    "value": "{\"name\": \"Xiamen\", \"code\": \"CHN10286\"}"
+                },
+                {
+                    "label": "Xian",
+                    "value": "{\"name\": \"Xian\", \"code\": \"CHN07094\"}"
+                },
+                {
+                    "label": "Xiangfan",
+                    "value": "{\"name\": \"Xiangfan\", \"code\": \"CHN08334\"}"
+                },
+                {
+                    "label": "Xianyang",
+                    "value": "{\"name\": \"Xianyang\", \"code\": \"CHN07004\"}"
+                },
+                {
+                    "label": "Xiaogan",
+                    "value": "{\"name\": \"Xiaogan\", \"code\": \"CHN08895\"}"
+                },
+                {
+                    "label": "Xingtai",
+                    "value": "{\"name\": \"Xingtai\", \"code\": \"CHN07960\"}"
+                },
+                {
+                    "label": "Xinxiang",
+                    "value": "{\"name\": \"Xinxiang\", \"code\": \"CHN08157\"}"
+                },
+                {
+                    "label": "Xinyang",
+                    "value": "{\"name\": \"Xinyang\", \"code\": \"CHN08699\"}"
+                },
+                {
+                    "label": "Xuchang",
+                    "value": "{\"name\": \"Xuchang\", \"code\": \"CHN08356\"}"
+                },
+                {
+                    "label": "Xuzhou",
+                    "value": "{\"name\": \"Xuzhou\", \"code\": \"CHN09008\"}"
+                },
+                {
+                    "label": "Yamoussoukro",
+                    "value": "{\"name\": \"Yamoussoukro\", \"code\": \"CIV02223\"}"
+                },
+                {
+                    "label": "Yancheng",
+                    "value": "{\"name\": \"Yancheng\", \"code\": \"CHN09743\"}"
+                },
+                {
+                    "label": "Yangon",
+                    "value": "{\"name\": \"Yangon\", \"code\": \"MMR04435\"}"
+                },
+                {
+                    "label": "Yangzhou",
+                    "value": "{\"name\": \"Yangzhou\", \"code\": \"CHN09769\"}"
+                },
+                {
+                    "label": "Yantai",
+                    "value": "{\"name\": \"Yantai\", \"code\": \"CHN09208\"}"
+                },
+                {
+                    "label": "Yaound\u00e9",
+                    "value": "{\"name\": \"Yaound\\u00e9\", \"code\": \"CMR02295\"}"
+                },
+                {
+                    "label": "Yaroslavl",
+                    "value": "{\"name\": \"Yaroslavl\", \"code\": \"RU02850\"}"
+                },
+                {
+                    "label": "Yerevan",
+                    "value": "{\"name\": \"Yerevan\", \"code\": \"ARM00359\"}"
+                },
+                {
+                    "label": "Yibin",
+                    "value": "{\"name\": \"Yibin\", \"code\": \"CHN06950\"}"
+                },
+                {
+                    "label": "Yichang",
+                    "value": "{\"name\": \"Yichang\", \"code\": \"CHN08366\"}"
+                },
+                {
+                    "label": "Yichun",
+                    "value": "{\"name\": \"Yichun\", \"code\": \"CHN09487\"}"
+                },
+                {
+                    "label": "Yinchuan",
+                    "value": "{\"name\": \"Yinchuan\", \"code\": \"CHN04150\"}"
+                },
+                {
+                    "label": "Yogyakarta",
+                    "value": "{\"name\": \"Yogyakarta\", \"code\": \"IDN05918\"}"
+                },
+                {
+                    "label": "Yueyang",
+                    "value": "{\"name\": \"Yueyang\", \"code\": \"CHN08967\"}"
+                },
+                {
+                    "label": "Yulin",
+                    "value": "{\"name\": \"Yulin\", \"code\": \"CHN05738\"}"
+                },
+                {
+                    "label": "Yuncheng",
+                    "value": "{\"name\": \"Yuncheng\", \"code\": \"CHN07656\"}"
+                },
+                {
+                    "label": "Zagreb",
+                    "value": "{\"name\": \"Zagreb\", \"code\": \"HR001C\"}"
+                },
+                {
+                    "label": "Zahedan",
+                    "value": "{\"name\": \"Zahedan\", \"code\": \"IRN06211\"}"
+                },
+                {
+                    "label": "Zamboanga City",
+                    "value": "{\"name\": \"Zamboanga City\", \"code\": \"PHL04067\"}"
+                },
+                {
+                    "label": "Zaozhuang",
+                    "value": "{\"name\": \"Zaozhuang\", \"code\": \"CHN08981\"}"
+                },
+                {
+                    "label": "Zaporizhzhya",
+                    "value": "{\"name\": \"Zaporizhzhya\", \"code\": \"UR03780\"}"
+                },
+                {
+                    "label": "Zaragoza",
+                    "value": "{\"name\": \"Zaragoza\", \"code\": \"ES005C\"}"
+                },
+                {
+                    "label": "Zaria",
+                    "value": "{\"name\": \"Zaria\", \"code\": \"NGA06768\"}"
+                },
+                {
+                    "label": "Zhangjiakou",
+                    "value": "{\"name\": \"Zhangjiakou\", \"code\": \"CHN07088\"}"
+                },
+                {
+                    "label": "Zhangzhou",
+                    "value": "{\"name\": \"Zhangzhou\", \"code\": \"CHN10262\"}"
+                },
+                {
+                    "label": "Zhanjiang",
+                    "value": "{\"name\": \"Zhanjiang\", \"code\": \"CHN09401\"}"
+                },
+                {
+                    "label": "Zhaoqing",
+                    "value": "{\"name\": \"Zhaoqing\", \"code\": \"CHN09631\"}"
+                },
+                {
+                    "label": "Zhaotong",
+                    "value": "{\"name\": \"Zhaotong\", \"code\": \"CHN06944\"}"
+                },
+                {
+                    "label": "Zhengzhou",
+                    "value": "{\"name\": \"Zhengzhou\", \"code\": \"CHN08189\"}"
+                },
+                {
+                    "label": "Zhenjiang",
+                    "value": "{\"name\": \"Zhenjiang\", \"code\": \"CHN09805\"}"
+                },
+                {
+                    "label": "Zhongshan",
+                    "value": "{\"name\": \"Zhongshan\", \"code\": \"CHN09839\"}"
+                },
+                {
+                    "label": "Zhoukou",
+                    "value": "{\"name\": \"Zhoukou\", \"code\": \"CHN08566\"}"
+                },
+                {
+                    "label": "Zhuhai",
+                    "value": "{\"name\": \"Zhuhai\", \"code\": \"CHN09871\"}"
+                },
+                {
+                    "label": "Zhumadian",
+                    "value": "{\"name\": \"Zhumadian\", \"code\": \"CHN08552\"}"
+                },
+                {
+                    "label": "Zhuzhou",
+                    "value": "{\"name\": \"Zhuzhou\", \"code\": \"CHN09186\"}"
+                },
+                {
+                    "label": "Zibo",
+                    "value": "{\"name\": \"Zibo\", \"code\": \"CHN08664\"}"
+                },
+                {
+                    "label": "Zunyi",
+                    "value": "{\"name\": \"Zunyi\", \"code\": \"CHN07884\"}"
+                },
+                {
+                    "label": "Zurich",
+                    "value": "{\"name\": \"Zurich\", \"code\": \"CH001C\"}"
+                }
+            ]
+        }
+    ]
+}

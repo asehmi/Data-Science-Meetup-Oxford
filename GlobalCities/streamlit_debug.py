@@ -69,6 +69,7 @@ def set(flag: bool=False, wait_for_client=False, host='localhost', port=8765):
             if st.session_state.debugging == None:
                 logging.info(f'>>> Remote debugging in NOT active <<<')
             st.session_state.debugging = False
-    except:
+    except Exception as e:
+        print(str(e))
         # Ignore... e.g. for cloud deployments
         pass

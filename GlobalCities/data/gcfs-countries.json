@@ -1,0 +1,668 @@
+{
+    "label": "Global Cities Forecast Service",
+    "value": "Global Cities Forecast Service",
+    "children": [
+        {
+            "label": "Countries",
+            "value": "Countries",
+            "children": [
+                {
+                    "label": "Afghanistan",
+                    "value": "{\"name\": \"Afghanistan\", \"code\": \"AFG\"}"
+                },
+                {
+                    "label": "Albania",
+                    "value": "{\"name\": \"Albania\", \"code\": \"ALB\"}"
+                },
+                {
+                    "label": "Algeria",
+                    "value": "{\"name\": \"Algeria\", \"code\": \"DZA\"}"
+                },
+                {
+                    "label": "Angola",
+                    "value": "{\"name\": \"Angola\", \"code\": \"AGO\"}"
+                },
+                {
+                    "label": "Argentina",
+                    "value": "{\"name\": \"Argentina\", \"code\": \"ARG\"}"
+                },
+                {
+                    "label": "Armenia",
+                    "value": "{\"name\": \"Armenia\", \"code\": \"ARM\"}"
+                },
+                {
+                    "label": "Australia",
+                    "value": "{\"name\": \"Australia\", \"code\": \"AUS\"}"
+                },
+                {
+                    "label": "Austria",
+                    "value": "{\"name\": \"Austria\", \"code\": \"AT\"}"
+                },
+                {
+                    "label": "Azerbaijan",
+                    "value": "{\"name\": \"Azerbaijan\", \"code\": \"AZE\"}"
+                },
+                {
+                    "label": "Bahamas",
+                    "value": "{\"name\": \"Bahamas\", \"code\": \"BHS\"}"
+                },
+                {
+                    "label": "Bahrain",
+                    "value": "{\"name\": \"Bahrain\", \"code\": \"BHR\"}"
+                },
+                {
+                    "label": "Bangladesh",
+                    "value": "{\"name\": \"Bangladesh\", \"code\": \"BGD\"}"
+                },
+                {
+                    "label": "Barbados",
+                    "value": "{\"name\": \"Barbados\", \"code\": \"BRB\"}"
+                },
+                {
+                    "label": "Belarus",
+                    "value": "{\"name\": \"Belarus\", \"code\": \"BLR\"}"
+                },
+                {
+                    "label": "Belgium",
+                    "value": "{\"name\": \"Belgium\", \"code\": \"BE\"}"
+                },
+                {
+                    "label": "Benin",
+                    "value": "{\"name\": \"Benin\", \"code\": \"BEN\"}"
+                },
+                {
+                    "label": "Bolivia",
+                    "value": "{\"name\": \"Bolivia\", \"code\": \"BOL\"}"
+                },
+                {
+                    "label": "Bosnia and Herzegovina",
+                    "value": "{\"name\": \"Bosnia and Herzegovina\", \"code\": \"BIH\"}"
+                },
+                {
+                    "label": "Botswana",
+                    "value": "{\"name\": \"Botswana\", \"code\": \"BWA\"}"
+                },
+                {
+                    "label": "Brazil",
+                    "value": "{\"name\": \"Brazil\", \"code\": \"BRA\"}"
+                },
+                {
+                    "label": "Bulgaria",
+                    "value": "{\"name\": \"Bulgaria\", \"code\": \"BG\"}"
+                },
+                {
+                    "label": "Burkina Faso",
+                    "value": "{\"name\": \"Burkina Faso\", \"code\": \"BFA\"}"
+                },
+                {
+                    "label": "Burundi",
+                    "value": "{\"name\": \"Burundi\", \"code\": \"BDI\"}"
+                },
+                {
+                    "label": "Cambodia",
+                    "value": "{\"name\": \"Cambodia\", \"code\": \"KHM\"}"
+                },
+                {
+                    "label": "Cameroon",
+                    "value": "{\"name\": \"Cameroon\", \"code\": \"CMR\"}"
+                },
+                {
+                    "label": "Canada",
+                    "value": "{\"name\": \"Canada\", \"code\": \"CAN\"}"
+                },
+                {
+                    "label": "Cape Verde",
+                    "value": "{\"name\": \"Cape Verde\", \"code\": \"CPV\"}"
+                },
+                {
+                    "label": "Central African Republic",
+                    "value": "{\"name\": \"Central African Republic\", \"code\": \"CAF\"}"
+                },
+                {
+                    "label": "Chad",
+                    "value": "{\"name\": \"Chad\", \"code\": \"TCD\"}"
+                },
+                {
+                    "label": "Chile",
+                    "value": "{\"name\": \"Chile\", \"code\": \"CHL\"}"
+                },
+                {
+                    "label": "China",
+                    "value": "{\"name\": \"China\", \"code\": \"CHN\"}"
+                },
+                {
+                    "label": "Colombia",
+                    "value": "{\"name\": \"Colombia\", \"code\": \"COL\"}"
+                },
+                {
+                    "label": "Congo",
+                    "value": "{\"name\": \"Congo\", \"code\": \"COG\"}"
+                },
+                {
+                    "label": "Costa Rica",
+                    "value": "{\"name\": \"Costa Rica\", \"code\": \"CRI\"}"
+                },
+                {
+                    "label": "C\u00f4te d'Ivoire",
+                    "value": "{\"name\": \"C\\u00f4te d'Ivoire\", \"code\": \"CIV\"}"
+                },
+                {
+                    "label": "Croatia",
+                    "value": "{\"name\": \"Croatia\", \"code\": \"HR\"}"
+                },
+                {
+                    "label": "Cuba",
+                    "value": "{\"name\": \"Cuba\", \"code\": \"CUB\"}"
+                },
+                {
+                    "label": "Cyprus",
+                    "value": "{\"name\": \"Cyprus\", \"code\": \"CY\"}"
+                },
+                {
+                    "label": "Czech Republic",
+                    "value": "{\"name\": \"Czech Republic\", \"code\": \"CZ\"}"
+                },
+                {
+                    "label": "Democratic Republic of Congo",
+                    "value": "{\"name\": \"Democratic Republic of Congo\", \"code\": \"COD\"}"
+                },
+                {
+                    "label": "Denmark",
+                    "value": "{\"name\": \"Denmark\", \"code\": \"DK\"}"
+                },
+                {
+                    "label": "Djibouti",
+                    "value": "{\"name\": \"Djibouti\", \"code\": \"DJI\"}"
+                },
+                {
+                    "label": "Dominican Republic",
+                    "value": "{\"name\": \"Dominican Republic\", \"code\": \"DOM\"}"
+                },
+                {
+                    "label": "Ecuador",
+                    "value": "{\"name\": \"Ecuador\", \"code\": \"ECU\"}"
+                },
+                {
+                    "label": "Egypt",
+                    "value": "{\"name\": \"Egypt\", \"code\": \"EGY\"}"
+                },
+                {
+                    "label": "El Salvador",
+                    "value": "{\"name\": \"El Salvador\", \"code\": \"SLV\"}"
+                },
+                {
+                    "label": "Equatorial Guinea",
+                    "value": "{\"name\": \"Equatorial Guinea\", \"code\": \"GNQ\"}"
+                },
+                {
+                    "label": "Eritrea",
+                    "value": "{\"name\": \"Eritrea\", \"code\": \"ERI\"}"
+                },
+                {
+                    "label": "Estonia",
+                    "value": "{\"name\": \"Estonia\", \"code\": \"EE\"}"
+                },
+                {
+                    "label": "Eswatini",
+                    "value": "{\"name\": \"Eswatini\", \"code\": \"SWZ\"}"
+                },
+                {
+                    "label": "Ethiopia",
+                    "value": "{\"name\": \"Ethiopia\", \"code\": \"ETH\"}"
+                },
+                {
+                    "label": "Fiji",
+                    "value": "{\"name\": \"Fiji\", \"code\": \"FJI\"}"
+                },
+                {
+                    "label": "Finland",
+                    "value": "{\"name\": \"Finland\", \"code\": \"FI\"}"
+                },
+                {
+                    "label": "France",
+                    "value": "{\"name\": \"France\", \"code\": \"FR\"}"
+                },
+                {
+                    "label": "Gabon",
+                    "value": "{\"name\": \"Gabon\", \"code\": \"GAB\"}"
+                },
+                {
+                    "label": "Gambia",
+                    "value": "{\"name\": \"Gambia\", \"code\": \"GMB\"}"
+                },
+                {
+                    "label": "Georgia",
+                    "value": "{\"name\": \"Georgia\", \"code\": \"GEO\"}"
+                },
+                {
+                    "label": "Germany",
+                    "value": "{\"name\": \"Germany\", \"code\": \"DE\"}"
+                },
+                {
+                    "label": "Ghana",
+                    "value": "{\"name\": \"Ghana\", \"code\": \"GHA\"}"
+                },
+                {
+                    "label": "Greece",
+                    "value": "{\"name\": \"Greece\", \"code\": \"EL\"}"
+                },
+                {
+                    "label": "Guatemala",
+                    "value": "{\"name\": \"Guatemala\", \"code\": \"GTM\"}"
+                },
+                {
+                    "label": "Guinea",
+                    "value": "{\"name\": \"Guinea\", \"code\": \"GIN\"}"
+                },
+                {
+                    "label": "Guinea-Bissau",
+                    "value": "{\"name\": \"Guinea-Bissau\", \"code\": \"GNB\"}"
+                },
+                {
+                    "label": "Guyana",
+                    "value": "{\"name\": \"Guyana\", \"code\": \"GUY\"}"
+                },
+                {
+                    "label": "Haiti",
+                    "value": "{\"name\": \"Haiti\", \"code\": \"HTI\"}"
+                },
+                {
+                    "label": "Honduras",
+                    "value": "{\"name\": \"Honduras\", \"code\": \"HND\"}"
+                },
+                {
+                    "label": "Hong Kong, China",
+                    "value": "{\"name\": \"Hong Kong, China\", \"code\": \"HKG\"}"
+                },
+                {
+                    "label": "Hungary",
+                    "value": "{\"name\": \"Hungary\", \"code\": \"HU\"}"
+                },
+                {
+                    "label": "Iceland",
+                    "value": "{\"name\": \"Iceland\", \"code\": \"ISL\"}"
+                },
+                {
+                    "label": "India",
+                    "value": "{\"name\": \"India\", \"code\": \"IND\"}"
+                },
+                {
+                    "label": "Indonesia",
+                    "value": "{\"name\": \"Indonesia\", \"code\": \"IDN\"}"
+                },
+                {
+                    "label": "Iran",
+                    "value": "{\"name\": \"Iran\", \"code\": \"IRN\"}"
+                },
+                {
+                    "label": "Iraq",
+                    "value": "{\"name\": \"Iraq\", \"code\": \"IRQ\"}"
+                },
+                {
+                    "label": "Ireland",
+                    "value": "{\"name\": \"Ireland\", \"code\": \"IE\"}"
+                },
+                {
+                    "label": "Israel",
+                    "value": "{\"name\": \"Israel\", \"code\": \"ISR\"}"
+                },
+                {
+                    "label": "Italy",
+                    "value": "{\"name\": \"Italy\", \"code\": \"IT\"}"
+                },
+                {
+                    "label": "Jamaica",
+                    "value": "{\"name\": \"Jamaica\", \"code\": \"JAM\"}"
+                },
+                {
+                    "label": "Japan",
+                    "value": "{\"name\": \"Japan\", \"code\": \"JPN\"}"
+                },
+                {
+                    "label": "Jordan",
+                    "value": "{\"name\": \"Jordan\", \"code\": \"JOR\"}"
+                },
+                {
+                    "label": "Kazakhstan",
+                    "value": "{\"name\": \"Kazakhstan\", \"code\": \"KAZ\"}"
+                },
+                {
+                    "label": "Kenya",
+                    "value": "{\"name\": \"Kenya\", \"code\": \"KEN\"}"
+                },
+                {
+                    "label": "Kuwait",
+                    "value": "{\"name\": \"Kuwait\", \"code\": \"KWT\"}"
+                },
+                {
+                    "label": "Kyrgyzstan",
+                    "value": "{\"name\": \"Kyrgyzstan\", \"code\": \"KYR\"}"
+                },
+                {
+                    "label": "Lao PDR",
+                    "value": "{\"name\": \"Lao PDR\", \"code\": \"LAO\"}"
+                },
+                {
+                    "label": "Latvia",
+                    "value": "{\"name\": \"Latvia\", \"code\": \"LV\"}"
+                },
+                {
+                    "label": "Lebanon",
+                    "value": "{\"name\": \"Lebanon\", \"code\": \"LBN\"}"
+                },
+                {
+                    "label": "Lesotho",
+                    "value": "{\"name\": \"Lesotho\", \"code\": \"LSO\"}"
+                },
+                {
+                    "label": "Liberia",
+                    "value": "{\"name\": \"Liberia\", \"code\": \"LBR\"}"
+                },
+                {
+                    "label": "Libya",
+                    "value": "{\"name\": \"Libya\", \"code\": \"LBY\"}"
+                },
+                {
+                    "label": "Lithuania",
+                    "value": "{\"name\": \"Lithuania\", \"code\": \"LT\"}"
+                },
+                {
+                    "label": "Luxembourg",
+                    "value": "{\"name\": \"Luxembourg\", \"code\": \"LU\"}"
+                },
+                {
+                    "label": "Macao, China",
+                    "value": "{\"name\": \"Macao, China\", \"code\": \"MAC\"}"
+                },
+                {
+                    "label": "Madagascar",
+                    "value": "{\"name\": \"Madagascar\", \"code\": \"MDG\"}"
+                },
+                {
+                    "label": "Malawi",
+                    "value": "{\"name\": \"Malawi\", \"code\": \"MWI\"}"
+                },
+                {
+                    "label": "Malaysia",
+                    "value": "{\"name\": \"Malaysia\", \"code\": \"MYS\"}"
+                },
+                {
+                    "label": "Maldives",
+                    "value": "{\"name\": \"Maldives\", \"code\": \"MDV\"}"
+                },
+                {
+                    "label": "Mali",
+                    "value": "{\"name\": \"Mali\", \"code\": \"MLI\"}"
+                },
+                {
+                    "label": "Malta",
+                    "value": "{\"name\": \"Malta\", \"code\": \"MT\"}"
+                },
+                {
+                    "label": "Mauritania",
+                    "value": "{\"name\": \"Mauritania\", \"code\": \"MRT\"}"
+                },
+                {
+                    "label": "Mauritius",
+                    "value": "{\"name\": \"Mauritius\", \"code\": \"MUS\"}"
+                },
+                {
+                    "label": "Mexico",
+                    "value": "{\"name\": \"Mexico\", \"code\": \"MEX\"}"
+                },
+                {
+                    "label": "Moldova",
+                    "value": "{\"name\": \"Moldova\", \"code\": \"MDA\"}"
+                },
+                {
+                    "label": "Mongolia",
+                    "value": "{\"name\": \"Mongolia\", \"code\": \"MON\"}"
+                },
+                {
+                    "label": "Montenegro",
+                    "value": "{\"name\": \"Montenegro\", \"code\": \"MNE\"}"
+                },
+                {
+                    "label": "Morocco",
+                    "value": "{\"name\": \"Morocco\", \"code\": \"MAR\"}"
+                },
+                {
+                    "label": "Mozambique",
+                    "value": "{\"name\": \"Mozambique\", \"code\": \"MOZ\"}"
+                },
+                {
+                    "label": "Myanmar",
+                    "value": "{\"name\": \"Myanmar\", \"code\": \"MMR\"}"
+                },
+                {
+                    "label": "Namibia",
+                    "value": "{\"name\": \"Namibia\", \"code\": \"NAM\"}"
+                },
+                {
+                    "label": "Nepal",
+                    "value": "{\"name\": \"Nepal\", \"code\": \"NPL\"}"
+                },
+                {
+                    "label": "Netherlands",
+                    "value": "{\"name\": \"Netherlands\", \"code\": \"NL\"}"
+                },
+                {
+                    "label": "New Zealand",
+                    "value": "{\"name\": \"New Zealand\", \"code\": \"NZL\"}"
+                },
+                {
+                    "label": "Nicaragua",
+                    "value": "{\"name\": \"Nicaragua\", \"code\": \"NIC\"}"
+                },
+                {
+                    "label": "Niger",
+                    "value": "{\"name\": \"Niger\", \"code\": \"NER\"}"
+                },
+                {
+                    "label": "Nigeria",
+                    "value": "{\"name\": \"Nigeria\", \"code\": \"NGA\"}"
+                },
+                {
+                    "label": "North Macedonia",
+                    "value": "{\"name\": \"North Macedonia\", \"code\": \"MKD\"}"
+                },
+                {
+                    "label": "Norway",
+                    "value": "{\"name\": \"Norway\", \"code\": \"NO\"}"
+                },
+                {
+                    "label": "Oman",
+                    "value": "{\"name\": \"Oman\", \"code\": \"OMN\"}"
+                },
+                {
+                    "label": "Pakistan",
+                    "value": "{\"name\": \"Pakistan\", \"code\": \"PAK\"}"
+                },
+                {
+                    "label": "Panama",
+                    "value": "{\"name\": \"Panama\", \"code\": \"PAN\"}"
+                },
+                {
+                    "label": "Papua New Guinea",
+                    "value": "{\"name\": \"Papua New Guinea\", \"code\": \"PNG\"}"
+                },
+                {
+                    "label": "Paraguay",
+                    "value": "{\"name\": \"Paraguay\", \"code\": \"PRY\"}"
+                },
+                {
+                    "label": "Peru",
+                    "value": "{\"name\": \"Peru\", \"code\": \"PER\"}"
+                },
+                {
+                    "label": "Philippines",
+                    "value": "{\"name\": \"Philippines\", \"code\": \"PHL\"}"
+                },
+                {
+                    "label": "Poland",
+                    "value": "{\"name\": \"Poland\", \"code\": \"PL\"}"
+                },
+                {
+                    "label": "Portugal",
+                    "value": "{\"name\": \"Portugal\", \"code\": \"PT\"}"
+                },
+                {
+                    "label": "Puerto Rico",
+                    "value": "{\"name\": \"Puerto Rico\", \"code\": \"PRI\"}"
+                },
+                {
+                    "label": "Qatar",
+                    "value": "{\"name\": \"Qatar\", \"code\": \"QAT\"}"
+                },
+                {
+                    "label": "Romania",
+                    "value": "{\"name\": \"Romania\", \"code\": \"RO\"}"
+                },
+                {
+                    "label": "Russia",
+                    "value": "{\"name\": \"Russia\", \"code\": \"RU\"}"
+                },
+                {
+                    "label": "Rwanda",
+                    "value": "{\"name\": \"Rwanda\", \"code\": \"RWA\"}"
+                },
+                {
+                    "label": "Saudi Arabia",
+                    "value": "{\"name\": \"Saudi Arabia\", \"code\": \"SAU\"}"
+                },
+                {
+                    "label": "Senegal",
+                    "value": "{\"name\": \"Senegal\", \"code\": \"SEN\"}"
+                },
+                {
+                    "label": "Serbia",
+                    "value": "{\"name\": \"Serbia\", \"code\": \"RS\"}"
+                },
+                {
+                    "label": "Sierra Leone",
+                    "value": "{\"name\": \"Sierra Leone\", \"code\": \"SLE\"}"
+                },
+                {
+                    "label": "Singapore",
+                    "value": "{\"name\": \"Singapore\", \"code\": \"SGP\"}"
+                },
+                {
+                    "label": "Slovakia",
+                    "value": "{\"name\": \"Slovakia\", \"code\": \"SK\"}"
+                },
+                {
+                    "label": "Slovenia",
+                    "value": "{\"name\": \"Slovenia\", \"code\": \"SI\"}"
+                },
+                {
+                    "label": "South Africa",
+                    "value": "{\"name\": \"South Africa\", \"code\": \"ZAF\"}"
+                },
+                {
+                    "label": "South Korea",
+                    "value": "{\"name\": \"South Korea\", \"code\": \"KOR\"}"
+                },
+                {
+                    "label": "Spain",
+                    "value": "{\"name\": \"Spain\", \"code\": \"ES\"}"
+                },
+                {
+                    "label": "Sri Lanka",
+                    "value": "{\"name\": \"Sri Lanka\", \"code\": \"LKA\"}"
+                },
+                {
+                    "label": "Sudan",
+                    "value": "{\"name\": \"Sudan\", \"code\": \"SDN\"}"
+                },
+                {
+                    "label": "Suriname",
+                    "value": "{\"name\": \"Suriname\", \"code\": \"SUR\"}"
+                },
+                {
+                    "label": "Sweden",
+                    "value": "{\"name\": \"Sweden\", \"code\": \"SE\"}"
+                },
+                {
+                    "label": "Switzerland",
+                    "value": "{\"name\": \"Switzerland\", \"code\": \"CH\"}"
+                },
+                {
+                    "label": "Taiwan",
+                    "value": "{\"name\": \"Taiwan\", \"code\": \"TAI\"}"
+                },
+                {
+                    "label": "Tajikistan",
+                    "value": "{\"name\": \"Tajikistan\", \"code\": \"TJK\"}"
+                },
+                {
+                    "label": "Tanzania",
+                    "value": "{\"name\": \"Tanzania\", \"code\": \"TZA\"}"
+                },
+                {
+                    "label": "Thailand",
+                    "value": "{\"name\": \"Thailand\", \"code\": \"THA\"}"
+                },
+                {
+                    "label": "Togo",
+                    "value": "{\"name\": \"Togo\", \"code\": \"TGO\"}"
+                },
+                {
+                    "label": "Tunisia",
+                    "value": "{\"name\": \"Tunisia\", \"code\": \"TUN\"}"
+                },
+                {
+                    "label": "Turkey",
+                    "value": "{\"name\": \"Turkey\", \"code\": \"TR\"}"
+                },
+                {
+                    "label": "Turkmenistan",
+                    "value": "{\"name\": \"Turkmenistan\", \"code\": \"TKM\"}"
+                },
+                {
+                    "label": "UAE",
+                    "value": "{\"name\": \"UAE\", \"code\": \"ARE\"}"
+                },
+                {
+                    "label": "Uganda",
+                    "value": "{\"name\": \"Uganda\", \"code\": \"UGA\"}"
+                },
+                {
+                    "label": "Ukraine",
+                    "value": "{\"name\": \"Ukraine\", \"code\": \"UR\"}"
+                },
+                {
+                    "label": "United Kingdom",
+                    "value": "{\"name\": \"United Kingdom\", \"code\": \"UK\"}"
+                },
+                {
+                    "label": "United States",
+                    "value": "{\"name\": \"United States\", \"code\": \"US\"}"
+                },
+                {
+                    "label": "Uruguay",
+                    "value": "{\"name\": \"Uruguay\", \"code\": \"URY\"}"
+                },
+                {
+                    "label": "Uzbekistan",
+                    "value": "{\"name\": \"Uzbekistan\", \"code\": \"UZB\"}"
+                },
+                {
+                    "label": "Venezuela",
+                    "value": "{\"name\": \"Venezuela\", \"code\": \"VEN\"}"
+                },
+                {
+                    "label": "Vietnam",
+                    "value": "{\"name\": \"Vietnam\", \"code\": \"VNM\"}"
+                },
+                {
+                    "label": "Zambia",
+                    "value": "{\"name\": \"Zambia\", \"code\": \"ZMB\"}"
+                },
+                {
+                    "label": "Zimbabwe",
+                    "value": "{\"name\": \"Zimbabwe\", \"code\": \"ZWE\"}"
+                }
+            ]
+        }
+    ]
+}

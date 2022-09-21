@@ -1,5 +1,5 @@
+import json
 import pandas as pd
-import numpy as np
 import streamlit as st
 
 from CAGR_Utils import CAGR_Rolling
@@ -20,24 +20,102 @@ def load_data(region_type):
 
 @st.cache(persist=True)
 def load_data_countries():
-    gc_data_countries = pd.read_excel('GCFS Countries (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na=False, na_values=["NA"], engine='openpyxl')
+    gc_data_countries = pd.read_excel('./data/GCFS Countries (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na=False, na_values=["NA"], engine='openpyxl')
     return gc_data_countries
 
 @st.cache(persist=True)
 def load_data_cities():
-    gc_data_cities = pd.read_excel('GCFS Cities (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na = False, na_values = ['NA'], engine='openpyxl')
+    gc_data_cities = pd.read_excel('./data/GCFS Cities (GDP, Labour, Population, Incomes) SAMPLE.xlsx', keep_default_na = False, na_values = ['NA'], engine='openpyxl')
     return gc_data_cities
+
+@st.cache(persist=True, allow_output_mutation=True)
+def load_databank_locations():
+    with open('./data/gcfs-tree.json', 'rt', encoding='utf8') as f:
+        tree_str = f.read()
+
+    treejson = json.loads(tree_str)
+    databank = treejson[0]['Name']
+
+    regions = [(region['Name'],region['Children']) for region in treejson[0]['Children']]
+
+    # Walk source tree and build countries tree structure from 'By geographic level' branch,
+    # which contains the country codes
+    country_codes_dict = {}
+    countries_json = {'label': databank, 'value': databank, 'children': []}
+    city_codes_dict = {}
+    cities_json = {'label': databank, 'value': databank, 'children': []}
+    for (region, countries) in regions:
+        if region == 'By geographic level':
+            for country in countries:
+                if country['Name'] == 'Countries':
+                    country_codes_dict[country['Name']] = country['Code']
+                    countries_json['children'].append({'label': country['Name'], 'value': country['Name'], 'children': []})
+                elif country['Name'] == 'Cities':
+                    city_codes_dict[country['Name']] = country['Code']
+                    cities_json['children'].append({'label': country['Name'], 'value': country['Name'], 'children': []})
+
+                for city in country['Children']:
+                    if country['Name'] == 'Countries':
+                        country_codes_dict[city['Name']] = city['Code']
+                        countries_json['children'][0]['children'].append({
+                            'label': city['Name'],
+                            'value': json.dumps({'name': city['Name'], 'code': city['Code']})
+                        })
+                    elif country['Name'] == 'Cities':
+                        city_codes_dict[city['Name']] = city['Code']
+                        cities_json['children'][0]['children'].append({
+                            'label': city['Name'],
+                            'value': json.dumps({'name': city['Name'], 'code': city['Code']})
+                        })
+
+    # Walk source tree and build regions > countries > cities tree structure,
+    # using the above countries structure to resolve the country codes
+    # (this is because the non-'By geographic level' branches don't have country codes!)
+    locations_list = []
+    locations_json = {'label': databank, 'value': databank, 'children': [{'label': 'Locations', 'value': 'Locations', 'children': []}]}
+    for i, (region, countries) in enumerate(regions):
+
+        locations_json['children'][0]['children'].append({'label': region, 'value': region, 'children': []})
+
+        for j, country in enumerate(countries):
+
+            locations_json['children'][0]['children'][i]['children'].append({
+                'label': country['Name'],
+                'value': json.dumps({'name': country['Name'], 'code': country_codes_dict.get(country['Name'], None)}),
+                'children': []
+            })
+
+            for city in country['Children']:
+
+                city_name = city['Name'] if city['Name'] != country['Name'] else (city['Name'] + ' - City')
+                locations_json['children'][0]['children'][i]['children'][j]['children'].append({
+                    'label': city_name, 
+                    'value': json.dumps({'name': city['Name'], 'code': city['Code']})
+                })
+
+                locations_list.append({
+                    'Databank': databank,
+                    'Region': region,
+                    'Country': country['Name'],
+                    'Location': city['Name'],
+                    'Location Code': city['Code']
+                })
+
+    locations_df = pd.DataFrame.from_dict(locations_list)
+    pruned_regions = [child for child in locations_json['children'][0]['children'] if child['label'] != 'By geographic level']
+    locations_json['children'][0]['children'] = pruned_regions
+
+    return (locations_df, locations_json, countries_json, cities_json)
 
 @st.cache(persist=True)
 def load_geojson():
-    geojson = pd.read_json('gcfs-geojson.json', orient='records')
+    geojson = pd.read_json('./data/gcfs-geojson.json', orient='records')
     geojson = pd.read_json(geojson['properties'].to_json(orient='records'),orient='records')
     geojson = geojson[['locationCode','latitude','longitude']]
     return geojson
 
 @st.cache(persist=True)
 def clean_and_reshape_data(gc_data, geojson):
-
     # UNPIVOT DATA
     value_vars = list(gc_data.filter(regex=('\\d')).columns)
     # value_vars
